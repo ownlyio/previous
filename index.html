@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Ownly">
+	<title>Ownly</title>
+	<link rel="icon" href="img/ownly.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div style="overflow-x:hidden">
+	<!--	<img src="img/Ownly%20Website.jpg" class="w-100">-->
+	
+		<div class="d-flex justify-content-center align-items-center position-fixed vh-100 w-100 bg-white" id="loading-ownly-container" style="z-index:100">
+			<div class="pb-5">
+				<img src="img/ownly-2.png" id="loading-ownly" style="width:200px; transition:1s" />
+			</div>
+		</div>
+	
+		<header class="py-2 py-sm-3 border-bottom position-fixed w-100 bg-white" style="top:0; left:0; z-index:10">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="d-flex align-items-center">
+						<div class="pe-2">
+							<a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+								<img src="img/ownly.png" class="d-none d-md-block" width="50" />
+								<img src="img/ownly-2.png" class="d-block d-md-none" width="60" />
+							</a>
+						</div>
+						<div class="text-color-1 font-size-170 rubik-black ps-1 d-none d-md-block">OWNLY</div>
+					</div>
+					
+					<div>
+						<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 rubik-regular">
+							<li><a href="#features" class="nav-link pe-3 py-1 py-sm-2 link-color-1 font-size-100 font-size-sm-120">Features</a></li>
+							<li><a href="#tokenomics" class="nav-link px-3 py-1 py-sm-2 link-color-1 font-size-100 font-size-sm-120 mb-1 mb-sm-0">Tokenomics</a></li>
+							<li><a href="#roadmap" class="nav-link px-3 py-1 py-sm-2 link-color-1 font-size-100 font-size-sm-120">Roadmap</a></li>
+							<li><a href="#team" class="nav-link ps-3 py-1 py-sm-2 link-color-1 font-size-100 font-size-sm-120">Team</a></li>
+							<li><button type="button" class="nav-link btn btn-custom-2 ms-3 ps-3 py-1 py-sm-2 font-size-80 font-size-sm-90" style="border-radius:40px">Launch Marketplace</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="w-100" id="banners">
+			<div id="carousel-1" class="carousel slide" data-bs-ride="carousel" style="">
+				<div class="carousel-indicators pb-5">
+					<div class="d-flex flex-column align-items-center">
+						<div class="pb-4">
+							<button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active mx-2 mx-md-4" aria-current="true" style="height:18px; width:18px; border-radius:50%"></button>
+							<button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" class="mx-2 mx-md-4" style="height:18px; width:18px; border-radius:50%"></button>
+							<button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" class="mx-2 mx-md-4" style="height:18px; width:18px; border-radius:50%"></button>
+							<button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3" class="mx-2 mx-md-4" style="height:18px; width:18px; border-radius:50%"></button>
+							<button type="button" data-bs-target="#carousel-1" data-bs-slide-to="4" class="mx-2 mx-md-4" style="height:18px; width:18px; border-radius:50%"></button>
+						</div>
+						
+						<div class="text-center">
+							<button class="btn btn-custom-1 px-5 py-3 font-size-110 font-size-sm-140" style="border-radius:35px; letter-spacing:0.05em">Read Whitepaper</button>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="background-image-cover position-relative page-min-height" style="background-image:url('img/ownly.jpeg')">
+							<div class="position-absolute w-100 h-100" style="background-color:rgba(0,0,0,0.8)">
+								<div class="container w-100 h-100">
+									<div class="d-flex align-items-center w-100 h-100">
+										<div class="text-center w-100 pb-5">
+											<div class="neo-black text-color-2 font-size-350 font-size-sm-400 font-size-lg-500 line-height-100 mb-3" style="letter-spacing:0.1em">OWNLY</div>
+											<div class="alegreya-italic text-white font-size-160 font-size-sm-180 font-size-lg-230 pb-5" style="letter-spacing:0.1em">Own the only NFT Art Collection created by amazing artists</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="background-image-cover position-relative page-min-height" style="background-image:url('img/nft-pioneer.jpg')">
+							<div class="position-absolute w-100 h-100" style="background-color:rgba(0,0,0,0.8)">
+								<div class="container w-100 h-100">
+									<div class="d-flex align-items-center w-100 h-100">
+										<div class="text-center w-100 pb-5">
+											<div class="neo-black text-color-3 font-size-350 font-size-sm-400 font-size-lg-500 line-height-100 mb-3" style="letter-spacing:0.1em">NFT Pioneer</div>
+											<div class="alegreya-italic text-white font-size-160 font-size-sm-180 font-size-lg-230 pb-5" style="letter-spacing:0.1em">With 2+ years in the industry</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="background-image-cover position-relative page-min-height" style="background-image:url('img/globally-competitive.jpeg')">
+							<div class="position-absolute w-100 h-100" style="background-color:rgba(0,0,0,0.8)">
+								<div class="container w-100 h-100">
+									<div class="d-flex align-items-center w-100 h-100">
+										<div class="text-center w-100 pb-5">
+											<div class="neo-black text-color-4 font-size-350 font-size-sm-400 font-size-lg-500 line-height-100 mb-3" style="letter-spacing:0.1em">Globally Competitive</div>
+											<div class="alegreya-italic text-white font-size-160 font-size-sm-180 font-size-lg-230 pb-5" style="letter-spacing:0.1em">Won 13th place in Decentraland's Global Game Jam in 2019</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="background-image-cover position-relative page-min-height" style="background-image:url('img/amazing-nft-artists.jpg')">
+							<div class="position-absolute w-100 h-100" style="background-color:rgba(0,0,0,0.8)">
+								<div class="container w-100 h-100">
+									<div class="d-flex align-items-center w-100 h-100">
+										<div class="text-center w-100 pb-5">
+											<div class="neo-black text-color-3 font-size-350 font-size-sm-400 font-size-lg-500 line-height-100 mb-3" style="letter-spacing:0.1em">Amazing NFT Artists</div>
+											<div class="alegreya-italic text-white font-size-160 font-size-sm-180 font-size-lg-230 pb-5" style="letter-spacing:0.1em">existing basket portfolio of NFT Artworks</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="background-image-cover position-relative page-min-height" style="background-image:url('img/pool-of-creative-talents.jpeg')">
+							<div class="position-absolute w-100 h-100" style="background-color:rgba(0,0,0,0.8)">
+								<div class="container w-100 h-100">
+									<div class="d-flex align-items-center w-100 h-100">
+										<div class="text-center w-100 pb-5">
+											<div class="neo-black text-color-3 font-size-350 font-size-sm-400 font-size-lg-500 line-height-100 mb-3" style="letter-spacing:0.1em">Pool of Creative Talents</div>
+											<div class="alegreya-italic text-white font-size-160 font-size-sm-180 font-size-lg-230 pb-5" style="letter-spacing:0.1em">wide network of artists</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		
+		<div class="page-min-height w-100 bg-color-1">
+			<div class="container py-5">
+				<div class="alegreya-bold-italic text-color-3 font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">OUR KEY FEATURES</div>
+				
+				<div class="ps-xl-5">
+					<div class="ps-lg-4">
+						<div class="row">
+							<div class="col-md-6 mb-5">
+								<div class="ps-4 py-1 h-100" style="border-left:4px solid #16b99a">
+									<div class="text-color-3 font-size-180 font-size-lg-230 neo-black letter-spacing-5 mb-3">GOVERNANCE</div>
+									
+									<div class="d-flex">
+										<div class="me-4" style="min-width:80px; width:80px; height:80px">
+											<img src="img/dollar.png" class="w-100">
+										</div>
+										<div class="text-color-5 alegreya-regular font-size-120 py-2">OWN holders are responsible for governing the protocol via systematic voting for the next featured artist and collection to be released.</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-6 mb-5">
+								<div class="ps-4 py-1 h-100" style="border-left:4px solid #16b99a">
+									<div class="text-color-3 font-size-180 font-size-lg-230 neo-black letter-spacing-5 mb-3">INTEROPERABILITY</div>
+									
+									<div class="d-flex">
+										<div class="me-4" style="min-width:80px; width:80px; height:80px">
+											<img src="img/dollar.png" class="w-100">
+										</div>
+										<div class="text-color-5 alegreya-regular font-size-120 py-2">Powered by Cardano Blockchain, it can support users across multiple blockchains.</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-6 mb-5">
+								<div class="ps-4 py-1 h-100" style="border-left:4px solid #16b99a">
+									<div class="text-color-3 font-size-180 font-size-lg-230 neo-black letter-spacing-5 mb-3">NFT - DeFi</div>
+									
+									<div class="d-flex">
+										<div class="me-4" style="min-width:80px; width:80px; height:80px">
+											<img src="img/dollar.png" class="w-100">
+										</div>
+										<div class="text-color-5 alegreya-regular font-size-120 py-2">Fractionalizing multiple NFTs, utilizing LP mining on DEXes, lending & staking, to improve overall liquidity.</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-6 mb-5">
+								<div class="ps-4 py-1 h-100" style="border-left:4px solid #16b99a">
+									<div class="text-color-3 font-size-180 font-size-lg-230 neo-black letter-spacing-5 mb-3">ROYALTY SHARING</div>
+									
+									<div class="d-flex">
+										<div class="me-4" style="min-width:80px; width:80px; height:80px">
+											<img src="img/dollar.png" class="w-100">
+										</div>
+										<div class="text-color-5 alegreya-regular font-size-120 py-2">Royalty share for NFT creators, incentives for users & traders with transaction mining.</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-6 mb-5">
+								<div class="ps-4 py-1 h-100" style="border-left:4px solid #16b99a">
+									<div class="text-color-3 font-size-180 font-size-lg-230 neo-black letter-spacing-5 mb-3">INNOVATE P2P LENDING</div>
+									
+									<div class="d-flex">
+										<div class="me-4" style="min-width:80px; width:80px; height:80px">
+											<img src="img/dollar.png" class="w-100">
+										</div>
+										<div class="text-color-5 alegreya-regular font-size-120 py-2">Use Non-Fungible Tokens and various crypto assets as collateral.</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-6 mb-5">
+								<div class="ps-4 py-1 h-100" style="border-left:4px solid #16b99a">
+									<div class="text-color-3 font-size-180 font-size-lg-230 neo-black letter-spacing-5 mb-3">ENVIRONMENT FRIENDLY</div>
+									
+									<div class="d-flex">
+										<div class="me-4" style="min-width:80px; width:80px; height:80px">
+											<img src="img/dollar.png" class="w-100">
+										</div>
+										<div class="text-color-5 alegreya-regular font-size-120 py-2">Everyone can create "clean" NFTs without coding skill, trade without underlying blockchain knowledge.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-min-height w-100 bg-color-2">
+			<div class="container py-5">
+				<div class="alegreya-bold-italic text-white font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">OUR TOKENOMICS</div>
+			
+				<div class="d-flex flex-column flex-md-row align-items-start align-items-lg-center mb-5">
+					<div class="text-center me-md-5 mb-4 mb-md-0">
+						<img src="img/own-token.png" width="200" />
+					</div>
+					
+					<div class="me-5">
+						<div class="text-white alegreya-italic font-size-190 font-size-lg-220 letter-spacing-5 mb-4 ps-2">The native token of OWNLY is designed for community governance and DeFi Utilization with NFT-creator-centricity and DeFi-community-driven purpose.</div>
+						
+						<div>
+							<button class="btn btn-custom-3 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">Read Whitepaper</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row pt-4 pb-4 px-1">
+					<div class="col-6 col-lg-3 px-2 mb-5">
+						<div class="px-3 px-sm-4 px-md-5 px-lg-4 px-xxl-5">
+							<div class="bg-color-3 w-100 position-relative" style="padding-top:100%; border-radius:50%; z-index:1">
+								<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0">
+									<div class="text-white rubik-bold font-size-110 font-sm-size-130 font-size-xl-150 text-center line-height-130">OWNLY<br>DAO</div>
+								</div>
+								
+								<div class="position-absolute tokenomics-arrow">
+									<img src="img/arrow-blue.png" class="w-100">
+								</div>
+							</div>
+						</div>
+						
+						<div class="tokenomics-card-body">
+							<div class="bg-white w-100 position-relative py-5 px-4" style="border-radius:100px">
+								<div class="d-flex justify-content-center align-items-center pt-4 pt-sm-5 pb-3 pb-sm-5">
+									<div class="line-height-130 pt-5 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 pb-4 font-size-100 font-size-sm-110 font-size-xl-120">OWN hodlers can govern and decide the trajectory of the OWNLY platform on certain economic factors such as voting for the next featured artist, collateral and interest rate.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-6 col-lg-3 px-2 mb-5">
+						<div class="px-3 px-sm-4 px-md-5 px-lg-4 px-xxl-5">
+							<div class="bg-color-4 w-100 position-relative" style="padding-top:100%; border-radius:50%; z-index:1">
+								<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0">
+									<div class="text-white rubik-bold font-size-110 font-sm-size-130 font-size-xl-150 text-center line-height-130">MODE OF<br>PAYMENT</div>
+								</div>
+								
+								<div class="position-absolute tokenomics-arrow d-none d-lg-block">
+									<img src="img/arrow-orange.png" class="w-100">
+								</div>
+							</div>
+						</div>
+						
+						<div class="tokenomics-card-body">
+							<div class="bg-white w-100 position-relative py-5 px-4" style="border-radius:100px">
+								<div class="d-flex justify-content-center align-items-center pt-4 pt-sm-5 pb-3 pb-sm-5">
+									<div class="line-height-130 pt-5 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 pb-4 font-size-100 font-size-sm-110 font-size-xl-120">OWN Tokens will be used for paying the platform fees, buying and selling NFTs in OWNLY.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-6 col-lg-3 px-2 mb-5">
+						<div class="px-3 px-sm-4 px-md-5 px-lg-4 px-xxl-5">
+							<div class="bg-color-5 w-100 position-relative" style="padding-top:100%; border-radius:50%; z-index:1">
+								<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0">
+									<div class="text-white rubik-bold font-size-110 font-sm-size-130 font-size-xl-150 text-center line-height-130">STAKING<br>REWARDS</div>
+								</div>
+								
+								<div class="position-absolute tokenomics-arrow">
+									<img src="img/arrow-red.png" class="w-100">
+								</div>
+							</div>
+						</div>
+						
+						<div class="tokenomics-card-body">
+							<div class="bg-white w-100 position-relative py-5 px-4" style="border-radius:100px">
+								<div class="d-flex justify-content-center align-items-center pt-4 pt-sm-5 pb-3 pb-sm-5">
+									<div class="line-height-130 pt-5 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 pb-4 font-size-100 font-size-sm-110 font-size-xl-120">OWN Tokens will be used as rewards in our Liquidity Mining Pool.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-6 col-lg-3 px-2 mb-5">
+						<div class="px-3 px-sm-4 px-md-5 px-lg-4 px-xxl-5">
+							<div class="bg-color-6 w-100 position-relative" style="padding-top:100%; border-radius:50%; z-index:1">
+								<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0">
+									<div class="text-white rubik-bold font-size-110 font-sm-size-130 font-size-xl-150 text-center line-height-130">GOVERNANCE<br>INCENTIVES</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tokenomics-card-body">
+							<div class="bg-white w-100 position-relative py-5 px-4" style="border-radius:100px">
+								<div class="d-flex justify-content-center align-items-center pt-4 pt-sm-5 pb-3 pb-sm-5">
+									<div class="line-height-130 pt-5 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 font-size-100 font-size-sm-110 font-size-xl-120">OWN Token hodlers who participate in OWNLY Governance for its continuous and sustained improvement and growth are entitled to OWN rewards.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-min-height w-100 bg-color-1">
+			<div class="container py-5">
+				<div class="alegreya-bold-italic text-color-1 font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">OUR ROADMAP</div>
+				
+				<div class="d-flex flex-column flex-md-row">
+					<div class="flex-fill">
+						<div class="bg-color-3 pe-5 pt-0 pb-3 mb-5 position-relative" style="width:fit-content; border-top-right-radius:200px; border-bottom-right-radius:200px">
+							<div class="container font-size-550 font-lg-size-620 alegreya-bold-italic text-white line-height-100 pe-5">2021</div>
+							<div class="position-absolute h-100 w-100 bg-color-3" style="top:0; left:-99%"></div>
+						</div>
+						
+						<div class="d-none d-md-block">
+							<div class="mb-5">
+								<img src="img/2021-q2.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2021-q4.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5 pt-5">
+								<div class="mt-5">
+									<img src="img/2022-q2.jpg" class="w-100 pt-5 mt-5" />
+								</div>
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2022-q4.jpg" class="w-100" />
+							</div>
+						</div>
+						
+						<div class="d-block d-md-none">
+							<div class="mb-5">
+								<img src="img/2021-q1.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2021-q2.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2021-q3.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2021-q4.jpg" class="w-100" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="mx-4 d-none d-md-block py-5" style="width:6px">
+						<div class="py-4 py-xl-5 h-100" style="width:6px">
+							<div class="py-0 py-xl-4 h-100" style="width:6px">
+								<div class="h-100" style="background-color:#000000; width:4px"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="flex-fill">
+						<div class="d-none d-md-block">
+							<div class="mb-5">
+								<img src="img/2021-q1.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2021-q3.jpg" class="w-100" />
+							</div>
+						</div>
+						
+						<div class="d-flex justify-content-end pt-md-5">
+							<div class="bg-color-4 ps-5 pt-0 pb-3 mb-5 position-relative" style="width:fit-content; border-top-left-radius:200px; border-bottom-left-radius:200px">
+								<div class="container font-size-550 font-lg-size-620 alegreya-bold-italic text-white text-end line-height-100 ps-5">2022</div>
+								<div class="position-absolute h-100 w-100 bg-color-4" style="top:0; right:-99%"></div>
+							</div>
+						</div>
+						
+						<div class="d-none d-md-block">
+							<div class="mb-5">
+								<img src="img/2022-q1.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2022-q3.jpg" class="w-100" />
+							</div>
+						</div>
+						
+						<div class="d-block d-md-none">
+							<div class="mb-5">
+								<img src="img/2022-q1.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2022-q2.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2022-q3.jpg" class="w-100" />
+							</div>
+							
+							<div class="mb-5">
+								<img src="img/2022-q4.jpg" class="w-100" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-min-height w-100 bg-color-7">
+			<div class="container py-5">
+				<div class="alegreya-bold-italic text-white font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">MEET OUR ARTISTS</div>
+				
+				<div class="row px-0">
+					<div class="col-md-6 px-4 mb-5">
+						<div class="position-relative overflow-hidden artist-card">
+							<img src="img/chen-naje2.jpg" class="w-100 mb-5 mb-md-0" />
+							
+							<div class="position-absolute w-100 px-4 py-4 d-none d-md-block" style="top:0; left:0">
+								<p class="neo-black text-white font-size-230 font-size-lg-280 line-height-110 letter-spacing-5 mb-1">Chen Naje</p>
+								<p class="neo-regular-italic text-white font-size-180 font-size-lg-230 line-height-130 letter-spacing-5">Ink Illustrator</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-4 px-xl-5 py-3 py-lg-4 artist-description" style="left:0; background-color:rgba(52,49,49,0.85); transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-artist-description">
+									<i class="fas fa-chevron-down text-white font-size-150"></i>
+								</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130">John Kaizen “Chen” Naje, also known as “Chenandink” within the art community, is an artist based in Camalig, Albay, Philippines. With over 40,000 followers in his Instagram account, Chen is one of Bicol’s pride when it comes to art and illustration.</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130 mb-0">He is recognized for creating detailed illustrations of nature and wildlife using pen and ink. With his Bachelor's Degree in Fine Arts and extensive experience in making illustrations, he has landed multiple commissions for private individuals and collectors around the world.</p>
+							</div>
+							
+							<div class="position-absolute d-block d-md-none bg-white px-4 py-3 w-100" style="bottom:0; left:0">
+								<div class="d-flex mb-3">
+									<div class="me-4">
+										<p class="neo-black font-size-130 mb-0">Chen&nbsp;Naje</p>
+										<p class="neo-regular-italic font-size-120 mb-0">Ink&nbsp;Illustrator</p>
+									</div>
+									
+									<div class="flex-fill" style="min-width:100px">
+										<div class="d-flex flex-wrap justify-content-end">
+											<div class="bg-color-7 p-2">
+												<a href="https://web.facebook.com/chenandink" target="_blank">
+													<i class="fab fa-facebook-f text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.instagram.com/chenandink/" target="_blank">
+													<i class="fab fa-instagram text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.chenandink.com/" target="_blank">
+													<i class="fas fa-globe text-white font-size-110"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<p class="neo-bold font-size-110 cursor-pointer mb-0 show-artist-description">Read More&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></p>
+							</div>
+						</div>
+						
+						<div class="d-none d-md-block">
+							<div class="d-flex align-items-center mt-3">
+								<div class="me-4">
+									<a href="https://web.facebook.com/chenandink" target="_blank">
+										<i class="fab fa-facebook-f text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.instagram.com/chenandink/" target="_blank">
+										<i class="fab fa-instagram text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.chenandink.com/" target="_blank">
+										<i class="fas fa-globe text-white font-size-180"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 px-4 mb-5">
+						<div class="position-relative overflow-hidden artist-card">
+							<img src="img/lei-melendres2.jpg" class="w-100 mb-5 mb-md-0" />
+							
+							<div class="position-absolute w-100 px-4 py-4 d-none d-md-block" style="top:0; left:0">
+								<p class="neo-black text-white font-size-230 font-size-lg-280 line-height-110 letter-spacing-5 mb-1">Lei Melendres</p>
+								<p class="neo-regular-italic text-white font-size-180 font-size-lg-230 line-height-130 letter-spacing-5">Doodle Artist</p>
+							</div>
+							
+							<div class="position-absolute d-block d-md-none bg-white px-4 py-3 w-100" style="bottom:0; left:0">
+								<div class="d-flex mb-3">
+									<div class="me-4">
+										<p class="neo-black font-size-130 mb-0">Lei&nbsp;Melendres</p>
+										<p class="neo-regular-italic font-size-120 mb-0">Doodle&nbsp;Artist</p>
+									</div>
+									
+									<div class="flex-fill" style="min-width:100px">
+										<div class="d-flex flex-wrap justify-content-end">
+											<div class="bg-color-7 p-2">
+												<a href="https://web.facebook.com/leimelendresdoodles" target="_blank">
+													<i class="fab fa-facebook-f text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.instagram.com/leimelendres/" target="_blank">
+													<i class="fab fa-instagram text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://twitter.com/LeiMelendres" target="_blank">
+													<i class="fab fa-twitter text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.behance.net/leimelendres" target="_blank">
+													<i class="fab fa-behance text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.deviantart.com/leimelendres" target="_blank">
+													<i class="fab fa-deviantart text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.youtube.com/c/leimelendres" target="_blank">
+													<i class="fab fa-youtube text-white font-size-110"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<p class="neo-bold font-size-110 cursor-pointer mb-0 show-artist-description">Read More&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></p>
+							</div>
+							
+							<div class="position-absolute w-100 px-4 px-xl-5 py-3 py-lg-4 artist-description" style="left:0; background-color:rgba(52,49,49,0.85); transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-artist-description">
+									<i class="fas fa-chevron-down text-white font-size-150"></i>
+								</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130">Lei is a multi-faceted artist. Although his main focus is digital illustration, he also includes traditional illustration, mural work, product design, and toy customization in his services.</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130">He coined a term for his art style. He named it “Infinity Mix” because of the mixture of endless elements and details interacting together to form a scene.</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130 mb-0">Lei served multiple local and international clients. He has worked with NBA Store, Samsonite Red Philippines, Capital PH, Rhinoshield, Asus PH, Coffee Bean & Tea Leaf, Kipling, Lazada SG, G-Shock PH, Globe, Daniel Wellington, WWF Philippines.</p>
+							</div>
+						</div>
+						
+						<div class="d-none d-md-block">
+							<div class="d-flex align-items-center mt-3">
+								<div class="me-4">
+									<a href="https://web.facebook.com/leimelendresdoodles" target="_blank">
+										<i class="fab fa-facebook-f text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.instagram.com/leimelendres/" target="_blank">
+										<i class="fab fa-instagram text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://twitter.com/LeiMelendres" target="_blank">
+										<i class="fab fa-twitter text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.behance.net/leimelendres" target="_blank">
+										<i class="fab fa-behance text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.deviantart.com/leimelendres" target="_blank">
+										<i class="fab fa-deviantart text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.youtube.com/c/leimelendres" target="_blank">
+										<i class="fab fa-youtube text-white font-size-180"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 px-4 mb-5">
+						<div class="position-relative overflow-hidden artist-card">
+							<img src="img/eugene-oligo2.jpg" class="w-100 mb-5 mb-md-0" />
+							
+							<div class="position-absolute w-100 px-4 py-4 d-none d-md-block" style="top:0; left:0">
+								<p class="neo-black text-white font-size-230 font-size-lg-280 line-height-110 letter-spacing-5 mb-1">Eugene Oligo</p>
+								<p class="neo-regular-italic text-white font-size-180 font-size-lg-230 line-height-130 letter-spacing-5">Concept Artist</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-4 px-xl-5 py-3 py-lg-4 artist-description" style="left:0; background-color:rgba(52,49,49,0.85); transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-artist-description">
+									<i class="fas fa-chevron-down text-white font-size-150"></i>
+								</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130">Eugene is a multimedia artist that focuses on digital illustrations, digital painting, concept art 2D and 3D. He also creates traditional artworks such as paintings, portraits and so on.</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130 mb-0">He served many clients locally, nationally and internationally. He had a collaboration project with Titus pens, and was invited to be a guest artist to make doodle wall art with other artists.</p>
+							</div>
+							
+							<div class="position-absolute d-block d-md-none bg-white px-4 py-3 w-100" style="bottom:0; left:0">
+								<div class="d-flex mb-3">
+									<div class="me-4">
+										<p class="neo-black font-size-130 mb-0">Eugene&nbsp;Oligo</p>
+										<p class="neo-regular-italic font-size-120 mb-0">Concept&nbsp;Artist</p>
+									</div>
+									
+									<div class="flex-fill" style="min-width:100px">
+										<div class="d-flex flex-wrap justify-content-end">
+											<div class="bg-color-7 p-2">
+												<a href="https://web.facebook.com/chenandink" target="_blank">
+													<i class="fab fa-facebook-f text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.instagram.com/chenandink/" target="_blank">
+													<i class="fab fa-instagram text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.chenandink.com/" target="_blank">
+													<i class="fas fa-globe text-white font-size-110"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<p class="neo-bold font-size-110 cursor-pointer mb-0 show-artist-description">Read More&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></p>
+							</div>
+						</div>
+						
+						<div class="d-none d-md-block">
+							<div class="d-flex align-items-center mt-3">
+								<div class="me-4">
+									<a href="https://web.facebook.com/eugene.delacroixii" target="_blank">
+										<i class="fab fa-facebook-f text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.instagram.com/eugene_dlcrx/" target="_blank">
+										<i class="fab fa-instagram text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://edlcrx.artstation.com/" target="_blank">
+										<i class="fab fa-artstation text-white font-size-180"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 px-4 mb-5">
+						<div class="position-relative overflow-hidden artist-card">
+							<img src="img/dan-barotilla2.jpg" class="w-100 mb-5 mb-md-0" />
+							
+							<div class="position-absolute w-100 px-4 py-4 d-none d-md-block" style="top:0; left:0">
+								<p class="neo-black text-white font-size-230 font-size-lg-280 line-height-110 letter-spacing-5 mb-1">Dan Vincent Barotilla</p>
+								<p class="neo-regular-italic text-white font-size-180 font-size-lg-230 line-height-130 letter-spacing-5">Visual Artist</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-4 px-xl-5 py-3 py-lg-4 artist-description" style="left:0; background-color:rgba(52,49,49,0.85); transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-artist-description">
+									<i class="fas fa-chevron-down text-white font-size-150"></i>
+								</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130">Dan is an Albay based artist that uses different mediums in his works. His focus is in traditional painting, oils, pencils. does custom toys and also practices 3d digital art. His painting style is realism, mostly black and white paintings, he is also working on a character the “Mustache Boii”.</p>
+								<p class="text-white font-size-md-90 font-size-lg-120 font-size-xl-140 line-height-130 mb-0">His inspiration for his character is himself. Long haired raggedy guy with a mustache existing on different personalities. He also has done community based mural projects along with different organizations. Joined mural and painting competitions and shows.</p>
+							</div>
+							
+							<div class="position-absolute d-block d-md-none bg-white px-4 py-3 w-100" style="bottom:0; left:0">
+								<div class="d-flex mb-3">
+									<div class="me-4">
+										<p class="neo-black font-size-130 mb-0">Dan&nbsp;Vincent Barotilla</p>
+										<p class="neo-regular-italic font-size-120 mb-0">Visual&nbsp;Artist</p>
+									</div>
+									
+									<div class="flex-fill" style="min-width:100px">
+										<div class="d-flex flex-wrap justify-content-end">
+											<div class="bg-color-7 p-2">
+												<a href="https://web.facebook.com/chenandink" target="_blank">
+													<i class="fab fa-facebook-f text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.instagram.com/chenandink/" target="_blank">
+													<i class="fab fa-instagram text-white font-size-110"></i>
+												</a>
+											</div>
+											<div class="bg-color-7 p-2">
+												<a href="https://www.chenandink.com/" target="_blank">
+													<i class="fas fa-globe text-white font-size-110"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<p class="neo-bold font-size-110 cursor-pointer mb-0 show-artist-description">Read More&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></p>
+							</div>
+						</div>
+						
+						<div class="d-none d-md-block">
+							<div class="d-flex align-items-center mt-3">
+								<div class="me-4">
+									<a href="https://web.facebook.com/dbarotilla9" target="_blank">
+										<i class="fab fa-facebook-f text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.instagram.com/mustache.boii/" target="_blank">
+										<i class="fab fa-instagram text-white font-size-180"></i>
+									</a>
+								</div>
+								<div class="me-4">
+									<a href="https://www.artstation.com/sphinx1232" target="_blank">
+										<i class="fab fa-artstation text-white font-size-180"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="text-center font-size-160 text-white letter-spacing-5 pt-3">MORE ARTISTS COMING SOON..</div>
+			</div>
+		</div>
+		
+		<div class="page-min-height w-100 bg-color-5">
+			<div class="container py-5">
+				<div class="alegreya-bold-italic text-white font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">MEET OUR TEAM</div>
+				
+				<div class="row">
+					<div class="offset-md-3 col-md-6 offset-lg-0 col-lg-4 px-3 mb-5">
+						<div class="position-relative overflow-hidden team-card shadow-custom-1">
+							<a href="https://www.linkedin.com/in/ismaeljerusalem/" target="_blank">
+								<img src="img/isma2.png" class="w-100 mt-5 pt-5" />
+							</a>
+							
+							<div class="position-absolute w-100 px-4 py-4" style="top:0; left:0">
+								<p class="neo-black text-white font-size-160 font-size-md-150 font-size-xl-170 line-height-110 letter-spacing-5 mb-1">Ismael Jerusalem</p>
+								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Chief Executive Officer</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
+									<i class="fas fa-chevron-down text-white font-size-120"></i>
+								</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">Ismael is the Head Organizer of Albay Multimedia Arts Convention (AMAC), the biggest event celebrating creativity in the Bicol Region. He is also a Community Manager of Bicol IT Org. Inc., the largest and most active IT advocacy non-profit organization in the Southern Luzon.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">He launched a very successful Augmented Reality art exhibit based on the Ibalong epic, Bicol's earliest work of literature. One of the first presentations in the country that combines art and cutting edge technology last August 2019 together with Studio Down South. He was formerly the Gallery Manager of Galleria de Embarcadero, which supports homegrown creative talents in showcasing their works of art.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-0">He earned Blockchain certifications from IBM. He also earned Adobe Influencer Status and certifications from Adobe Education Exchange.</p>
+							</div>
+						</div>
+						
+						<div class="position-relative d-block d-md-none">
+							<div class="position-absolute text-center w-100 text-white py-3 font-size-90 show-team-description cursor-pointer" style="background-color:rgba(52,49,49,0.85); left:0; top:-48px">Read More..</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-4 px-3 mb-5">
+						<div class="position-relative overflow-hidden team-card shadow-custom-1">
+							<a href="https://www.linkedin.com/in/bernard-historillo-089aba204/" target="_blank">
+								<img src="img/bernard2.png" class="w-100 mt-5 pt-5" />
+							</a>
+							
+							<div class="position-absolute w-100 px-4 py-4" style="top:0; left:0">
+								<p class="neo-black text-white font-size-160 font-size-md-150 font-size-xl-170 line-height-110 letter-spacing-5 mb-1">Bernard Historillo</p>
+								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Chief Technology Officer</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
+									<i class="fas fa-chevron-down text-white font-size-120"></i>
+								</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">Bernard is a full stack developer with a degree of Bachelor of Science in Computer Science who works with various national and international clients. He worked on both frontend and backend in several software development projects in US based and Singapore based clients.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-0">He won several programming competitions. He plays a key role in delivering quality software systems. He also earned several certifications in attending national conferences in the tech industry.</p>
+							</div>
+						</div>
+						
+						<div class="position-relative d-block d-md-none">
+							<div class="position-absolute text-center w-100 text-white py-3 font-size-90 show-team-description cursor-pointer" style="background-color:rgba(52,49,49,0.85); left:0; top:-48px">Read More..</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-4 px-3 mb-5">
+						<div class="position-relative overflow-hidden team-card shadow-custom-1">
+							<a href="https://www.linkedin.com/in/karlvasquez/" target="_blank">
+								<img src="img/karl2.png" class="w-100 mt-5 pt-5" />
+							</a>
+							
+							<div class="position-absolute w-100 px-4 py-4" style="top:0; left:0">
+								<p class="neo-black text-white font-size-160 font-size-md-150 font-size-xl-170 line-height-110 letter-spacing-5 mb-1">Karl Vasquez</p>
+								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Chief Marketing Officer</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
+									<i class="fas fa-chevron-down text-white font-size-120"></i>
+								</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">Karl is a Creative Entrepreneur. And few from his creative pursuits are the Albay Multimedia Arts Convention (AMAC), where he is part of the Core Organizing team of the biggest creative convention in Bicol. He co-founded a design studio based, Studio Down South, where they help organizations, communities, brands and businesses solve their creative needs.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">He is the Founder and the CEO of the community-based streetwear brand, Bounce Back PH, where it incorporates fashion with stories of hope and resiliency.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-0">He also works with various clients as a Creative Marketing Specialist. And with all his creative projects, he is recognized by When in Manila last 2019 as one of the Top 30 Young Successful Entrepreneurs Under Age of 30 in the Philippines.</p>
+							</div>
+						</div>
+						
+						<div class="position-relative d-block d-md-none">
+							<div class="position-absolute text-center w-100 text-white py-3 font-size-90 show-team-description cursor-pointer" style="background-color:rgba(52,49,49,0.85); left:0; top:-48px">Read More..</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-min-height w-100 bg-color-6">
+			<div class="container py-5">
+				<div class="alegreya-bold-italic text-white font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">MEET OUR ADVISORS</div>
+				
+				<div class="row">
+					<div class="offset-md-3 col-md-6 offset-lg-0 col-lg-4 px-3 mb-5">
+						<div class="position-relative overflow-hidden team-card shadow-custom-1">
+							<a href="https://www.linkedin.com/in/ricoz/" target="_blank">
+								<img src="img/sir-rico2.png" class="w-100 mt-5 pt-5" />
+							</a>
+							
+							<div class="position-absolute w-100 px-4 py-4" style="top:0; left:0">
+								<p class="neo-black text-white font-size-160 font-size-md-150 font-size-xl-170 line-height-110 letter-spacing-5 mb-1">Rico Zuniga</p>
+								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Technical Advisor</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
+									<i class="fas fa-chevron-down text-white font-size-120"></i>
+								</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">Rico has over 15 years of experience leading product development teams for startups and multinational companies. Rico has been working with blockchain technology since 2017. He is also a ConSys-certified blockchain developer. Moreover, Rico is the co-founder of Bicol IT.org Inc., the largest and most active IT advocacy non-profit organization in Southern Luzon.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">He’s currently the CTO of SparkPoint Innovations Inc., a Blockchain technology startup from the Philippines. They launched their own cryptocurrency token called SRK in 2018, where you can store SRK in their wallet or trade it on BitMart, HotBit, Crex24, and Uniswap.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-0">He also contributed to a few open source projects on GitHub. On the side, he teaches various technologies and writes coding tutorials.</p>
+							</div>
+						</div>
+						
+						<div class="position-relative d-block d-md-none">
+							<div class="position-absolute text-center w-100 text-white py-3 font-size-90 show-team-description cursor-pointer" style="background-color:rgba(52,49,49,0.85); left:0; top:-48px">Read More..</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-4 px-3 mb-5">
+						<div class="position-relative overflow-hidden team-card shadow-custom-1">
+							<a href="https://www.linkedin.com/in/andrino-agnas-2473a3158/" target="_blank">
+								<img src="img/sir-andy2.png" class="w-100 mt-5 pt-5" />
+							</a>
+							
+							<div class="position-absolute w-100 px-4 py-4" style="top:0; left:0">
+								<p class="neo-black text-white font-size-160 font-size-md-150 font-size-xl-170 line-height-110 letter-spacing-5 mb-1">Andy Agnas</p>
+								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Technical Advisor</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
+									<i class="fas fa-chevron-down text-white font-size-120"></i>
+								</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">Andy is the CEO of SparkPoint Innovations Inc., one of the leading blockchain companies in the Philippines.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">He has been a financial and tax consultant for various companies for over 6 years. A CPA by profession, Andy is the managing owner of his own accounting firm and currently a director of PICPA-Cam Sur Chapter, an active and prestigious professional organization in the Philippines.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-0">Andy is also a blockchain enthusiast since 2016, being a resource speaker in various seminars relating to blockchain technology and cryptocurrencies.</p>
+							</div>
+						</div>
+						
+						<div class="position-relative d-block d-md-none">
+							<div class="position-absolute text-center w-100 text-white py-3 font-size-90 show-team-description cursor-pointer" style="background-color:rgba(52,49,49,0.85); left:0; top:-48px">Read More..</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-4 px-3 mb-5">
+						<div class="position-relative overflow-hidden team-card shadow-custom-1">
+							<a href="http://behance.net/rafbanzuela" target="_blank">
+								<img src="img/raf2.png" class="w-100 mt-5 pt-5" />
+							</a>
+							
+							<div class="position-absolute w-100 px-4 py-4" style="top:0; left:0">
+								<p class="neo-black text-white font-size-160 font-size-md-150 font-size-xl-170 line-height-110 letter-spacing-5 mb-1">Raf Banzuela</p>
+								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Technical Advisor</p>
+							</div>
+							
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
+									<i class="fas fa-chevron-down text-white font-size-120"></i>
+								</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">Raf Banzuela an illustrator and designer based in the Philippines with over 10 years of industry experience. Combining surrealism and realism in his highly detailed works focused on the human figure and nature,</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-1">Raf Banzuela‘s creations are absolutely fascinating. This is what makes his works give the viewer this troubling feeling. His medium is mainly graphite, but he also uses acrylic and ink.</p>
+								<p class="text-white font-size-90 font-size-sm-100 font-size-md-90 font-size-lg-80 font-size-xl-90 line-height-130 mb-0">He works with national and international clients such as The Great Little Place London, Hinge Inquirer Publications, Ystyle - Philippine Star, Chop Suey Publications, Lifeline Foundation, and General Interactive Co.</p>
+							</div>
+						</div>
+						
+						<div class="position-relative d-block d-md-none">
+							<div class="position-absolute text-center w-100 text-white py-3 font-size-90 show-team-description cursor-pointer" style="background-color:rgba(52,49,49,0.85); left:0; top:-48px">Read More..</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-100 bg-color-1">
+			<div class="container py-5">
+				<div class="alegreya-bold-italic text-color-1 font-size-240 font-size-md-280 mb-4" style="letter-spacing:0.05em">JOIN OUR NEWSLETTER</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-md-9">
+						<div class="ps-1 font-size-120 mb-3">Be the first to get the latest news and updates.</div>
+						
+						<div class="mb-4 pb-1">
+							<input type="text" class="form-control shadow-custom-1 px-5 py-3 font-size-120" placeholder="Enter Your Email Address here" />
+						</div>
+						
+						<div class="form-check mb-5">
+							<div class="d-flex align-items-center">
+								<div class="me-4">
+									<input type="checkbox" class="form-check-input shadow-custom-1" id="subscribe" style="width:30px; height:30px" />
+								</div>
+								<div class="mt-2 pt-1">
+									<label class="form-check-label font-size-120" for="subscribe">Yes, I'd like to receive the latest news and updates from <span class="neo-bold">Ownly</span></label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="text-center">
+							<button class="btn btn-custom-1 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">
+								<span class="px-5">Subscribe now!</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-100 bg-white">
+			<div class="container py-5">
+				<div class="d-flex justify-content-between align-items-end">
+					<div class="d-flex">
+						<div class="text-center pe-5">
+							<img src="img/ownly-2.png" class="mb-3" width="120" />
+							<div class="text-color-1 font-size-90">Ownly &copy; 2021</div>
+						</div>
+						
+						<div class="d-flex flex-column justify-content-between ps-3 py-1" style="border-left:3px solid #000000">
+							<div class="d-flex text-color-1">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-map-marker-alt font-size-120"></i>
+								</div>
+								<div class="font-size-90">
+									<div>SILI DELI: DOST-BU TBI Office, Ground floor,</div>
+									<div>Student Union Bldg., Bicol University Main Campus,</div>
+									<div>Daraga, Albay Sagpon</div>
+								</div>
+							</div>
+							
+							<div class="d-flex text-color-1">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-envelope font-size-120"></i>
+								</div>
+								<div class="font-size-90">ownly@outlook.ph</div>
+							</div>
+							
+							<div class="d-flex text-color-1">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-phone font-size-120"></i>
+								</div>
+								<div class="font-size-90">0956 152 5513</div>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<div class="text-color-1 font-size-160 mb-3">Connect with us:</div>
+						<div class="font-size-240 font-size-xl-300">
+							<a href="https://twitter.com/ownlyio" class="text-decoration-none">
+								<i class="fab fa-twitter text-color-4 me-3"></i>
+							</a>
+							<a href="https://t.me/ownlyio" class="text-decoration-none">
+								<i class="fab fa-telegram text-color-4 me-3"></i>
+							</a>
+							<a href="https://discord.gg/cXez8Jz8" class="text-decoration-none">
+								<i class="fab fa-discord text-color-4 me-3"></i>
+							</a>
+							<a href="https://github.com/ownlyio" class="text-decoration-none">
+								<i class="fab fa-github text-color-4 me-3"></i>
+							</a>
+							<a href="https://www.linkedin.com/company/ownlyio/" class="text-decoration-none">
+								<i class="fab fa-linkedin-in text-color-4 me-3"></i>
+							</a>
+							<a href="https://web.facebook.com/ownly.io" class="text-decoration-none">
+								<i class="fab fa-facebook text-color-4 me-3"></i>
+							</a>
+							<a href="https://www.instagram.com/ownly.io/" class="text-decoration-none">
+								<i class="fab fa-instagram text-color-4"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
