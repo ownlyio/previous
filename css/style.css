@@ -82,6 +82,9 @@
     font-family: NeogroteskEss-Regular;
     line-height: 1.2em;
 }
+html {
+    scroll-behavior: smooth;
+}
 .text-color-1 {
     color:#bc3326;
 }
@@ -153,7 +156,7 @@
     letter-spacing:0.05em;
 }
 .shadow-custom-1 {
-    box-shadow:5px 5px 8px 0px rgba(0,0,0,0.85);
+    box-shadow:5px 5px 8px -4px rgba(0,0,0,0.85);
 }
 .cursor-pointer {
     cursor:pointer;

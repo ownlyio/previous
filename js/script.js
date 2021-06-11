@@ -30,8 +30,10 @@ $(document).on("mouseover", ".artist-card", function() {
 });
 
 $(document).on("mouseout", ".artist-card", function() {
-    let height = parseFloat($(this).find(".artist-description").css("height"));
-    $(this).find(".artist-description").css("bottom", "-" + height + "px");
+    if($(window).width() >= 768) {
+        let height = parseFloat($(this).find(".artist-description").css("height"));
+        $(this).find(".artist-description").css("bottom", "-" + height + "px");
+    }
 });
 
 $(document).on("click", ".show-artist-description", function() {
@@ -61,4 +63,25 @@ $(document).on("click", ".show-team-description", function() {
 $(document).on("click", ".hide-team-description", function() {
     let height = parseFloat($(this).closest(".team-card").find(".team-description").css("height"));
     $(this).closest(".team-card").find(".team-description").css("bottom", "-" + height + "px");
+});
+
+$(document).on('click', "a", function(event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+        let hash = this.hash;
+
+        console.log($(hash).offset().top);
+
+        $('html').animate({
+            scrollTop: $(hash).offset().top - parseFloat($("header").css("height"))
+        }, 200, function(){
+            window.location.hash = hash;
+        });
+
+        $('html').animate({
+            scrollTop: $(hash).offset().top - parseFloat($("header").css("height"))
+        }, 200, function(){
+            window.location.hash = hash;
+        });
+    }
 });
