@@ -1,16 +1,10 @@
+let loading_interval;
+
 $(window).on("load", function() {
     $("#loading-ownly-container").removeClass("d-flex");
     $("#loading-ownly-container").addClass("d-none");
-});
 
-$(document).ready(function() {
-    setInterval(function() {
-        if($("#loading-ownly").css('width') === "200px") {
-            $("#loading-ownly").css('width', '300px');
-        } else {
-            $("#loading-ownly").css('width', '200px');
-        }
-    }, 1100);
+    clearInterval(loading_interval);
 
     $(".artist-description").each(function() {
         let height = parseFloat($(this).css("height"));
@@ -21,6 +15,16 @@ $(document).ready(function() {
         let height = parseFloat($(this).css("height"));
         $(this).css("bottom", "-" + height + "px")
     });
+});
+
+$(document).ready(function() {
+    loading_interval = setInterval(function() {
+        if($("#loading-ownly").css('width') === "200px") {
+            $("#loading-ownly").css('width', '300px');
+        } else {
+            $("#loading-ownly").css('width', '200px');
+        }
+    }, 1100);
 });
 
 $(document).on("mouseover", ".artist-card", function() {

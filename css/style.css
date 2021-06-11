@@ -189,6 +189,10 @@ html {
     top:50px;
     right:-40px
 }
+.feature-icons {
+    min-width:50px;
+    width:50px;
+}
 
 @media(min-width:576px) {
     #banners {
@@ -241,6 +245,10 @@ html {
         width:45px;
         top:40px;
         right:-55px
+    }
+    .feature-icons {
+        min-width:80px;
+        width:80px;
     }
 }
 
