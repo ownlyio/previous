@@ -175,6 +175,16 @@ html {
 #banners {
     padding-top:100px;
 }
+.launch-market-place-popover {
+    background-color:#f19150;
+}
+.launch-market-place-popover .popover-body {
+    color:#ffffff;
+    font-size:1.2em;
+}
+.launch-market-place-popover .popover-arrow::after {
+    border-bottom-color:#f19150;
+}
 
 /*##################################################################*/
 

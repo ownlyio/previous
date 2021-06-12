@@ -25,6 +25,11 @@ $(document).ready(function() {
             $("#loading-ownly").css('width', '200px');
         }
     }, 1100);
+
+    let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
 });
 
 $(document).on("mouseover", ".artist-card", function() {
