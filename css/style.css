@@ -51,6 +51,13 @@
     font-family: NeogroteskEss-RegularIt;
 }
 @font-face {
+    font-family: NeogroteskEss-LightIt;
+    src: url('../fonts/Neo/NeogroteskEss-LightIt.otf');
+}
+.neo-light-italic {
+    font-family: NeogroteskEss-LightIt;
+}
+@font-face {
     font-family: Alegreya-Italic;
     src: url('../fonts/Alegreya/Alegreya-Italic.ttf');
 }
@@ -100,6 +107,15 @@ html {
 .text-color-5 {
     color:#147ca0;
 }
+.text-color-6 {
+    color:#000000;
+}
+.text-color-7 {
+    color:#616161;
+}
+.text-color-8 {
+    color:#137ebf;
+}
 .link-color-1 {
     color:#bc3326;
 }
@@ -131,6 +147,14 @@ html {
     background-color: #a32c21;
     color:#ffffff;
 }
+.btn-custom-4 {
+    background-color:#305e83;
+    color:#ffffff;
+}
+.btn-custom-4:hover, .btn-custom-4:active, .btn-custom-4:focus {
+    background-color: #274b69;
+    color:#ffffff;
+}
 .bg-color-1 {
     background-color:#f3f3f3;
 }
@@ -157,6 +181,9 @@ html {
 }
 .bg-color-9 {
     background-color:#e2792e;
+}
+.bg-color-10 {
+    background-color:#5e5e5e;
 }
 .letter-spacing-5 {
     letter-spacing:0.05em;
