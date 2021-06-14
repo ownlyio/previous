@@ -27,12 +27,8 @@ $(document).ready(function() {
         }
     }, 1100);
 
-    let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-    })
-
-    newsletter_form = document.getElementById("newsletter-form")
+    newsletter_form = document.getElementById("newsletter-form");
+    newsletter_form.addEventListener("submit", handleSubmit);
 });
 
 $(document).on("mouseover", ".artist-card", function() {
@@ -78,7 +74,7 @@ $(document).on("click", ".hide-team-description", function() {
 });
 
 $(document).on('click', "a", function(event) {
-    if (this.hash !== "") {
+    if(this.hash !== "") {
         event.preventDefault();
         let hash = this.hash;
 
@@ -98,25 +94,28 @@ $(document).on('click', "a", function(event) {
     }
 });
 
-$(document).on('change', "#newsletter-subscribe", function() {
-    $("#newsletter-form [type='submit']").prop("disabled", !$(this).prop("checked"));
-});
-
 async function handleSubmit(event) {
     event.preventDefault();
-    let status = document.getElementById("my-form-status");
+
+    $("#newsletter-form [type='submit']").prop("disabled", true);
+
     let data = new FormData(event.target);
     fetch(event.target.action, {
-        method: form.method,
+        method: newsletter_form.method,
         body: data,
         headers: {
             'Accept': 'application/json'
         }
     }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
+        $("#signing-up-success").removeClass("d-none");
         newsletter_form.reset()
+
+        $("#newsletter-form [type='submit']").prop("disabled", false);
+
+        setTimeout(function() {
+            $("#signing-up-success").addClass("d-none");
+        }, 5000);
     }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        console.log('Oops! There was a problem submitting your form');
     });
 }
-newsletter_form.addEventListener("submit", handleSubmit)
