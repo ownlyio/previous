@@ -1,4 +1,5 @@
 let loading_interval;
+let newsletter_form;
 
 $(window).on("load", function() {
     $("#loading-ownly-container").removeClass("d-flex");
@@ -30,6 +31,8 @@ $(document).ready(function() {
     let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl)
     })
+
+    newsletter_form = document.getElementById("newsletter-form")
 });
 
 $(document).on("mouseover", ".artist-card", function() {
@@ -94,3 +97,22 @@ $(document).on('click', "a", function(event) {
         });
     }
 });
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    let status = document.getElementById("my-form-status");
+    let data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        newsletter_form.reset()
+    }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+}
+newsletter_form.addEventListener("submit", handleSubmit)
