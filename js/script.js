@@ -98,6 +98,10 @@ $(document).on('click', "a", function(event) {
     }
 });
 
+$(document).on('change', "#newsletter-subscribe", function() {
+    $("#newsletter-form [type='submit']").prop("disabled", !$(this).prop("checked"));
+});
+
 async function handleSubmit(event) {
     event.preventDefault();
     let status = document.getElementById("my-form-status");
