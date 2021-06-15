@@ -159,7 +159,7 @@ html {
     background-color:#f3f3f3;
 }
 .bg-color-2 {
-    background-color:#16b99a;
+    background-color:#16b99a!important;
 }
 .bg-color-3 {
     background-color:#147ca0;
@@ -184,6 +184,9 @@ html {
 }
 .bg-color-10 {
     background-color:#5e5e5e;
+}
+.bg-color-11 {
+    background-color:#3a7a9d;
 }
 .letter-spacing-5 {
     letter-spacing:0.05em;
@@ -222,6 +225,14 @@ ul.dash > li:before {
     content: "-";
     width: 1em;
     margin-left: -1em;
+}
+#use-of-funds-table {
+    border:3px solid #000000;
+}
+#use-of-funds-table th, #use-of-funds-table td {
+    border-bottom:2px solid #000000;
+    border-right:2px solid #000000;
+    vertical-align:middle;
 }
 
 /*##################################################################*/
