@@ -234,6 +234,18 @@ ul.dash > li:before {
     border-right:2px solid #000000;
     vertical-align:middle;
 }
+.partner-logo:not(:hover) .normal {
+    display:block;
+}
+.partner-logo:not(:hover) .hovered {
+    display:none;
+}
+.partner-logo:hover .normal {
+    display:none;
+}
+.partner-logo:hover .hovered {
+    display:block;
+}
 
 /*##################################################################*/
 
