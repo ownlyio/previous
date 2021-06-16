@@ -1,0 +1,2 @@
+<h1>OWNLY</h1>
+<h6>OWNLY is a governance, token-based NFT platform that enable creators and collectors optimize the authentic value of NFT assets. Ownly is created to be a meeting place of artworks and collectors in the crypto space.</h6>
