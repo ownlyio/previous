@@ -1,12 +1,22 @@
 let loading_interval;
 let newsletter_form;
 
-$(window).on("load", function() {
+let initiate_loading_page = () => {
+    loading_interval = setInterval(function() {
+        if($("#loading-ownly").css('width') === "200px") {
+            $("#loading-ownly").css('width', '300px');
+        } else {
+            $("#loading-ownly").css('width', '200px');
+        }
+    }, 1100);
+};
+let close_loading_page = () => {
     $("#loading-ownly-container").removeClass("d-flex");
     $("#loading-ownly-container").addClass("d-none");
 
     clearInterval(loading_interval);
-
+};
+let adjust_artist_descriptions = () => {
     $(".artist-description").each(function() {
         let height = parseFloat($(this).css("height"));
         $(this).css("bottom", "-" + height + "px")
@@ -16,19 +26,20 @@ $(window).on("load", function() {
         let height = parseFloat($(this).css("height"));
         $(this).css("bottom", "-" + height + "px")
     });
+};
+let init_newsletter_form = () => {
+    newsletter_form = document.getElementById("newsletter-form");
+    newsletter_form.addEventListener("submit", handleSubmit);
+};
+
+$(window).on("load", function() {
+    close_loading_page();
+    adjust_artist_descriptions();
 });
 
 $(document).ready(function() {
-    loading_interval = setInterval(function() {
-        if($("#loading-ownly").css('width') === "200px") {
-            $("#loading-ownly").css('width', '300px');
-        } else {
-            $("#loading-ownly").css('width', '200px');
-        }
-    }, 1100);
-
-    newsletter_form = document.getElementById("newsletter-form");
-    newsletter_form.addEventListener("submit", handleSubmit);
+    initiate_loading_page();
+    init_newsletter_form();
 });
 
 $(document).on("mouseover", ".artist-card", function() {
