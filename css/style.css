@@ -269,7 +269,7 @@ ul.dash > li:before {
     display:block;
 }
 #header.scrolled {
-    background-color:#616161!important;
+    background-color:rgba(52,49,49,0.85)!important;
 }
 
 /*##################################################################*/
