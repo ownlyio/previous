@@ -123,6 +123,13 @@ html {
     color: #a32c21;
     text-decoration: underline;
 }
+.link-color-2 {
+    color:#ffffff;
+}
+.link-color-2:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
 .btn-custom-1 {
     background-color:#bc3426;
     color:#ffffff;
@@ -261,14 +268,17 @@ ul.dash > li:before {
 .partner-logo:hover .hovered {
     display:block;
 }
+#header.scrolled {
+    background-color:#616161!important;
+}
 
 /*##################################################################*/
 
 #banners {
-    padding-top:85px;
+    padding-top:0;
 }
 .page-min-height {
-    min-height:calc(100vh - 85px);
+    min-height:100vh;
 }
 .tokenomics-card-body {
     margin-top:-105px;
@@ -285,13 +295,14 @@ ul.dash > li:before {
     min-width:50px;
     width:50px;
 }
+#header {
+    background-color: rgba(0,0,0,0)!important;
+    border:0;
+}
 
 @media(min-width:576px) {
-    #banners {
-        padding-top:109.8px;
-    }
     .page-min-height {
-        min-height:calc(100vh - 109.8px);
+        min-height:100vh;
     }
     .tokenomics-card-body {
         margin-top:-130px;
@@ -307,6 +318,9 @@ ul.dash > li:before {
 }
 
 @media(min-width:768px) {
+    .page-min-height {
+        min-height:calc(100vh - 109.8px);
+    }
     .tokenomics-card-body {
         margin-top:-140px;
     }
@@ -317,6 +331,10 @@ ul.dash > li:before {
         width:45px;
         top:60px;
         right:-78px
+    }
+    #header {
+        background-color: #ffffff!important;
+        border-bottom:1px solid #dee2e6!important;
     }
 }
 

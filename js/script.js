@@ -3,12 +3,18 @@ let newsletter_form;
 
 let initiate_loading_page = () => {
     loading_interval = setInterval(function() {
-        if($("#loading-ownly").css('width') === "200px") {
-            $("#loading-ownly").css('width', '300px');
+        if($("#loading-ownly").css('opacity') === "1") {
+            $("#loading-ownly").css('opacity', '0.3');
         } else {
-            $("#loading-ownly").css('width', '200px');
+            $("#loading-ownly").css('opacity', '1');
         }
     }, 1100);
+
+    let all = document.getElementsByTagName("*");
+    for (let i=0, max=all.length; i < max; i++)
+    {
+        loading_set_ele(all[i]);
+    }
 };
 let close_loading_page = () => {
     $("#loading-ownly-container").removeClass("d-flex");
@@ -31,6 +37,22 @@ let init_newsletter_form = () => {
     newsletter_form = document.getElementById("newsletter-form");
     newsletter_form.addEventListener("submit", handleSubmit);
 };
+let loading_check_element = (ele) => {
+    let all = document.getElementsByTagName("*");
+    let per_inc=100/all.length;
+
+    if($(ele).on())
+    {
+        let prog_width=per_inc+Number(document.getElementById("progress_width").value);
+        document.getElementById("progress_width").value=prog_width;
+        $("#loading-page-progress-bar").css("width", prog_width + "%")
+    } else {
+        loading_set_ele(ele);
+    }
+}
+let loading_set_ele = (set_element) => {
+    loading_check_element(set_element);
+}
 
 $(window).on("load", function() {
     close_loading_page();
@@ -130,3 +152,30 @@ async function handleSubmit(event) {
         console.log('Oops! There was a problem submitting your form');
     });
 }
+
+$(document).on('click', "#show-mobile-nav", function() {
+    $("#mobile-nav").css("top", 0);
+});
+
+$(document).on('click', "#hide-mobile-nav", function() {
+    $("#mobile-nav").css("top", "-104px");
+});
+
+$(document).scroll("body", function() {
+    if($(window).width() >= 768) {
+        $("#header").removeClass("scrolled");
+        $("#mobile-scroll-up").addClass("d-none");
+    } else {
+        if($(window).scrollTop()) {
+            $("#header").addClass("scrolled");
+        } else {
+            $("#header").removeClass("scrolled");
+        }
+
+        if($(window).scrollTop() >= $(window).height()) {
+            $("#mobile-scroll-up").removeClass("d-none");
+        } else {
+            $("#mobile-scroll-up").addClass("d-none");
+        }
+    }
+});
