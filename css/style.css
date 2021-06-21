@@ -162,6 +162,16 @@ html {
     background-color: #274b69;
     color:#ffffff;
 }
+.btn-custom-5 {
+    background-color:rgba(0,0,0,0);
+    color:#16b99a;
+    border:4px solid #16b99a;
+}
+.btn-custom-5:hover, .btn-custom-5:active, .btn-custom-5:focus {
+    background-color: #16b99a;
+    border:4px solid #16b99a;
+    color:#ffffff;
+}
 .bg-color-1 {
     background-color:#f3f3f3!important;
 }
