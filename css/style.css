@@ -172,6 +172,22 @@ html {
     border:4px solid #16b99a;
     color:#ffffff;
 }
+.btn-custom-6 {
+    background-color:#d44e28;
+    color:#ffffff;
+}
+.btn-custom-6:hover, .btn-custom-6:active, .btn-custom-6:focus {
+    background-color: #ba4423;
+    color:#ffffff;
+}
+.btn-custom-7 {
+    background-color:#f19150;
+    color:#ffffff;
+}
+.btn-custom-7:hover, .btn-custom-7:active, .btn-custom-7:focus {
+    background-color: #d98248;
+    color:#ffffff;
+}
 .bg-color-1 {
     background-color:#f3f3f3!important;
 }
