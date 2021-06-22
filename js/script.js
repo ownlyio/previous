@@ -53,6 +53,9 @@ let loading_check_element = (ele) => {
 let loading_set_ele = (set_element) => {
     loading_check_element(set_element);
 }
+let init_aos = (set_element) => {
+    AOS.init();
+}
 
 $(window).on("load", function() {
     close_loading_page();
@@ -62,6 +65,7 @@ $(window).on("load", function() {
 $(document).ready(function() {
     initiate_loading_page();
     init_newsletter_form();
+    // init_aos();
 });
 
 $(document).on("mouseover", ".artist-card", function() {
