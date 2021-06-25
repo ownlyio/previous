@@ -455,8 +455,8 @@ contract EverRise is Context, IERC20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "EverRise";
-    string private _symbol = "RISE";
+    string private _name = "PatchieAndSpike";
+    string private _symbol = "PAP";
     uint8 private _decimals = 9;
 
 
