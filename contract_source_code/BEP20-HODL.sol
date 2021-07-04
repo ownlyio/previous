@@ -884,7 +884,7 @@ contract HODL is Context, IBEP20, Ownable, ReentrancyGuard {
     using SafeMath for uint256;
     using Address for address;
 
-    address payable public charityAddress = 0x768532c218f4f4e6E4960ceeA7F5a7A947a1dd61;
+    address payable public charityAddress = 0xb6266d43F3E319e884E31075a36fDE8ceAeEf1C8;
 
     mapping(address => uint256) private _rOwned;
     mapping(address => uint256) private _tOwned;

@@ -132,7 +132,7 @@ library Address {
 
 
     function functionCall(address target, bytes memory data) internal returns (bytes memory) {
-      return functionCall(target, data, "Address: low-level call failed");
+        return functionCall(target, data, "Address: low-level call failed");
     }
 
     function functionCall(address target, bytes memory data, string memory errorMessage) internal returns (bytes memory) {
@@ -369,19 +369,19 @@ interface IUniswapV2Router01 {
         uint deadline
     ) external returns (uint[] memory amounts);
     function swapExactETHForTokens(uint amountOutMin, address[] calldata path, address to, uint deadline)
-        external
-        payable
-        returns (uint[] memory amounts);
+    external
+    payable
+    returns (uint[] memory amounts);
     function swapTokensForExactETH(uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
-        external
-        returns (uint[] memory amounts);
+    external
+    returns (uint[] memory amounts);
     function swapExactTokensForETH(uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
-        external
-        returns (uint[] memory amounts);
+    external
+    returns (uint[] memory amounts);
     function swapETHForExactTokens(uint amountOut, address[] calldata path, address to, uint deadline)
-        external
-        payable
-        returns (uint[] memory amounts);
+    external
+    payable
+    returns (uint[] memory amounts);
 
     function quote(uint amountA, uint reserveA, uint reserveB) external pure returns (uint amountB);
     function getAmountOut(uint amountIn, uint reserveIn, uint reserveOut) external pure returns (uint amountOut);
@@ -455,8 +455,8 @@ contract EverRise is Context, IERC20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "Patchie";
-    string private _symbol = "PAT";
+    string private _name = "EverRise";
+    string private _symbol = "RISE";
     uint8 private _decimals = 9;
 
 
@@ -510,7 +510,7 @@ contract EverRise is Context, IERC20, Ownable {
 
         IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x10ED43C718714eb63d5aA57B78B54704E256024E);
         uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
-            .createPair(address(this), _uniswapV2Router.WETH());
+        .createPair(address(this), _uniswapV2Router.WETH());
 
         uniswapV2Router = _uniswapV2Router;
 
@@ -666,7 +666,7 @@ contract EverRise is Context, IERC20, Ownable {
                 contractTokenBalance = minimumTokensBeforeSwap;
                 swapTokens(contractTokenBalance);
             }
-	        uint256 balance = address(this).balance;
+            uint256 balance = address(this).balance;
             if (buyBackEnabled && balance > uint256(1 * 10**18)) {
 
                 if (balance > buyBackUpperLimit)
@@ -699,9 +699,9 @@ contract EverRise is Context, IERC20, Ownable {
 
 
     function buyBackTokens(uint256 amount) private lockTheSwap {
-    	if (amount > 0) {
-    	    swapETHForTokens(amount);
-	    }
+        if (amount > 0) {
+            swapETHForTokens(amount);
+        }
     }
 
     function swapTokensForEth(uint256 tokenAmount) private {
@@ -730,7 +730,7 @@ contract EverRise is Context, IERC20, Ownable {
         path[0] = uniswapV2Router.WETH();
         path[1] = address(this);
 
-      // make the swap
+        // make the swap
         uniswapV2Router.swapExactETHForTokensSupportingFeeOnTransferTokens{value: amount}(
             0, // accept any amount of Tokens
             path,
@@ -785,7 +785,7 @@ contract EverRise is Context, IERC20, Ownable {
 
     function _transferToExcluded(address sender, address recipient, uint256 tAmount) private {
         (uint256 rAmount, uint256 rTransferAmount, uint256 rFee, uint256 tTransferAmount, uint256 tFee, uint256 tLiquidity) = _getValues(tAmount);
-	    _rOwned[sender] = _rOwned[sender].sub(rAmount);
+        _rOwned[sender] = _rOwned[sender].sub(rAmount);
         _tOwned[recipient] = _tOwned[recipient].add(tTransferAmount);
         _rOwned[recipient] = _rOwned[recipient].add(rTransferAmount);
         _takeLiquidity(tLiquidity);
@@ -795,7 +795,7 @@ contract EverRise is Context, IERC20, Ownable {
 
     function _transferFromExcluded(address sender, address recipient, uint256 tAmount) private {
         (uint256 rAmount, uint256 rTransferAmount, uint256 rFee, uint256 tTransferAmount, uint256 tFee, uint256 tLiquidity) = _getValues(tAmount);
-    	_tOwned[sender] = _tOwned[sender].sub(tAmount);
+        _tOwned[sender] = _tOwned[sender].sub(tAmount);
         _rOwned[sender] = _rOwned[sender].sub(rAmount);
         _rOwned[recipient] = _rOwned[recipient].add(rTransferAmount);
         _takeLiquidity(tLiquidity);
@@ -805,7 +805,7 @@ contract EverRise is Context, IERC20, Ownable {
 
     function _transferBothExcluded(address sender, address recipient, uint256 tAmount) private {
         (uint256 rAmount, uint256 rTransferAmount, uint256 rFee, uint256 tTransferAmount, uint256 tFee, uint256 tLiquidity) = _getValues(tAmount);
-    	_tOwned[sender] = _tOwned[sender].sub(tAmount);
+        _tOwned[sender] = _tOwned[sender].sub(tAmount);
         _rOwned[sender] = _rOwned[sender].sub(rAmount);
         _tOwned[recipient] = _tOwned[recipient].add(tTransferAmount);
         _rOwned[recipient] = _rOwned[recipient].add(rTransferAmount);
@@ -924,7 +924,7 @@ contract EverRise is Context, IERC20, Ownable {
         minimumTokensBeforeSwap = _minimumTokensBeforeSwap;
     }
 
-     function setBuybackUpperLimit(uint256 buyBackLimit) external onlyOwner() {
+    function setBuybackUpperLimit(uint256 buyBackLimit) external onlyOwner() {
         buyBackUpperLimit = buyBackLimit * 10**18;
     }
 
@@ -960,6 +960,6 @@ contract EverRise is Context, IERC20, Ownable {
         recipient.transfer(amount);
     }
 
-     //to recieve ETH from uniswapV2Router when swaping
+    //to recieve ETH from uniswapV2Router when swaping
     receive() external payable {}
 }
