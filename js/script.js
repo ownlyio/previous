@@ -102,7 +102,7 @@ $(document).on("mouseout", ".team-card", function() {
 });
 
 $(document).on("click", ".show-team-description", function() {
-    $(this).closest(".col-lg-4").find(".team-description").css("bottom", "0");
+    $(this).closest(".col-lg-3").find(".team-description").css("bottom", "0");
 });
 
 $(document).on("click", ".hide-team-description", function() {
