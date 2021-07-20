@@ -44,7 +44,7 @@
 			<i class="fas fa-chevron-up"></i>
 		</a>
 		
-		<header class="py-3 position-fixed w-100" id="header" style="top:0; left:0; z-index:10; transition:0.3s">
+		<header class="py-3 position-fixed w-100 d-none" id="header" style="top:0; left:0; z-index:10; transition:0.3s">
 			<div class="container">
 				<div class="d-flex align-items-center justify-content-between">
 					<div class="d-flex align-items-center">
@@ -113,7 +113,98 @@
 			</div>
 		</div>
 		
-		<div class="w-100" id="banners">
+		<div id="own-countdown-container">
+			<div class="row">
+				<div class="order-1 order-lg-0 col-lg-6 px-0">
+					<div class="min-vh-100 h-100 background-image-cover" style="background-image:url('img/bg/own.gif')"></div>
+				</div>
+				
+				<div class="min-vh-100 order-0 order-lg-1 col-lg-6 px-4 px-0 bg-color-18 d-flex flex-column align-items-center justify-content-between">
+					<div class="mb-5 mt-4">
+						<ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center align-items-center mb-0 rubik-regular">
+							<li><a href="#features" class="nav-link ps-0 pe-1 pe-sm-2 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-110 mb-2">Features</a></li>
+							<li><a href="#tokenomics" class="nav-link px-1 px-sm-2 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-110 mb-2">Tokenomics</a></li>
+							<li><a href="#roadmap" class="nav-link px-1 px-sm-2 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-110 mb-2">Roadmap</a></li>
+							<li><a href="#blog" class="nav-link px-1 px-sm-2 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-110 mb-2">Blog</a></li>
+							<li><a href="#team" class="nav-link px-1 px-sm-2 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-110 mb-2">Team</a></li>
+							<li><a href="https://ownly.io/marketplace" target="_blank" class="nav-link btn btn-custom-5 ms-1 ms-sm-3 ps-sm-3 py-1 py-sm-2 font-size-80 font-size-sm-80 mb-2" style="border-radius:40px">Launch Marketplace</a></li>
+						</ul>
+					</div>
+					
+					<div class="mb-5">
+						<div class="bg-color-7 rubik-bold font-size-220 font-size-lg-280 font-size-xl-370 text-color-9 text-center px-2 py-2 mb-4">OWN IS COMING:</div>
+						<div class="d-flex justify-content-center pt-2 mb-5">
+							<div>
+								<div class="rubik-black text-center font-size-310 font-size-lg-470 font-size-xl-500 text-color-6 mb-3 invisible" id="days">00</div>
+								<div class="font-size-90 font-size-lg-130 font-size-xl-140 text-center text-color-6">Days</div>
+							</div>
+							<div class="rubik-black font-size-310 font-size-lg-470 font-size-xl-500 text-color-6">:</div>
+							<div>
+								<div class="rubik-black text-center font-size-310 font-size-lg-470 font-size-xl-500 text-color-6 mb-3 invisible" id="hours">00</div>
+								<div class="font-size-90 font-size-lg-130 font-size-xl-140 text-center text-color-6">Hours</div>
+							</div>
+							<div class="rubik-black font-size-310 font-size-lg-470 font-size-xl-500 text-color-6">:</div>
+							<div>
+								<div class="rubik-black text-center font-size-310 font-size-lg-470 font-size-xl-500 text-color-6 mb-3 invisible" id="minutes">00</div>
+								<div class="font-size-90 font-size-lg-130 font-size-xl-140 text-center text-color-6">Minutes</div>
+							</div>
+							<div class="rubik-black font-size-310 font-size-lg-470 font-size-xl-500 text-color-6">:</div>
+							<div>
+								<div class="rubik-black text-center font-size-310 font-size-lg-470 font-size-xl-500 text-color-6 mb-3 invisible" id="seconds">00</div>
+								<div class="font-size-90 font-size-lg-130 font-size-xl-140 text-center text-color-6">Seconds</div>
+							</div>
+						</div>
+						
+						<div class="mb-4 pb-2">
+							<form class="newsletter-form" action="https://formspree.io/f/xayajjqb" method="POST">
+								<div class="font-size-110 font-size-lg-130 font-size-xl-180 neo-bold text-center mb-4">Join our VIP list for the inside scoop</div>
+								
+								<div class="d-flex">
+									<div class="flex-fill">
+										<input type="email" name="email_address" class="form-control px-4 px-xl-5 py-2 py-lg-3 font-size-100 font-size-xl-120" placeholder="Your email" style="border-top-left-radius:35px; border-bottom-left-radius:35px;" required />
+									</div>
+									
+									<div>
+										<button type="submit" class="btn btn-custom-1 px-4 px-xl-5 py-2 py-lg-3 font-size-100 font-size-xl-120" style="border-top-right-radius:35px; border-bottom-right-radius:35px; letter-spacing:0.05em">Subscribe</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						
+						<div>
+							<div class="text-color-1 text-center font-size-110 font-size-lg-120 neo-bold mb-3">Connect with us:</div>
+							<div class="text-center font-size-170 font-size-lg-200 line-height-140">
+								<a href="https://twitter.com/ownlyio" class="text-decoration-none">
+									<i class="fab fa-twitter text-color-4 me-2 me-sm-3"></i>
+								</a>
+								<a href="https://t.me/ownlyio" class="text-decoration-none">
+									<i class="fab fa-telegram text-color-4 me-2 me-sm-3"></i>
+								</a>
+								<a href="https://discord.gg/cXez8Jz8" class="text-decoration-none">
+									<i class="fab fa-discord text-color-4 me-2 me-sm-3"></i>
+								</a>
+								<a href="https://github.com/ownlyio" class="text-decoration-none">
+									<i class="fab fa-github text-color-4 me-2 me-sm-3"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/ownlyio/" class="text-decoration-none">
+									<i class="fab fa-linkedin-in text-color-4 me-2 me-sm-3"></i>
+								</a>
+								<a href="https://web.facebook.com/ownly.io" class="text-decoration-none">
+									<i class="fab fa-facebook text-color-4 me-2 me-sm-3"></i>
+								</a>
+								<a href="https://www.instagram.com/ownly.io/" class="text-decoration-none">
+									<i class="fab fa-instagram text-color-4"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="invisible w-100" style="height:45px"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-100">
 			<div id="carousel-1" class="carousel slide" data-bs-ride="carousel" style="">
 				<div class="carousel-indicators pb-5">
 					<div class="d-flex flex-column align-items-center">
@@ -241,7 +332,7 @@
 		
 		<div class="w-100 bg-color-9 py-2 py-md-0">
 			<div class="container py-4 py-md-5">
-				<div class="text-white font-size-130 font-size-sm-170 font-size-md-230 font-size-lg-240 py-md-4"><span class="neo-black">$OWN</span> Token is the native utility token of Ownly, users are able to buy, own, collect, and trade 1 of 1 edition crypto artworks by talented artists. Own the only true copy and there's nothing else like that in the world -- as if it's made just for you.</div>
+				<div class="text-white font-size-130 font-size-sm-170 font-size-md-230 font-size-lg-240 py-md-4"><span class="neo-black">OWN</span> Token is the native utility token of Ownly, users are able to buy, own, collect, and trade 1 of 1 edition crypto artworks by talented artists. Own the only true copy and there's nothing else like that in the world -- as if it's made just for you.</div>
 			</div>
 		</div>
 		
@@ -1400,7 +1491,13 @@
 		
 		<div class="w-100 bg-color-10 py-2 py-md-0">
 			<div class="container py-4 py-md-5">
-				<div class="neo-light-italic text-white font-size-130 font-size-sm-170 font-size-md-230 font-size-lg-240 py-md-4">We love unique items and we take pride in owning something rare. Having the only authentic copy of an extraordinary and valuable item is a different kind of thrill.</div>
+				<div class="neo-light-italic text-white font-size-130 font-size-sm-170 font-size-md-230 font-size-lg-240 py-md-4 mb-3">We love unique items and we take pride in owning something rare. Having the only authentic copy of an extraordinary and valuable item is a different kind of thrill.</div>
+				
+				<div class="text-center">
+					<a href="https://opensea.io/ownly" target="_blank" class="btn btn-custom-2 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">
+						<span class="px-5">Buy on OpenSea</span>
+					</a>
+				</div>
 			</div>
 		</div>
 		
@@ -1846,7 +1943,7 @@
 				
 				<div class="row justify-content-center pt-2">
 					<div class="col-md-9">
-						<form id="newsletter-form" action="https://formspree.io/f/xayajjqb" method="POST">
+						<form class="newsletter-form" action="https://formspree.io/f/xayajjqb" method="POST">
 							<div class="ps-1 font-size-120 line-height-140 mb-4">Don't miss the chance to snag the next big thing! Sign up to get insider tips, updates, exclusive promos, members-only giveaways, and the latest Ownly news straight to your inbox today.</div>
 							
 							<div class="mb-4 pb-3">
@@ -1858,8 +1955,6 @@
 									<span class="px-5">Subscribe now!</span>
 								</button>
 							</div>
-							
-							<div class="alert alert-success mt-4 text-center mb-0 d-none" id="signing-up-success">Thank you for subscribing!</div>
 						</form>
 					</div>
 				</div>
@@ -1929,6 +2024,22 @@
 							</a>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="modal-subscribe-success" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-sm">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="text-center mt-3 mb-3">
+						<i class="fas fa-check-circle font-size-400 text-color-3"></i>
+					</div>
+					<h5 class="w-100 font-size-100 text-center">Thank you for subscribing!</h5>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-custom-2 px-4" data-bs-dismiss="modal">Okay</button>
 				</div>
 			</div>
 		</div>

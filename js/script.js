@@ -33,10 +33,6 @@ let adjust_artist_descriptions = () => {
         $(this).css("bottom", "-" + height + "px")
     });
 };
-let init_newsletter_form = () => {
-    newsletter_form = document.getElementById("newsletter-form");
-    newsletter_form.addEventListener("submit", handleSubmit);
-};
 let loading_check_element = (ele) => {
     let all = document.getElementsByTagName("*");
     let per_inc=100/all.length;
@@ -57,14 +53,66 @@ let init_aos = (set_element) => {
     AOS.init();
 }
 
+let pad_zeroes = (number) => {
+    number = number.toString();
+
+    while(number.length < 2) {
+        number = "0" + number;
+    }
+
+    return number;
+};
+
+let start_countdown = () => {
+    let countDownDate = new Date("Jul 26, 2021 08:00:00").getTime();
+
+    let x = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+
+        let days = pad_zeroes(Math.floor(distance / (1000 * 60 * 60 * 24)));
+        let hours = pad_zeroes(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+        let minutes = pad_zeroes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+        let seconds = pad_zeroes(Math.floor((distance % (1000 * 60)) / 1000));
+
+        $("#days").text(days);
+        $("#hours").text(hours);
+        $("#minutes").text(minutes);
+        $("#seconds").text(seconds);
+
+        $("#days").removeClass("invisible");
+        $("#hours").removeClass("invisible");
+        $("#minutes").removeClass("invisible");
+        $("#seconds").removeClass("invisible");
+
+        if (distance < 0) {
+            clearInterval(x);
+            $("#days").text("00");
+            $("#hours").text("00");
+            $("#minutes").text("00");
+            $("#seconds").text("00");
+        }
+    }, 1000);
+};
+
 $(window).on("load", function() {
     close_loading_page();
     adjust_artist_descriptions();
 });
 
+$(window).on("scroll", function() {
+    let elementTarget = $("#own-countdown-container")[0];
+
+    if(window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+        $("#header").removeClass("d-none");
+    } else {
+        $("#header").addClass("d-none");
+    }
+});
+
 $(document).ready(function() {
     initiate_loading_page();
-    init_newsletter_form();
+    start_countdown();
     // init_aos();
 });
 
@@ -131,31 +179,29 @@ $(document).on('click', "a", function(event) {
     }
 });
 
-async function handleSubmit(event) {
+$(document).on("submit", ".newsletter-form", async (event) => {
     event.preventDefault();
 
-    $("#newsletter-form [type='submit']").prop("disabled", true);
+    newsletter_form = $(this);
+    newsletter_form.find("[type='submit']").prop("disabled", true);
 
     let data = new FormData(event.target);
     fetch(event.target.action, {
-        method: newsletter_form.method,
+        method: "POST",
         body: data,
         headers: {
             'Accept': 'application/json'
         }
     }).then(response => {
-        $("#signing-up-success").removeClass("d-none");
-        newsletter_form.reset()
+        newsletter_form.find("input").val("");
 
         $("#newsletter-form [type='submit']").prop("disabled", false);
 
-        setTimeout(function() {
-            $("#signing-up-success").addClass("d-none");
-        }, 5000);
+        $("#modal-subscribe-success").modal("show");
     }).catch(error => {
         console.log('Oops! There was a problem submitting your form');
     });
-}
+});
 
 $(document).on('click', "#show-mobile-nav", function() {
     $("#mobile-nav").css("top", 0);

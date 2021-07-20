@@ -116,6 +116,9 @@ html {
 .text-color-8 {
     color:#137ebf;
 }
+.text-color-9 {
+    color:#f4f0eb;
+}
 .link-color-1 {
     color:#bc3326;
 }
@@ -236,6 +239,12 @@ html {
 .bg-color-16 {
     background-color:#ebaba3!important;
 }
+.bg-color-17 {
+    background-color:#111a23!important;
+}
+.bg-color-18 {
+    background-color:#f4f0eb!important;
+}
 .letter-spacing-5 {
     letter-spacing:0.05em;
 }
@@ -325,6 +334,10 @@ ul.dash > li:before {
     background-color: rgba(0,0,0,0)!important;
     border:0;
 }
+#countdown-container, #newsletter-form input {
+    min-width:300px;
+    width:300px;
+}
 
 @media(min-width:576px) {
     .page-min-height {
@@ -341,9 +354,15 @@ ul.dash > li:before {
         top:60px;
         right:-53px
     }
+    #countdown-container, #newsletter-form input {
+        min-width:520px;
+    }
 }
 
 @media(min-width:768px) {
+    #banners {
+        padding-top:109.8px;
+    }
     .page-min-height {
         min-height:calc(100vh - 109.8px);
     }
@@ -362,6 +381,9 @@ ul.dash > li:before {
         background-color: #ffffff!important;
         border-bottom:1px solid #dee2e6!important;
     }
+    #countdown-container, #newsletter-form input {
+        min-width:580px;
+    }
 }
 
 @media(min-width:992px) {
@@ -369,7 +391,7 @@ ul.dash > li:before {
         padding-top:83px;
     }
     .page-min-height {
-        min-height:calc(100vh - 83px);
+        min-height:calc(100vh - 83px) !important;
     }
     .tokenomics-card-body {
         margin-top:-120px;
@@ -385,6 +407,9 @@ ul.dash > li:before {
     .feature-icons {
         min-width:80px;
         width:80px;
+    }
+    #countdown-container, #newsletter-form input {
+        min-width:620px;
     }
 }
 
