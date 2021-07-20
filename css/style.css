@@ -334,9 +334,8 @@ ul.dash > li:before {
     background-color: rgba(0,0,0,0)!important;
     border:0;
 }
-#countdown-container, #newsletter-form input {
-    min-width:300px;
-    width:300px;
+.countdown {
+    min-width:75px;
 }
 
 @media(min-width:576px) {
@@ -353,9 +352,6 @@ ul.dash > li:before {
         width:40px;
         top:60px;
         right:-53px
-    }
-    #countdown-container, #newsletter-form input {
-        min-width:520px;
     }
 }
 
@@ -381,9 +377,6 @@ ul.dash > li:before {
         background-color: #ffffff!important;
         border-bottom:1px solid #dee2e6!important;
     }
-    #countdown-container, #newsletter-form input {
-        min-width:580px;
-    }
 }
 
 @media(min-width:992px) {
@@ -408,8 +401,8 @@ ul.dash > li:before {
         min-width:80px;
         width:80px;
     }
-    #countdown-container, #newsletter-form input {
-        min-width:620px;
+    .countdown {
+        min-width:105px;
     }
 }
 
@@ -424,6 +417,9 @@ ul.dash > li:before {
         width:45px;
         top:60px;
         right:-55px
+    }
+    .countdown {
+        min-width:116px;
     }
 }
 
