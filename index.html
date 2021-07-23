@@ -29,7 +29,7 @@
 	</script>
 </head>
 <body>
-	<div id="container" style="overflow-x:hidden">
+	<div id="top" style="overflow-x:hidden">
 		<div class="d-flex justify-content-center align-items-center position-fixed vh-100 w-100 bg-white" id="loading-ownly-container" style="z-index:100">
 			<div class="pb-5">
 				<img src="img/ownly-2.png" id="loading-ownly" style="width:200px; transition:1s" alt="Ownly" />
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 	
-		<a href="#container" class="d-none text-decoration-none position-fixed d-flex justify-content-center align-items-center bg-color-6 text-white" id="mobile-scroll-up" style="bottom:20px; right:20px; height:50px; width:50px; border-radius:50%; z-index:10">
+		<a href="#top" class="d-none text-decoration-none position-fixed d-flex justify-content-center align-items-center bg-color-6 text-white" id="mobile-scroll-up" style="bottom:20px; right:20px; height:50px; width:50px; border-radius:50%; z-index:10">
 			<i class="fas fa-chevron-up"></i>
 		</a>
 		
@@ -82,7 +82,7 @@
 				<div class="d-flex align-items-center justify-content-between">
 					<div class="d-flex align-items-center">
 						<div class="pe-2">
-							<a href="#banners" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+							<a href="#top" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
 								<img src="img/ownly-2.png" class="" width="80" alt="Ownly" />
 							</a>
 						</div>
@@ -1567,7 +1567,7 @@
 				<div class="alegreya-bold-italic text-white font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">MEET OUR TEAM</div>
 				
 				<div class="row">
-					<div class="offset-md-3 col-md-6 offset-lg-0 col-lg-4 px-3 mb-5">
+					<div class="offset-md-3 col-md-6 offset-lg-0 col-lg-4 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/isma3.png" class="w-100 mt-5 pt-5" alt="Ismael Jerusalem" />
 							
@@ -1576,7 +1576,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Chief Executive Officer</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -1599,7 +1599,7 @@
 						</div>
 					</div>
 					
-					<div class="col-md-6 col-lg-4 px-3 mb-5">
+					<div class="col-md-6 col-lg-4 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/bernard3.png" class="w-100 mt-5 pt-5" alt="Bernard Historillo" />
 							
@@ -1608,7 +1608,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Chief Technology Officer</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -1630,7 +1630,7 @@
 						</div>
 					</div>
 					
-					<div class="col-md-6 col-lg-4 px-3 mb-5">
+					<div class="col-md-6 col-lg-4 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/shiekina2.png" class="w-100 mt-5 pt-5" alt="Kina Añasco" />
 							
@@ -1639,7 +1639,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Marketing Specialist</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -1670,7 +1670,7 @@
 				<div class="alegreya-bold-italic text-white font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">MEET OUR ADVISORS</div>
 				
 				<div class="row justify-content-center">
-					<div class="col-md-6 col-lg-3 px-3 mb-5">
+					<div class="col-md-6 col-lg-3 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/advisors/sir-rico3.png" class="w-100 mt-5 pt-5" alt="Rico Zuñiga" />
 							
@@ -1679,7 +1679,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-120 line-height-130 letter-spacing-5">Technical Advisor</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -1702,7 +1702,7 @@
 						</div>
 					</div>
 					
-					<div class="col-md-6 col-lg-3 px-3 mb-5">
+					<div class="col-md-6 col-lg-3 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/advisors/sir-carlo.png" class="w-100 mt-5 pt-5" alt="Carlo Pinto, CPA, MBA" />
 							
@@ -1711,7 +1711,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-120 line-height-130 letter-spacing-5">Fintech Advisor</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -1732,7 +1732,7 @@
 						</div>
 					</div>
 					
-					<div class="col-md-6 col-lg-3 px-3 mb-5">
+					<div class="col-md-6 col-lg-3 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/advisors/karl3.png" class="w-100 mt-5 pt-5" alt="Karl Vasquez" />
 							
@@ -1741,7 +1741,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-120 line-height-130 letter-spacing-5">Marketing Advisor</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -1764,7 +1764,7 @@
 						</div>
 					</div>
 					
-					<div class="col-md-6 col-lg-3 px-3 mb-5">
+					<div class="col-md-6 col-lg-3 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/advisors/raf3.png" class="w-100 mt-5 pt-5" alt="Raf Banzuela" />
 							
@@ -1773,7 +1773,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-120 line-height-130 letter-spacing-5">Creative Advisor</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -1804,7 +1804,7 @@
 				<div class="alegreya-bold-italic text-white font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">MEET OUR ADVOCATES</div>
 				
 				<div class="row justify-content-center">
-					<div class="col-md-6 col-lg-4 px-3 mb-5">
+					<div class="col-md-6 col-lg-4 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/advocates/morris-perico.png" class="w-100 mt-5 pt-5" alt="Morris Perico" />
 							
@@ -1813,7 +1813,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Brand Ambassador</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -1840,7 +1840,7 @@
 						</div>
 					</div>
 					
-					<div class="col-md-6 col-lg-4 px-3 mb-5">
+					<div class="col-md-6 col-lg-4 px-3 mb-5 team-row-item">
 						<div class="position-relative overflow-hidden team-card shadow-custom-1">
 							<img src="img/advocates/micah-rico.png" class="w-100 mt-5 pt-5" alt="Micah Grace Rico" />
 							
@@ -1849,7 +1849,7 @@
 								<p class="neo-regular-italic text-white font-size-120 font-size-md-110 font-size-xl-130 line-height-130 letter-spacing-5">Content Specialist</p>
 							</div>
 							
-							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="left:0; background-color:#bc3727; transition:0.5s; z-index:1">
+							<div class="position-absolute w-100 px-3 px-xxl-4 py-3 team-description" style="max-height:100%; overflow-y:auto; left:0; background-color:#bc3727; transition:0.5s; z-index:1; bottom:-100%">
 								<p class="text-center cursor-pointer d-block d-md-none hide-team-description">
 									<i class="fas fa-chevron-down text-white font-size-120"></i>
 								</p>
@@ -2010,6 +2010,6 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/script.js?v=20"></script>
+	<script src="js/script.js?v=21"></script>
 </body>
 </html>

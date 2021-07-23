@@ -24,27 +24,13 @@ let close_loading_page = () => {
 };
 let adjust_artist_descriptions = () => {
     $(".artist-description").each(function() {
-        let height = parseFloat($(this).css("height"));
-        $(this).css("bottom", "-" + height + "px")
+        let height = parseFloat($(this).css("height")) * -1;
+        $(this).css("bottom", height + "px")
     });
 
     $(".team-description").each(function() {
-        let height = parseFloat($(this).css("height"));
-        $(this).css("bottom", "-" + height + "px")
-    });
-
-    $(".artist-description").each(function() {
-        if(parseFloat($(this).css("bottom")) > 0) {
-            adjust_artist_descriptions();
-            return 0;
-        }
-    });
-
-    $(".team-description").each(function() {
-        if(parseFloat($(this).css("bottom")) > 0) {
-            adjust_artist_descriptions();
-            return 0;
-        }
+        let height = parseFloat($(this).css("height")) * -1;
+        $(this).css("bottom", height + "px")
     });
 };
 let loading_check_element = (ele) => {
@@ -62,9 +48,6 @@ let loading_check_element = (ele) => {
 }
 let loading_set_ele = (set_element) => {
     loading_check_element(set_element);
-}
-let init_aos = (set_element) => {
-    AOS.init();
 }
 
 let pad_zeroes = (number) => {
@@ -111,7 +94,7 @@ let start_countdown = () => {
 
 $(window).on("load", function() {
     close_loading_page();
-    adjust_artist_descriptions();
+    // adjust_artist_descriptions();
 });
 
 $(window).on("scroll", function() {
@@ -127,7 +110,6 @@ $(window).on("scroll", function() {
 $(document).ready(function() {
     initiate_loading_page();
     start_countdown();
-    // init_aos();
 });
 
 $(document).on("mouseover", ".artist-card", function() {
@@ -164,7 +146,7 @@ $(document).on("mouseout", ".team-card", function() {
 });
 
 $(document).on("click", ".show-team-description", function() {
-    $(this).closest(".col-lg-3").find(".team-description").css("bottom", "0");
+    $(this).closest(".team-row-item").find(".team-description").css("bottom", "0");
 });
 
 $(document).on("click", ".hide-team-description", function() {
