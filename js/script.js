@@ -32,6 +32,20 @@ let adjust_artist_descriptions = () => {
         let height = parseFloat($(this).css("height"));
         $(this).css("bottom", "-" + height + "px")
     });
+
+    $(".artist-description").each(function() {
+        if(parseFloat($(this).css("bottom")) > 0) {
+            adjust_artist_descriptions();
+            return 0;
+        }
+    });
+
+    $(".team-description").each(function() {
+        if(parseFloat($(this).css("bottom")) > 0) {
+            adjust_artist_descriptions();
+            return 0;
+        }
+    });
 };
 let loading_check_element = (ele) => {
     let all = document.getElementsByTagName("*");
@@ -162,8 +176,6 @@ $(document).on('click', "a", function(event) {
     if(this.hash !== "") {
         event.preventDefault();
         let hash = this.hash;
-
-        console.log($(hash).offset().top);
 
         $('html').animate({
             scrollTop: $(hash).offset().top - parseFloat($("header").css("height"))
