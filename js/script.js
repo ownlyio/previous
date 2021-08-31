@@ -204,21 +204,21 @@ $(document).on('click', "#hide-mobile-nav", function() {
     $("#mobile-nav").css("top", "-104px");
 });
 
-$(document).scroll("body", function() {
-    if($(window).width() >= 768) {
-        $("#header").removeClass("scrolled");
-        $("#mobile-scroll-up").addClass("d-none");
-    } else {
-        if($(window).scrollTop()) {
-            $("#header").addClass("scrolled");
-        } else {
-            $("#header").removeClass("scrolled");
-        }
+// $(document).scroll("body", function() {
+//     if($(window).width() >= 768) {
+//         $("#header").removeClass("scrolled");
+//         $("#mobile-scroll-up").addClass("d-none");
+//     } else {
+//         if($(window).scrollTop()) {
+//             $("#header").addClass("scrolled");
+//         } else {
+//             $("#header").removeClass("scrolled");
+//         }
 
-        if($(window).scrollTop() >= $(window).height()) {
-            $("#mobile-scroll-up").removeClass("d-none");
-        } else {
-            $("#mobile-scroll-up").addClass("d-none");
-        }
-    }
-});
+//         if($(window).scrollTop() >= $(window).height()) {
+//             $("#mobile-scroll-up").removeClass("d-none");
+//         } else {
+//             $("#mobile-scroll-up").addClass("d-none");
+//         }
+//     }
+// });
