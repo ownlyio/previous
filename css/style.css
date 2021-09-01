@@ -479,7 +479,7 @@ ul.dash > li:before {
         margin-bottom: 3em;
     }
     .header-token#header {
-        background-color: #dee2e6 !important;
+        background-color:rgba(52,49,49,0.85) !important;
     }
     .own-token {
         width: 30% !important;
