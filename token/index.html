@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Ownly: Buy, own, collect, and trade 1 of 1 edition crypto artworks by talented artists." />
+	<meta name="description" content="OWNLY is a governance, token-based NFT platform that enable creators and collectors optimize the authentic value of NFT assets. Ownly is created to be a meeting place of artworks and collectors in the crypto space.">
+	<meta name="author" content="Ownly">
+	
+	<title>Ownly</title>
+	<link rel="icon" href="../img/ownly/32x32.png">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../fontawesome/css/all.css">
+	<link rel="stylesheet" href="../css/style.css?v=20">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<meta property="og:url" content="https://ownly.io" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Ownly: Buy, own, collect, and trade 1 of 1 edition crypto artworks by talented artists." />
+	<meta property="og:description" content="OWNLY is a governance, token-based NFT platform that enable creators and collectors optimize the authentic value of NFT assets. Ownly is created to be a meeting place of artworks and collectors in the crypto space." />
+	<meta property="og:image" content="https://ownly.io/img/bg/og.jpg" />
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LBV47LFR4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6LBV47LFR4');
+	</script>
+</head>
+<body id="own-token-wrap">
+	<div id="top" style="overflow-x:hidden">
+		<div class="d-flex justify-content-center align-items-center position-fixed vh-100 w-100 bg-white" id="loading-ownly-container" style="z-index:100">
+			<div class="pb-5">
+				<img src="../img/ownly-2.png" id="loading-ownly" style="width:200px; transition:1s" alt="Ownly" />
+				<div class="progress mt-4">
+					<div class="progress-bar progress-bar-striped progress-bar-animated bg-color-2" id="loading-page-progress-bar" role="progressbar" style="width:0"></div>
+				</div>
+				<input type="hidden" id="progress_width" value="0">
+			</div>
+		</div>
+	
+		<a href="#top" class="d-none text-decoration-none position-fixed d-flex justify-content-center align-items-center bg-color-6 text-white" id="mobile-scroll-up" style="bottom:20px; right:20px; height:50px; width:50px; border-radius:50%; z-index:10">
+			<i class="fas fa-chevron-up"></i>
+		</a>
+		
+		<header class="py-3 position-fixed w-100 header-token" id="header" style="top:0; left:0; z-index:10; transition:0.3s">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="d-flex align-items-center">
+						<div class="pe-2">
+							<a href="#banners" class="d-flex align-items-center mb-0 mb-md-2 mb-lg-0 text-dark text-decoration-none">
+								<img src="../img/ownly.png" class="d-none d-md-block" width="50" alt="Ownly" />
+								<img src="../img/ownly/horizontal-white.png" class="d-block d-md-none" width="130" alt="Ownly" />
+							</a>
+						</div>
+						<div>
+							<a href="#banners" class="link-color-1 font-size-170 rubik-black ps-1 d-none d-md-block text-decoration-none">OWNLY</a>
+						</div>
+					</div>
+					
+					<div class="d-none d-md-block">
+						<ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center mb-0 rubik-regular">
+							<li><a href="#features" class="nav-link pe-1 pe-sm-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-120">Features</a></li>
+							<li><a href="#tokenomics" class="nav-link px-1 px-sm-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-120 mb-1 mb-sm-0">Tokenomics</a></li>
+							<li><a href="#roadmap" class="nav-link px-1 px-sm-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-120">Roadmap</a></li>
+							<li><a href="#blog" class="nav-link px-1 px-sm-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-120">Blog</a></li>
+							<li><a href="#team" class="nav-link px-1 px-sm-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-120">Team</a></li>
+							<li><a href="https://ownly.io/marketplace" target="_blank" class="nav-link btn btn-custom-5 ms-1 ms-sm-3 ps-sm-3 py-1 py-sm-2 font-size-80 font-size-sm-90" style="border-radius:40px">Launch Marketplace</a></li>
+						</ul>
+					</div>
+					
+					<div class="d-block d-md-none pe-1 cursor-pointer" id="show-mobile-nav">
+						<i class="fas fa-bars text-white font-size-150"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="py-2 position-fixed bg-white w-100 overflow-hidden" id="mobile-nav" style="top:-104px; height:104px; left:0; z-index:10; transition:0.3s">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="d-flex align-items-center">
+						<div class="pe-2">
+							<a href="#top" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+								<img src="../img/ownly-2.png" class="" width="80" alt="Ownly" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="d-flex flex-fill">
+						<div class="d-flex justify-content-center w-100">
+							<div>
+								<ul class="nav flex-column align-items-start col-12 col-lg-auto me-lg-auto mb-0 rubik-regular">
+									<li><a href="#features" class="nav-link py-1 link-color-1 font-size-80">Features</a></li>
+									<li><a href="#tokenomics" class="nav-link py-1 link-color-1 font-size-80 mb-1 mb-sm-0">Tokenomics</a></li>
+								</ul>
+							</div>
+							<div>
+								<ul class="nav flex-column align-items-start col-12 col-lg-auto me-lg-auto mb-0 rubik-regular">
+									<li><a href="#roadmap" class="nav-link py-1 link-color-1 font-size-80">Roadmap</a></li>
+									<li><a href="#team" class="nav-link py-1 link-color-1 font-size-80">Team</a></li>
+									<li><a href="#private-sale" class="nav-link py-1 link-color-1 font-size-80">Private Sale</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="pe-1 cursor-pointer ps-3" id="hide-mobile-nav" style="margin-top:-50px">
+						<i class="fas fa-times text-color-1 font-size-130"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="w-100 py-2 py-md-0 mt-5 mb-5" id="own-token-sec">
+			<div class="container py-5 py-md-5">
+                <p data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" class="own-token-title text-color-1 font-size-140 font-size-sm-200 font-size-lg-240 text-center neo-black px-3 py-2 mt-5 mb-3">OWN TOKEN</p>
+                
+                <div class="own-token" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                    <img src="../img/ownly/200x200.png" class="w-100" alt="Own Token" />
+                </div>
+
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="own-token-desc mx-auto text-center line-height-150 pt-2 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 pb-4 font-size-100 font-size-sm-110 font-size-xl-120 w-75">OWN Token is the native utility token of Ownly, users are able to buy, own, collect, and trade 1 of 1 edition crypto artworks by talented artists. Own the only true copy and there's nothing else like that in the world -- as if it's made just for you.</p>
+            </div>
+        </div>
+
+        <div class="w-100 py-2 py-md-0 mt-5" data-aos-offset="250" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+			<div class="container py-5 py-md-5 d-flex justify-content-evenly" id="det-section">
+                <div class="text-center col1">
+                    <p class="text-color-3 font-size-400 neo-black letter-spacing-5 mb-1">OWN</p>
+                    <p class="text-color-7 font-size-120 neo-black letter-spacing-5">Ticker</p>
+                </div>
+                <div class="text-center col2">
+                    <p class="text-color-3 font-size-400 neo-black letter-spacing-5 mb-1">10 Billion</p>
+                    <p class="text-color-7 font-size-120 neo-black letter-spacing-5">Total Supply</p>
+                </div>
+                <div class="text-center col3">
+                    <p class="text-color-3 font-size-400 neo-black letter-spacing-5 mb-1">2</p>
+                    <p class="text-color-7 font-size-120 neo-black letter-spacing-5">No. of exchanges</p>
+                </div>
+            </div>
+        </div>
+
+		<div class="w-100 py-2 py-md-0 bg-color-1" id="addresses">
+			<div class="container py-5 py-md-5" data-aos-offset="250" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+                <div class="alegreya-bold-italic text-color-1 font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">OUR ADDRESSES</div>
+            
+				<div class="text-center mb-4">
+					<p class="mb-1 text-break">
+						<a class="text-decoration-none text-color-1 font-size-180 neo-black letter-spacing-5" target="_blank" href="https://bscscan.com/address/0x7665CB7b0d01Df1c9f9B9cC66019F00aBD6959bA">0x7665CB7b0d01Df1c9f9B9cC66019F00aBD6959bA</a>
+					</p>
+					<p class="text-color-7 font-size-130 letter-spacing-5">Contract Address - BSC</p>
+				</div>
+				<div class="text-center mb-4">
+					<p class="mb-1 text-break">
+						<a class="text-decoration-none text-color-1 font-size-180 neo-black letter-spacing-5" target="_blank" href="https://bscscan.com/address/0x672b733c5350034ccbd265aa7636c3ebdda2223b">0x672b733c5350034ccbd265aa7636c3ebdda2223b</a>
+					</p>
+					<p class="text-color-7 font-size-130 letter-spacing-5">Development & Staking Rewards</p>
+				</div>
+				<div class="text-center mb-4">
+					<p class="mb-1 text-break">
+						<a class="text-decoration-none text-color-1 font-size-180 neo-black letter-spacing-5" target="_blank" href="https://bscscan.com/address/0x175df4d77E8B16F8Cb8598a90d53C72B444D9682">0x175df4d77E8B16F8Cb8598a90d53C72B444D9682</a>
+					</p>
+					<p class="text-color-7 font-size-130 letter-spacing-5">Team and Advisors</p>
+				</div>
+				<div class="text-center mb-4">
+					<p class="mb-1 text-break">
+						<a class="text-decoration-none text-color-1 font-size-180 neo-black letter-spacing-5" target="_blank" href="https://bscscan.com/address/0xbB62583889a2409e34AF9df71585D3EFb26c9553">0xbB62583889a2409e34AF9df71585D3EFb26c9553</a>
+					</p>
+					<p class="text-color-7 font-size-130 letter-spacing-5">Private Sale</p>
+				</div>
+				<div class="text-center mb-4">
+					<p class="mb-1 text-break">
+						<a class="text-decoration-none text-color-1 font-size-180 neo-black letter-spacing-5" target="_blank" href="https://bscscan.com/address/0x337320c94210b433767b3cD8Bb9b63c107b1c269">0x337320c94210b433767b3cD8Bb9b63c107b1c269</a>
+					</p>
+					<p class="text-color-7 font-size-130 letter-spacing-5">Reserve</p>
+				</div>
+				<div class="text-center mb-4">
+					<p class="mb-1 text-break">
+						<a class="text-decoration-none text-color-1 font-size-180 neo-black letter-spacing-5" target="_blank" href="https://bscscan.com/address/0x1d08c0a9Cd4f98d978D273b9fdad64086d2129A3">0x1d08c0a9Cd4f98d978D273b9fdad64086d2129A3</a>
+					</p>
+					<p class="text-color-7 font-size-130 letter-spacing-5">Marketing and Community Airdrops</p>
+				</div>
+			</div>
+        </div>
+
+        <div class="page-min-height w-100 bg-color-2 py-2 py-md-0" id="tokenomics">
+			<div class="container py-4 py-md-5">
+				<div class="d-flex flex-column flex-md-row align-items-start align-items-lg-center mb-5">
+					<div class="text-center me-md-5 mb-4 mb-md-0" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+						<img src="../img/own-token.png" width="200" alt="Ownly" />
+					</div>
+					
+					<div class="me-5" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+						<div class="text-white alegreya-italic font-size-190 font-size-lg-220 letter-spacing-5 mb-4 ps-2">The native token of Ownly is designed for community governance and utilization of the true value of NFT assets.</div>
+						
+<!--						<div>-->
+<!--							<button class="btn btn-custom-3 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">Read Whitepaper</button>-->
+<!--						</div>-->
+					</div>
+				</div>
+				
+				<div class="row pt-4 pb-4 px-1" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+					<div class="col-6 col-lg-3 px-2 mb-5">
+						<div class="px-3 px-sm-4 px-md-5 px-lg-4 px-xxl-5">
+							<div class="bg-color-3 w-100 position-relative" style="padding-top:100%; border-radius:50%; z-index:1">
+								<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0">
+									<div class="text-white rubik-bold font-size-110 font-sm-size-130 font-size-xl-150 text-center line-height-130 p-3">OWNLY<br>DAO</div>
+								</div>
+								
+								<div class="position-absolute tokenomics-arrow">
+									<img src="../img/arrow-blue.png" class="w-100" alt="arrow" />
+								</div>
+							</div>
+						</div>
+						
+						<div class="tokenomics-card-body">
+							<div class="bg-white w-100 position-relative py-5 px-4" style="border-radius:100px">
+								<div class="d-flex justify-content-center align-items-center pt-4 pt-sm-5 pb-3 pb-sm-5">
+									<div class="line-height-130 pt-5 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 pb-4 font-size-100 font-size-sm-110 font-size-xl-120">OWN holders can govern and decide the trajectory of the OWNLY platform on certain economic factors such as voting for the next featured artist, collateral and interest rate.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-6 col-lg-3 px-2 mb-5">
+						<div class="px-3 px-sm-4 px-md-5 px-lg-4 px-xxl-5">
+							<div class="bg-color-4 w-100 position-relative" style="padding-top:100%; border-radius:50%; z-index:1">
+								<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0">
+									<div class="text-white rubik-bold font-size-110 font-sm-size-130 font-size-xl-150 text-center line-height-130 p-3">MODE OF<br>PAYMENT</div>
+								</div>
+								
+								<div class="position-absolute tokenomics-arrow d-none d-lg-block">
+									<img src="../img/arrow-orange.png" class="w-100" alt="arrow" />
+								</div>
+							</div>
+						</div>
+						
+						<div class="tokenomics-card-body">
+							<div class="bg-white w-100 position-relative py-5 px-4" style="border-radius:100px">
+								<div class="d-flex justify-content-center align-items-center pt-4 pt-sm-5 pb-3 pb-sm-5">
+									<div class="line-height-130 pt-5 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 pb-4 font-size-100 font-size-sm-110 font-size-xl-120">OWN Tokens will be used for paying the platform fees, buying and selling NFTs in OWNLY. OWN token holders can also purchase premiere NFTs at a discounted price.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-6 col-lg-3 px-2 mb-5">
+						<div class="px-3 px-sm-4 px-md-5 px-lg-4 px-xxl-5">
+							<div class="bg-color-5 w-100 position-relative" style="padding-top:100%; border-radius:50%; z-index:1">
+								<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0">
+									<div class="text-white rubik-bold font-size-110 font-sm-size-130 font-size-xl-150 text-center line-height-130 p-3">STAKING AND NFT REWARDS</div>
+								</div>
+								
+								<div class="position-absolute tokenomics-arrow">
+									<img src="../img/arrow-red.png" class="w-100" alt="arrow" />
+								</div>
+							</div>
+						</div>
+						
+						<div class="tokenomics-card-body">
+							<div class="bg-white w-100 position-relative py-5 px-4" style="border-radius:100px">
+								<div class="d-flex justify-content-center align-items-center pt-4 pt-sm-5 pb-3 pb-sm-5">
+									<div class="line-height-130 pt-5 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 pb-4 font-size-100 font-size-sm-110 font-size-xl-120">OWN Tokens and NFTS will be used as rewards in our Liquidity Mining Pool. Ownly NFT holders are also entitled to quarterly OWN airdrops.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-6 col-lg-3 px-2 mb-5">
+						<div class="px-3 px-sm-4 px-md-5 px-lg-4 px-xxl-5">
+							<div class="bg-color-6 w-100 position-relative" style="padding-top:100%; border-radius:50%; z-index:1">
+								<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0">
+									<div class="text-white rubik-bold font-size-110 font-sm-size-130 font-size-xl-150 text-center line-height-130 p-3">GOVERNANCE<br>INCENTIVES</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tokenomics-card-body">
+							<div class="bg-white w-100 position-relative py-5 px-4" style="border-radius:100px">
+								<div class="d-flex justify-content-center align-items-center pt-4 pt-sm-5 pb-3 pb-sm-5">
+									<div class="line-height-130 pt-5 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 font-size-100 font-size-sm-110 font-size-xl-120">OWN Token holders who participate in OWNLY Governance for its continuous and sustained improvement and growth are entitled to OWN rewards.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-100 bg-color-8 py-2 py-md-0">
+			<div class="container py-4 py-md-5">
+				<div class="text-white font-size-130 font-size-sm-170 font-size-md-230 font-size-lg-240 py-md-4 mb-3" data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">There will only be a total supply of 10 Billion $OWN Tokens, with the launch value of each $OWN already strengthened by our existing basket portfolio of NFT artworks.</div>
+				
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-9">
+						<div data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+							<img src="../img/distribution/OWN-Distrtibution-Graph-2.jpg" class="w-100" alt="Own Token Distribution" />
+						</div>
+						
+						<div class="table-responsive mb-2" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+							<table class="table table-bordered custom-table-1">
+								<tr>
+									<th class="bg-white text-color-1 font-size-70 font-size-sm-100 font-size-md-140">Description</th>
+									<th class="bg-white text-color-1 font-size-70 font-size-sm-100 font-size-md-140">Token Allocation</th>
+									<th class="bg-white text-color-1 font-size-70 font-size-sm-100 font-size-md-140">Percentage</th>
+									<th class="bg-white text-color-1 font-size-70 font-size-sm-100 font-size-md-140">Distribution Plan</th>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-120">Private Sale</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-120">2,000,000,000</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-120">20.0000%</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-120">6 months vesting and 16.67% monthly distribution</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-120">IDO</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-120">2,666,666,667</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-120">26.6667%</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-120">No Vesting</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-120">Development & Staking Rewards</td>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-120">2,183,333,333</td>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-120">21.83%</td>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-120">In accordance with staking rewards program schedule</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-120">Team and advisors</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-120">2,000,000,000</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-120">20.00%</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-120">2 years cliff and 5 years vesting with 20% yearly distribution</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-12 font-size-70 font-size-sm-100 font-size-md-120">Liquidity (MM)</td>
+									<td class="text-white bg-color-12 font-size-70 font-size-sm-100 font-size-md-120">150,000,000</td>
+									<td class="text-white bg-color-12 font-size-70 font-size-sm-100 font-size-md-120">1.50%</td>
+									<td class="text-white bg-color-12 font-size-70 font-size-sm-100 font-size-md-120">Upfront at initial DEX Listing</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-13 font-size-70 font-size-sm-100 font-size-md-120">Marketing and Community Airdrops</td>
+									<td class="text-white bg-color-13 font-size-70 font-size-sm-100 font-size-md-120">500,000,000</td>
+									<td class="text-white bg-color-13 font-size-70 font-size-sm-100 font-size-md-120">5.00%</td>
+									<td class="text-white bg-color-13 font-size-70 font-size-sm-100 font-size-md-120">Locked at TGE and distribution details will be announced soon</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-5 font-size-70 font-size-sm-100 font-size-md-120">Reserve</td>
+									<td class="text-white bg-color-5 font-size-70 font-size-sm-100 font-size-md-120">500,000,000</td>
+									<td class="text-white bg-color-5 font-size-70 font-size-sm-100 font-size-md-120">5.00%</td>
+									<td class="text-white bg-color-5 font-size-70 font-size-sm-100 font-size-md-120">Locked up for next 5 years</td>
+								</tr>
+								<tr>
+									<th class="text-color-1 bg-white font-size-70 font-size-sm-100 font-size-md-130">Total</th>
+									<th class="text-color-1 bg-white font-size-70 font-size-sm-100 font-size-md-130">10,000,000,000</th>
+									<th class="text-color-1 bg-white font-size-70 font-size-sm-100 font-size-md-130">100%</th>
+									<th class="text-color-1 bg-white font-size-70 font-size-sm-100 font-size-md-130"></th>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" class="text-white font-size-130 font-size-sm-170 font-size-md-230 font-size-lg-240 py-md-4 mb-3">The expected OWN circulating supply at Token Generation Event (TGE) is 3,000,000,000, which has an Initial Market Cap of $90,000.00 at the Initial DEX Offering price of $0.000030 per token.</div>
+				
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-9">
+						<div class="d-flex justify-content-center">
+							<div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" class="text-color-1 font-size-140 font-size-sm-200 font-size-lg-240 text-center bg-white neo-black px-3 py-2 mb-3">INITIAL MARKET CAP AT TGE</div>
+						</div>
+						
+						<div class="table-responsive mb-4" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+							<table class="table table-bordered custom-table-1">
+								<tr>
+									<th class="bg-white text-color-1 font-size-70 font-size-sm-100 font-size-md-120">Description</th>
+									<th class="bg-white text-color-1 font-size-70 font-size-sm-100 font-size-md-120 text-center">Private Sale</th>
+									<th class="bg-white text-color-1 font-size-70 font-size-sm-100 font-size-md-120 text-center">Initial DEX Offering (IDO)</th>
+									<th class="bg-white text-color-1 font-size-70 font-size-sm-100 font-size-md-120 text-center">TOTAL</th>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-110">Percentage Allocation</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-110 text-end">20.0000%</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-110 text-end">26.6667%</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-110 text-end">46.6667%</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-110">Allocated OWN Tokens</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-110 text-end">2,000,000,000.00</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-110 text-end">2,666,666,666.67</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-110 text-end">4,666,666,666.67</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-110">Price per OWN</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-110 text-end">$ 0.000020</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-110 text-end">$ 0.000030</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-110 text-end"></td>
+								</tr>
+								<tr>
+									<th class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-110">Target Amount to be raised</th>
+									<th class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-110 text-end">$ 40,000.00</th>
+									<th class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-110 text-end">$ 80,000.00</th>
+									<th class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-110 text-end">$ 120,000.00</th>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-110">Number of OWN Tokens at TGE</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-110 text-end">333,333,333.33</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-110 text-end">2,666,666,666.67</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-110 text-end">3,000,000,000.00</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-110">Percentage Allocation at TGE</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-110 text-end">3.00%</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-110 text-end">27.00%</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-110 text-end"></td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-110">Percentage of OWN based on total supply</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-110 text-end">3.33%</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-110 text-end">26.67%</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-110 text-end">30.00%</td>
+								</tr>
+								<tr>
+									<td class="text-white bg-color-3 font-size-70 font-size-sm-100 font-size-md-110">OWN Tokens to be released at TGE</td>
+									<td class="text-white bg-color-2 font-size-70 font-size-sm-100 font-size-md-110 text-end">$ 6,666.67</td>
+									<td class="text-white bg-color-4 font-size-70 font-size-sm-100 font-size-md-110 text-end">$ 80,000.00</td>
+									<td class="text-white bg-color-6 font-size-70 font-size-sm-100 font-size-md-110 text-end">$ 86,666.67</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="table-responsive mb-3" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+							<table class="table table-bordered custom-table-1" style="border:0">
+								<tr>
+									<td class="bg-color-14 text-color-1 font-size-70 font-size-sm-100 font-size-md-120" style="border-top:3px solid #000000; border-left:1px solid #000000">
+										<div class="mb-1">Tokens released at TGE:</div>
+										<div class="text-end text-color-6 neo-bold font-size-120">3,000,000,000.00</div>
+									</td>
+									<td class="bg-color-15 text-color-1 font-size-70 font-size-sm-100 font-size-md-120" style="border-top:3px solid #000000">
+										<div class="mb-1">Circulating Supply:</div>
+										<div class="text-end text-color-6 neo-bold font-size-120">30.00%</div>
+									</td>
+									<td class="bg-color-16 text-color-1 font-size-70 font-size-sm-100 font-size-md-120" style="border-top:3px solid #000000">
+										<div class="mb-1">Market Cap at IDO Price:</div>
+										<div class="text-end text-color-6 neo-bold font-size-120">$ 90,000.00</div>
+									</td>
+								</tr>
+								<tr style="border-bottom:0">
+									<td colspan="2" class="text-color-1 font-size-70 font-size-sm-100 font-size-md-120" style="background-color:rgba(0,0,0,0); border-bottom:0 solid #147ca0; border-left:0"></td>
+									<td class="bg-color-16 text-color-1 font-size-70 font-size-sm-100 font-size-md-120">
+										<div class="mb-1">Market Cap at x10:</div>
+										<div class="text-end text-color-6 neo-bold font-size-120">$ 900,000.00</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="text-center text-white mb-5" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">OWN Token Market Cap at Initial Launch</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-100 py-2 py-md-0" id="exchanges">
+			<div class="container py-4 py-md-5">
+                <div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" class="alegreya-bold-italic text-color-4 font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">EXCHANGES</div>
+
+				<div class="d-flex justify-content-evenly align-items-end" id="exc-section">
+					<div class="text-center">
+						<div class="mb-3" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+							<img src="../img/exchanges/sparkswap.png" class="w-100" alt="SparkSwap" />
+						</div>
+						<a data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" href="https://ownly.io/sparkswap" target="_blank" class="neo-black btn btn-border-1 px-2 py-1 font-size-80 font-size-sm-100" style="border-radius:35px; letter-spacing:0.05em">OWN/BNB</a>
+					</div>
+					<div class="text-center">
+						<div class="mb-3" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+							<img src="../img/exchanges/pancakeswap.png" class="w-100" alt="PancakeSwap" />
+						</div>
+						<a data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" href="https://ownly.io/pancakeswap" target="_blank" class="neo-black btn btn-border-1 px-2 py-1 font-size-80 font-size-sm-100" style="border-radius:35px; letter-spacing:0.05em">OWN/BNB</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-100 bg-color-1 py-2 py-md-0" id="private-sale">
+			<div class="container py-4 py-md-5">
+				<div class="alegreya-bold-italic text-color-1 font-size-240 font-size-md-280 mb-4" style="letter-spacing:0.05em">JOIN OUR VIP LIST FOR THE INSIDE SCOOP</div>
+				
+				<div class="row justify-content-center pt-2">
+					<div class="col-md-9">
+						<form class="newsletter-form" action="https://formspree.io/f/xayajjqb" method="POST">
+							<div class="ps-1 font-size-120 line-height-140 mb-4">Don't miss the chance to snag the next big thing! Sign up to get insider tips, updates, exclusive promos, members-only giveaways, and the latest Ownly news straight to your inbox today.</div>
+							
+							<div class="mb-4 pb-3">
+								<input type="email" name="email_address" class="form-control shadow-custom-1 px-4 px-sm-5 py-3 font-size-120" placeholder="Enter Your Email Address here" required />
+							</div>
+							
+							<div class="text-center">
+								<button type="submit" class="btn btn-custom-1 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">
+									<span class="px-5">Subscribe now!</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-100 bg-white">
+			<div class="container py-4">
+				<div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end">
+					<div class="d-flex me-3 mb-4 mb-md-0">
+						<div class="text-center pe-3 pe-md-5">
+							<img src="img/ownly-2.png" class="mb-3" width="120" alt="Ownly" />
+							<div class="text-color-1 font-size-90">Ownly &copy; 2021</div>
+						</div>
+						
+						<div class="d-flex flex-column justify-content-between ps-3 py-1" style="border-left:3px solid #000000">
+							<div class="d-flex text-color-1 mb-2">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-map-marker-alt font-size-120"></i>
+								</div>
+								<div class="font-size-90">
+									<div>SILI DELI: DOST-BU TBI Office, Ground floor,</div>
+									<div>Student Union Bldg., Bicol University Main Campus,</div>
+									<div>Daraga, Albay Sagpon</div>
+								</div>
+							</div>
+							
+							<div class="d-flex text-color-1 mb-2">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-envelope font-size-120"></i>
+								</div>
+								<div class="font-size-90">support@ownly.io</div>
+							</div>
+							
+							<div class="d-flex text-color-1">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-phone font-size-120"></i>
+								</div>
+								<div class="font-size-90">0956 152 5513</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="px-2 px-md-0">
+						<div class="text-color-1 font-size-140 font-size-sm-160 mb-2">Connect with us:</div>
+						<div class="font-size-170 font-size-sm-200 font-size-lg-160 font-size-xl-240 font-size-xl-260 line-height-140">
+							<a href="https://twitter.com/ownlyio" class="text-decoration-none">
+								<i class="fab fa-twitter text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://t.me/ownlyio" class="text-decoration-none">
+								<i class="fab fa-telegram text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://discord.gg/BYGqbbZU" class="text-decoration-none">
+								<i class="fab fa-discord text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://github.com/ownlyio" class="text-decoration-none">
+								<i class="fab fa-github text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://www.linkedin.com/company/ownlyio/" class="text-decoration-none">
+								<i class="fab fa-linkedin-in text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://web.facebook.com/ownly.io" class="text-decoration-none">
+								<i class="fab fa-facebook text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://www.instagram.com/ownly.io/" class="text-decoration-none">
+								<i class="fab fa-instagram text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://www.reddit.com/r/Ownly/" class="text-decoration-none">
+								<i class="fab fa-reddit text-color-4"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="modal-subscribe-success" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-sm">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="text-center mt-3 mb-3">
+						<i class="fas fa-check-circle font-size-400 text-color-3"></i>
+					</div>
+					<h5 class="w-100 font-size-100 text-center">Thank you for subscribing!</h5>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-custom-2 px-4" data-bs-dismiss="modal">Okay</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="../js/script.js?v=23"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
