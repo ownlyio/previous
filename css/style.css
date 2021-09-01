@@ -356,11 +356,18 @@ ul.dash > li:before {
 }
 
 @media(min-width:768px) {
+    .carousel-indicators {
+        bottom: -35px !important;
+    }
+    .carousel-item .d-flex {
+        margin-top: 1.5rem;
+    }
     #banners {
         padding-top:109.8px;
     }
     .page-min-height {
-        min-height:calc(100vh - 109.8px);
+        /* min-height:calc(100vh - 109.8px); */
+        min-height: 100vh !important;
     }
     .tokenomics-card-body {
         margin-top:-140px;
@@ -380,11 +387,18 @@ ul.dash > li:before {
 }
 
 @media(min-width:992px) {
+    .carousel-item .d-flex {
+        margin-top: 0;
+    }
+    .carousel-indicators {
+        bottom: 0 !important;
+    }
     #banners {
         padding-top:83px;
     }
     .page-min-height {
-        min-height:calc(100vh - 83px) !important;
+        /* min-height:calc(100vh - 83px) !important; */
+        min-height: 100vh !important;
     }
     .tokenomics-card-body {
         margin-top:-120px;
@@ -434,5 +448,11 @@ ul.dash > li:before {
         width:65px;
         top:55px;
         right:-90px
+    }
+}
+
+@media (max-width: 576px) {
+    .whitepaper {
+        width: 280px !important;
     }
 }
