@@ -191,6 +191,14 @@ html {
     background-color: #d98248;
     color:#ffffff;
 }
+.btn-border-1 {
+    border: 2px solid #f19150;
+    color:#f19150;
+}
+.btn-border-1:hover, .btn-border-1:active, .btn-border-1:focus {
+    background-color:#f19150;
+    color:#ffffff;
+}
 .bg-color-1 {
     background-color:#f3f3f3!important;
 }
@@ -338,6 +346,15 @@ ul.dash > li:before {
     min-width:75px;
 }
 
+.own-token {
+    width: 15%;
+    margin: 1.5rem auto 1rem;
+}
+
+#addresses a:hover {
+    color:#bc3326;
+}
+
 @media(min-width:576px) {
     .page-min-height {
         min-height:100vh;
@@ -434,5 +451,46 @@ ul.dash > li:before {
         width:65px;
         top:55px;
         right:-90px
+    }
+}
+
+@media (max-width: 991px) {
+    .own-token-desc {
+        width: 100% !important;
+    }
+    #det-section {
+        flex-direction: column;
+    }
+    #det-section > div:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    #addresses .alegreya-bold-italic,
+    #exchanges .alegreya-bold-italic {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #exc-section {
+        flex-direction: column;
+        align-items: center !important;
+    }
+    #exc-section > div:not(:last-child) {
+        margin-bottom: 3em;
+    }
+    .header-token#header {
+        background-color:rgba(52,49,49,0.85) !important;
+    }
+    .own-token {
+        width: 30% !important;
+    }
+    .own-token-desc {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .own-token-title {
+        font-size: 2.5em;
     }
 }
