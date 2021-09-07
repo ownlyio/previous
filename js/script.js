@@ -153,24 +153,24 @@ $(document).on("click", ".hide-team-description", function() {
     $(this).closest(".team-card").find(".team-description").css("bottom", "-" + height + "px");
 });
 
-$(document).on('click', "a", function(event) {
-    if(this.hash !== "") {
-        event.preventDefault();
-        let hash = this.hash;
+// $(document).on('click', "a", function(event) {
+//     if(this.hash !== "") {
+//         event.preventDefault();
+//         let hash = this.hash;
 
-        $('html').animate({
-            scrollTop: $(hash).offset().top - parseFloat($("header").css("height"))
-        }, 200, function(){
-            window.location.hash = hash;
-        });
+//         $('html').animate({
+//             scrollTop: $(hash).offset().top - parseFloat($("header").css("height"))
+//         }, 200, function(){
+//             window.location.hash = hash;
+//         });
 
-        $('html').animate({
-            scrollTop: $(hash).offset().top - parseFloat($("header").css("height"))
-        }, 200, function(){
-            window.location.hash = hash;
-        });
-    }
-});
+//         $('html').animate({
+//             scrollTop: $(hash).offset().top - parseFloat($("header").css("height"))
+//         }, 200, function(){
+//             window.location.hash = hash;
+//         });
+//     }
+// });
 
 $(document).on("submit", ".newsletter-form", async (event) => {
     event.preventDefault();
