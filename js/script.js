@@ -98,13 +98,13 @@ $(window).on("load", function() {
 });
 
 $(window).on("scroll", function() {
-    let elementTarget = $("#own-countdown-container")[0];
-
-    if(window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-        $("#header").removeClass("d-none");
-    } else {
-        $("#header").addClass("d-none");
-    }
+    // let elementTarget = $("#own-countdown-container")[0];
+    //
+    // if(window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+    //     $("#header").removeClass("d-none");
+    // } else {
+    //     $("#header").addClass("d-none");
+    // }
 });
 
 $(document).ready(function() {
