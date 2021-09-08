@@ -183,7 +183,7 @@ $(document).on("submit", "#newsletter-form", function(e) {
     let data = new FormData($(this)[0]);
 
     $.ajax({
-        url: "http://ownly-api.test/api/store-mustachio-subscriber",
+        url: "https://ownly.tk/api/store-mustachio-subscriber",
         method: "POST",
         cache: false,
         contentType: false,
