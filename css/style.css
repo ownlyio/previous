@@ -343,18 +343,21 @@ ul.dash > li:before {
     border:0;
 }
 .countdown {
-    min-width:75px;
+    min-width:65px;
 }
 
 .own-token {
     width: 15%;
     margin: 1.5rem auto 1rem;
 }
-
 #addresses a:hover {
     color:#bc3326;
 }
+.padding-after-nav {
+    padding-top:68px!important;
+}
 
+/* SM */
 @media(min-width:576px) {
     .page-min-height {
         min-height:100vh;
@@ -370,8 +373,11 @@ ul.dash > li:before {
         top:60px;
         right:-53px
     }
+    .padding-after-nav {
+        padding-top:117px!important;
+    }
 }
-
+/* MD */
 @media(min-width:768px) {
     #banners {
         padding-top:109.8px;
@@ -394,8 +400,11 @@ ul.dash > li:before {
         background-color: #ffffff!important;
         border-bottom:1px solid #dee2e6!important;
     }
+    .padding-after-nav {
+        padding-top:117px!important;
+    }
 }
-
+/* LG */
 @media(min-width:992px) {
     #banners {
         padding-top:83px;
@@ -421,8 +430,14 @@ ul.dash > li:before {
     .countdown {
         min-width:105px;
     }
+    .padding-after-nav {
+        padding-top:83px!important;
+    }
+    #burn-header-container {
+        min-height:calc(100vh - 83px);
+    }
 }
-
+/* XL */
 @media(min-width:1200px) {
     .tokenomics-card-body {
         margin-top:-145px;
@@ -439,7 +454,7 @@ ul.dash > li:before {
         min-width:116px;
     }
 }
-
+/* XXL */
 @media(min-width:1400px) {
     .tokenomics-card-body {
         margin-top:-120px;

@@ -61,7 +61,7 @@ let pad_zeroes = (number) => {
 };
 
 let start_countdown = () => {
-    let countDownDate = new Date("Jul 27, 2021 17:00:00").getTime();
+    let countDownDate = new Date("Sep 30, 2021 17:00:00").getTime();
 
     let x = setInterval(function() {
         let now = new Date().getTime();
@@ -109,6 +109,7 @@ $(window).on("scroll", function() {
 
 $(document).ready(function() {
     initiate_loading_page();
+    start_countdown();
 });
 
 $(document).on("mouseover", ".artist-card", function() {
@@ -172,27 +173,30 @@ $(document).on("click", ".hide-team-description", function() {
 //     }
 // });
 
-$(document).on("submit", ".newsletter-form", async (event) => {
-    event.preventDefault();
+$(document).on("submit", "#newsletter-form", function(e) {
+    e.preventDefault();
 
-    newsletter_form = $(this);
+    let newsletter_form = $(this);
     newsletter_form.find("[type='submit']").prop("disabled", true);
 
-    let data = new FormData(event.target);
-    fetch(event.target.action, {
-        method: "POST",
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(response => {
-        newsletter_form.find("input").val("");
+    console.log(newsletter_form);
+    let data = new FormData($(this)[0]);
 
-        $("#newsletter-form [type='submit']").prop("disabled", false);
+    $.ajax({
+        url: "http://ownly-api.test/api/store-mustachio-subscriber",
+        method: "POST",
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: data
+    }).done(function(response) {
+        $("#newsletter-form input").val("");
 
         $("#modal-subscribe-success").modal("show");
-    }).catch(error => {
-        console.log('Oops! There was a problem submitting your form');
+    }).fail(function(error) {
+        console.log(error);
+    }).always(function() {
+        $("#newsletter-form [type='submit']").prop("disabled", false);
     });
 });
 
