@@ -7,7 +7,7 @@ function shortenText(text, startingPoint, maxLength) {
 }
 
 // featured post
-fetch('https://feed2json.org/convert?url=https://medium.com/feed/ownlyio/tagged/updates')
+fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownlyio/tagged/updates')
 .then(function (response) {
     return response.json();
 })
@@ -33,7 +33,7 @@ fetch('https://feed2json.org/convert?url=https://medium.com/feed/ownlyio/tagged/
 });
 
 // other posts
-fetch('https://feed2json.org/convert?url=https://medium.com/feed/ownlyio')
+fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownlyio')
 .then(function (response) {
     return response.json();
 })
