@@ -38,7 +38,11 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownl
     return response.json();
 })
 .then(function (data) {
-    var posts = data.items.slice(0, 4).filter(x => !x.title.includes('August 2021'))
+    // check if on the first 6 blogs, the featured post is included
+    var featuredPostIncluded = data.items.findIndex(x => x.title.includes('August 2021'))
+    var posts = featuredPostIncluded != -1 ? 
+        data.items.slice(0, 7).filter(x => !x.title.includes('August 2021')) : // return 7 blogs less the featured post (total of 6)
+        data.items.slice(0, 6) // return just 6 blogs
 
     var output = ''
     posts.forEach(function (post) {
