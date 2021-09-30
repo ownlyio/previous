@@ -61,35 +61,52 @@ let pad_zeroes = (number) => {
 };
 
 let start_countdown = () => {
-    let countDownDate = new Date("Sep 30, 2021 17:00:00").getTime();
+    $.ajax({
+        // url: "http://ownly-api.test/api/get-remaining-time/2021-09-30%2009:00:00",
+        url: "http://ownly-api.test/api/get-remaining-time/2021-09-30%2009:00:00",
+        method: "GET"
+    }).done(function(remaining_time) {
+        let countDownDate = new Date().getTime() + (remaining_time * 1000);
+        // countDownDate = new Date("Sep 30, 2021 17:00:00").getTime();
 
-    let x = setInterval(function() {
-        let now = new Date().getTime();
-        let distance = countDownDate - now;
+        let x = setInterval(function() {
+            let now = new Date().getTime();
+            let distance = countDownDate - now;
 
-        let days = pad_zeroes(Math.floor(distance / (1000 * 60 * 60 * 24)));
-        let hours = pad_zeroes(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-        let minutes = pad_zeroes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
-        let seconds = pad_zeroes(Math.floor((distance % (1000 * 60)) / 1000));
+            let days = pad_zeroes(Math.floor(distance / (1000 * 60 * 60 * 24)));
+            let hours = pad_zeroes(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+            let minutes = pad_zeroes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+            let seconds = pad_zeroes(Math.floor((distance % (1000 * 60)) / 1000));
 
-        $("#days").text(days);
-        $("#hours").text(hours);
-        $("#minutes").text(minutes);
-        $("#seconds").text(seconds);
+            $("#days").text(days);
+            $("#hours").text(hours);
+            $("#minutes").text(minutes);
+            $("#seconds").text(seconds);
 
-        $("#days").removeClass("invisible");
-        $("#hours").removeClass("invisible");
-        $("#minutes").removeClass("invisible");
-        $("#seconds").removeClass("invisible");
+            $("#days").removeClass("invisible");
+            $("#hours").removeClass("invisible");
+            $("#minutes").removeClass("invisible");
+            $("#seconds").removeClass("invisible");
 
-        if (distance < 0) {
-            clearInterval(x);
-            $("#days").text("00");
-            $("#hours").text("00");
-            $("#minutes").text("00");
-            $("#seconds").text("00");
-        }
-    }, 1000);
+            if (distance < 0) {
+                clearInterval(x);
+                $("#days").text("00");
+                $("#hours").text("00");
+                $("#minutes").text("00");
+                $("#seconds").text("00");
+
+                clearInterval(x);
+
+                $("#burn-event-newsletter").addClass("d-none");
+                $("#burn-event-own-burning").removeClass("d-none");
+                setTimeout(function() {
+                    $("#burn-event-own-burning").css("margin-top", "0");
+                }, 100);
+            }
+        }, 500);
+    }).fail(function(error) {
+        console.log(error);
+    });
 };
 
 $(window).on("load", function() {
