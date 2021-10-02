@@ -39,9 +39,9 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownl
 })
 .then(function (data) {
     // check if on the first 6 blogs, the featured post is included
-    var featuredPostIncluded = data.items.findIndex(x => x.title.includes('August 2021'))
+    var featuredPostIncluded = data.items.findIndex(x => x.title.includes('September 2021'))
     var posts = featuredPostIncluded != -1 ? 
-        data.items.slice(0, 8).filter(x => !x.title.includes('August 2021') && !x.title.includes('Ownly Marketplace Beta Version Features')) : // return 8 blogs less the featured post and beta features blog (total of 6)
+        data.items.slice(0, 8).filter(x => !x.title.includes('September 2021') && !x.title.includes('Ownly Marketplace Beta Version Features')) : // return 8 blogs less the featured post and beta features blog (total of 6)
         data.items.slice(0, 7).filter(x => !x.title.includes('Ownly Marketplace Beta Version Features')) // return just 7 blogs less beta features blog (total of 6)
 
     var output = ''
