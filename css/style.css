@@ -356,6 +356,12 @@ ul.dash > li:before {
 .padding-after-nav {
     padding-top:68px!important;
 }
+#october-targets {
+    width:70px;
+}
+#monthly-targets-bg {
+    background-size:cover;
+}
 
 /* SM */
 @media(min-width:576px) {
@@ -375,6 +381,12 @@ ul.dash > li:before {
     }
     .padding-after-nav {
         padding-top:117px!important;
+    }
+    #monthly-targets-bg {
+        background-size:contain;
+    }
+    #october-targets {
+        width:100px;
     }
 }
 /* MD */
@@ -402,6 +414,9 @@ ul.dash > li:before {
     }
     .padding-after-nav {
         padding-top:117px!important;
+    }
+    #october-targets {
+        width:150px;
     }
 }
 /* LG */
@@ -435,6 +450,9 @@ ul.dash > li:before {
     }
     #burn-header-container {
         min-height:calc(100vh - 83px);
+    }
+    #october-targets {
+        width:230px;
     }
 }
 /* XL */
