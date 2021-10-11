@@ -62,7 +62,7 @@ let pad_zeroes = (number) => {
 
 let start_countdown = () => {
     $.ajax({
-        url: "https://ownly.tk/api/get-remaining-time/2021-09-30%2009:00:00",
+        url: "https://ownly.tk/api/get-remaining-time/2021-10-15%2011:00:00",
         // url: "http://ownly-api.test/api/get-remaining-time/2021-09-30%2009:00:00",
         method: "GET"
     }).done(function(remaining_time) {
@@ -128,7 +128,7 @@ $(window).on("scroll", function() {
 
 $(document).ready(function() {
     initiate_loading_page();
-    // start_countdown();
+    start_countdown();
 });
 
 $(document).on("mouseover", ".artist-card", function() {

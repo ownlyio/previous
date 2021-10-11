@@ -119,6 +119,9 @@ html {
 .text-color-9 {
     color:#f4f0eb;
 }
+.text-color-10 {
+    color:#16b99a!important;
+}
 .link-color-1 {
     color:#bc3326;
 }
@@ -191,6 +194,14 @@ html {
     background-color: #d98248;
     color:#ffffff;
 }
+.btn-custom-8 {
+    background-color:#d546bc;
+    color:#ffffff;
+}
+.btn-custom-8:hover, .btn-custom-8:active, .btn-custom-8:focus {
+    background-color: #bd3ea8;
+    color:#ffffff;
+}
 .btn-border-1 {
     border: 2px solid #f19150;
     color:#f19150;
@@ -252,6 +263,9 @@ html {
 }
 .bg-color-18 {
     background-color:#f4f0eb!important;
+}
+.bg-color-19 {
+    background-color:#d546bc!important;
 }
 .letter-spacing-5 {
     letter-spacing:0.05em;
@@ -343,7 +357,7 @@ ul.dash > li:before {
     border:0;
 }
 .countdown {
-    min-width:65px;
+    min-width:60px;
 }
 
 .own-token {
