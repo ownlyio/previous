@@ -45,19 +45,21 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownl
         data.items.slice(0, 7).filter(x => !x.title.includes('Ownly Marketplace Beta Version Features')) // return just 7 blogs less beta features blog (total of 6)
 
     var output = ''
-    posts.forEach(function (post) {
-        var textOnlyDescription = stripHTMLTags(post.description)
-        output += `<div class="col-md-4 pb-3 pb-md-0">`
-        output += `    <a href="${post.guid}" target="_blank">`
-        output += `        <div class="w-100 background-image-cover mb-3" style="padding-top:54%; background-image:url('${post.thumbnail}"></div>`
-        output += `    </a>`
-            
-        output += `    <div class="mb-3">`
-        output += `        <a class="neo-bold text-color-6 font-size-140 font-size-lg-170 text-decoration-none link-blog" href="${post.guid}" target="_blank">${post.title}</a>`
-        output += `    </div>`
-        output += `    <div class="text-color-7 font-size-100 font-size-lg-120 mb-3">${shortenText(textOnlyDescription, 1, 150) + '...'}</div>`
-        output += `    <div class="text-color-8 font-size-100 font-size-lg-120 mb-4">${post.author}</div>`
-        output += `</div>`
+    posts.forEach(function (post, i) {
+        if(i > 0) {
+            var textOnlyDescription = stripHTMLTags(post.description)
+            output += `<div class="col-md-4 pb-3 pb-md-0">`
+            output += `    <a href="${post.guid}" target="_blank">`
+            output += `        <div class="w-100 background-image-cover mb-3" style="padding-top:54%; background-image:url('${post.thumbnail}"></div>`
+            output += `    </a>`
+
+            output += `    <div class="mb-3">`
+            output += `        <a class="neo-bold text-color-6 font-size-140 font-size-lg-170 text-decoration-none link-blog" href="${post.guid}" target="_blank">${post.title}</a>`
+            output += `    </div>`
+            output += `    <div class="text-color-7 font-size-100 font-size-lg-120 mb-3">${shortenText(textOnlyDescription, 1, 150) + '...'}</div>`
+            output += `    <div class="text-color-8 font-size-100 font-size-lg-120 mb-4">${post.author}</div>`
+            output += `</div>`
+        }
     });
 
     document.querySelector('#other-posts').innerHTML = output;
