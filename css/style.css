@@ -202,6 +202,14 @@ html {
     background-color: #bd3ea8;
     color:#ffffff;
 }
+.btn-custom-9 {
+    background-color:#9300a8;
+    color:#ffffff;
+}
+.btn-custom-9:hover, .btn-custom-9:active, .btn-custom-9:focus {
+    background-color: #7e008f;
+    color:#ffffff;
+}
 .btn-border-1 {
     border: 2px solid #f19150;
     color:#f19150;
@@ -266,6 +274,9 @@ html {
 }
 .bg-color-19 {
     background-color:#d546bc!important;
+}
+.bg-color-20 {
+    background-color:#9300a8!important;
 }
 .letter-spacing-5 {
     letter-spacing:0.05em;
