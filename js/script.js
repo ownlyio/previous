@@ -111,7 +111,7 @@ let start_countdown = () => {
 
 $(window).on("load", function() {
     close_loading_page();
-    // adjust_artist_descriptions();
+    adjust_artist_descriptions();
 
     $("#mustachio-teaser-container").html('<video autoPlay loop muted controls class="w-100" style="border-radius:10px; border:6px solid #ffffff"><source src="img/mustachios/teaser.mp4" type="video/mp4"></video>');
 });
