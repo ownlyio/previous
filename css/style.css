@@ -381,7 +381,7 @@ ul.dash > li:before {
 .padding-after-nav {
     padding-top:68px!important;
 }
-#october-targets {
+#november-targets {
     width:70px;
 }
 #monthly-targets-bg {
@@ -410,8 +410,8 @@ ul.dash > li:before {
     #monthly-targets-bg {
         background-size:contain;
     }
-    #october-targets {
-        width:100px;
+    #november-targets {
+        width:150px;
     }
 }
 /* MD */
@@ -440,7 +440,7 @@ ul.dash > li:before {
     .padding-after-nav {
         padding-top:117px!important;
     }
-    #october-targets {
+    #november-targets {
         width:150px;
     }
 }
@@ -476,8 +476,8 @@ ul.dash > li:before {
     #burn-header-container {
         min-height:calc(100vh - 83px);
     }
-    #october-targets {
-        width:230px;
+    #november-targets {
+        width:160px;
     }
 }
 /* XL */
