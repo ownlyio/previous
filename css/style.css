@@ -210,6 +210,14 @@ html {
     background-color: #7e008f;
     color:#ffffff;
 }
+.btn-custom-10 {
+    background-color:#ffffff;
+    color:#000000;
+}
+.btn-custom-10:hover, .btn-custom-10:active, .btn-custom-10:focus {
+    background-color: #ffffff;
+    color:#000000;
+}
 .btn-border-1 {
     border: 2px solid #f19150;
     color:#f19150;
@@ -278,6 +286,9 @@ html {
 .bg-color-20 {
     background-color:#9300a8!important;
 }
+.bg-color-21 {
+    background-color:#1f1f1f!important;
+}
 .letter-spacing-5 {
     letter-spacing:0.05em;
 }
@@ -339,6 +350,23 @@ ul.dash > li:before {
 #header.scrolled {
     background-color:rgba(52,49,49,0.85)!important;
 }
+/* Scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #606060 #f3f3f3;
+}
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f3f3f3;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #606060;
+    border-radius: 4px;
+}
 
 /*##################################################################*/
 
@@ -386,6 +414,13 @@ ul.dash > li:before {
 }
 #monthly-targets-bg {
     background-size:cover;
+}
+.bbbe-q4-text {
+    height:calc(100% + 3.5px);
+    top:-2px;
+}
+#bbbe-q4-timer {
+    height:79px;
 }
 
 /* SM */
@@ -443,6 +478,10 @@ ul.dash > li:before {
     #november-targets {
         width:150px;
     }
+    .bbbe-q4-text {
+        height:calc(100% + 7px);
+        top:-4px;
+    }
 }
 /* LG */
 @media(min-width:992px) {
@@ -479,6 +518,13 @@ ul.dash > li:before {
     #november-targets {
         width:160px;
     }
+    .bbbe-q4-text {
+        height:calc(100% + 9px);
+        top:-5px;
+    }
+    #bbbe-q4-timer {
+        height:112px;
+    }
 }
 /* XL */
 @media(min-width:1200px) {
@@ -494,7 +540,7 @@ ul.dash > li:before {
         right:-55px
     }
     .countdown {
-        min-width:116px;
+        min-width:100px;
     }
 }
 /* XXL */
