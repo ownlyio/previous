@@ -422,6 +422,9 @@ ul.dash > li:before {
 #bbbe-q4-timer {
     height:79px;
 }
+.bbbe-q4-btn {
+    width:200px;
+}
 
 /* SM */
 @media(min-width:576px) {
@@ -481,6 +484,9 @@ ul.dash > li:before {
     .bbbe-q4-text {
         height:calc(100% + 7px);
         top:-4px;
+    }
+    .bbbe-q4-btn {
+        width:310px;
     }
 }
 /* LG */
