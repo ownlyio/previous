@@ -39,7 +39,7 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownl
 })
 .then(function (data) {
     // change this every month
-    var accomplishmentBlog = "500 Million OWN BuyBack"
+    var accomplishmentBlog = "November 2021"
 
     // check if on the first 6 blogs, the featured post is included
     var returnedPosts = data.items.slice(0, 6)
