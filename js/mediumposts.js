@@ -12,7 +12,8 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownl
     return response.json();
 })
 .then(function (data) {
-    var featured_post = data.items[0]
+    // var featured_post = data.items[0]
+    var featured_post = data.items[1] // revert this back to zero when buyback is removed from featured
 
     var featured_post_description = stripHTMLTags(featured_post.description);
     var feat_output = `<div class="col-md-6">`
@@ -39,15 +40,13 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownl
 })
 .then(function (data) {
     // change this every month
-    var accomplishmentBlog = "500 Million OWN BuyBack"
+    var accomplishmentBlog = "BuyBack and Burn Event"
 
     // check if on the first 6 blogs, the featured post is included
     var returnedPosts = data.items.slice(0, 6)
     var featuredPostIncluded = returnedPosts.findIndex(x => x.title.includes(accomplishmentBlog))
     var posts = featuredPostIncluded != -1 ? 
         data.items.slice(0, 7).filter(x => !x.title.includes(accomplishmentBlog)) : returnedPosts
-
-    console.log(posts)
 
     var output = ''
     posts.forEach(function (post, i) {
