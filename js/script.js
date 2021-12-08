@@ -224,7 +224,7 @@ $(document).on('click', "#show-mobile-nav", function() {
 });
 
 $(document).on('click', "#hide-mobile-nav", function() {
-    $("#mobile-nav").css("top", "-140px");
+    $("#mobile-nav").css("top", "-" + parseFloat($("#mobile-nav").css("height")) + "px");
 });
 
 $(document).scroll("body", function() {
