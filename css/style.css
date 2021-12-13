@@ -1519,7 +1519,7 @@ ul.dash > li:before {
   height: 79px;
 }
 .bbbe-q4-btn {
-  width: 200px;
+  width: 250px;
 }
 .bbbe-q4-btn:hover,
 .bbbe-q4-btn:focus {
@@ -1586,7 +1586,7 @@ ul.dash > li:before {
     top: -4px;
   }
   .bbbe-q4-btn {
-    width: 310px;
+    width: 400px;
   }
 }
 /* LG */
