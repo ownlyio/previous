@@ -97,7 +97,7 @@ let start_countdown = () => {
 
                 clearInterval(x);
 
-                $("#burn-event-newsletter").addClass("d-none");
+                $("#burn-event-fireworks").removeClass("d-none");
                 $("#burn-event-own-burning").removeClass("d-none");
                 setTimeout(function() {
                     $("#burn-event-own-burning").css("margin-top", "0");
