@@ -12,8 +12,7 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownl
     return response.json();
 })
 .then(function (data) {
-    // var featured_post = data.items[0]
-    var featured_post = data.items[1] // revert this back to zero when buyback is removed from featured
+    var featured_post = data.items[0]
 
     var featured_post_description = stripHTMLTags(featured_post.description);
     var feat_output = `<div class="col-md-6">`
@@ -40,7 +39,7 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/ownl
 })
 .then(function (data) {
     // change this every month
-    var accomplishmentBlog = "BuyBack and Burn Event"
+    var accomplishmentBlog = "December 2021"
 
     // check if on the first 6 blogs, the featured post is included
     var returnedPosts = data.items.slice(0, 6)
