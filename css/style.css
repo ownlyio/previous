@@ -1546,6 +1546,12 @@ ul.dash > li:before {
   padding-top: 15rem !important;
 }
 
+#mq-banner {
+  margin-top: 83px;
+  background-image: url("../img/mq/mq_banner.jpg");
+  background-position: center center;
+}
+
 /* SM */
 @media (min-width: 576px) {
   .page-min-height {
@@ -1698,6 +1704,10 @@ ul.dash > li:before {
   #exchanges .alegreya-bold-italic {
     text-align: center;
   }
+  #mq-banner {
+    background-image: url("../img/mq/mq_banner_tab.jpg");
+    background-position: center center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1716,6 +1726,9 @@ ul.dash > li:before {
   }
   .own-token-desc {
     font-size: 1.2em;
+  }
+  #mq-banner {
+    margin-top: 0;
   }
 }
 
