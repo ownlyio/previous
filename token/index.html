@@ -30,7 +30,9 @@
 	</script>
 </head>
 <body id="own-token-wrap">
+	<!-- TOKEN -->
 	<div id="top" style="overflow-x:hidden">
+		<!-- NAV -->
 		<div class="d-flex justify-content-center align-items-center position-fixed vh-100 w-100 bg-white" id="loading-ownly-container" style="z-index:100">
 			<div class="pb-5">
 				<img src="../img/ownly-2.png" id="loading-ownly" style="width:200px; transition:1s" alt="Ownly" />
@@ -120,7 +122,9 @@
 				</ul>	
 			</div>
 		</div>
+		<!-- END NAV -->
 
+		<!-- BODY -->
         <div class="w-100 py-2 py-md-0" id="own-token-sec">
 			<div class="container min-vh-100 padding-after-nav d-flex align-items-center">
 				<div class="mb-5">
@@ -132,8 +136,9 @@
 	
 					<p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="own-token-desc mx-auto text-center line-height-150 pt-2 letter-spacing-5 mt-0 mt-sm-4 mt-xl-5 mt-xxl-3 pb-4 font-size-100 font-size-sm-110 font-size-xl-150 w-75">OWN Token is the native utility token of Ownly, users are able to buy, own, collect, and trade 1 of 1 edition crypto artworks by talented artists. Own the only true copy and there's nothing else like that in the world -- as if it's made just for you.</p>
 
-					<div class="mx-auto" style="width: 300px;">
-						<a href="https://medium.com/ownlyio/why-own-own-token-advantages-of-holding-our-low-market-cap-altcoin-5ab046a95313" target="_blank" class="nav-link btn btn-custom-2 ps-sm-3 py-1 py-sm-2 font-size-80 font-size-sm-90" style="border-radius:40px">Why Own $OWN Tokens?</a>
+					<div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="d-flex justify-content-center token-btns">
+						<a href="https://medium.com/ownlyio/why-own-own-token-advantages-of-holding-our-low-market-cap-altcoin-5ab046a95313" target="_blank" class="nav-link btn btn-custom-2 ps-sm-3 py-1 py-sm-2 font-size-80 font-size-sm-90" style="border-radius:40px; margin-right: 10px;">Why Own $OWN Tokens?</a>
+						<a href="#stake" class="nav-link btn btn-custom-6 ps-sm-3 py-1 py-sm-2 font-size-80 font-size-sm-90" style="border-radius:40px">Stake your OWN Tokens</a>
 					</div>
 				</div>
             </div>
@@ -545,6 +550,29 @@
 			</div>
 		</div>
 
+		<div class="w-100 bg-color-1 py-2 py-md-0" id="stake">
+			<div class="container py-4 py-md-5">
+                <div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" class="alegreya-bold-italic text-color-3 font-size-240 font-size-md-280 mb-3" style="letter-spacing:0.05em">STAKING</div>
+				<div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" class="ps-1 font-size-120 line-height-140">Stake your OWN Tokens and/or OWN/BUSD Tokens on our staking platforms and earn rewards in $OWN or other cryptocurrency.</div>
+				</div>
+
+				<div class="d-flex justify-content-evenly align-items-end" id="exc-section">
+					<div class="text-center mb-4">
+						<div class="mb-3" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+							<img src="../img/exchanges/sparkswap.png" class="w-100" alt="SparkSwap" />
+						</div>
+						<a data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" href="https://srk.sh/pool" target="_blank" class="neo-black btn btn-custom-2 px-3 py-2 font-size-80 font-size-sm-100" style="border-radius:35px; letter-spacing:0.05em">Stake OWN to Earn SFUEL</a>
+					</div>
+					<div class="text-center mb-4">
+						<div class="mb-3" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
+							<img src="../img/exchanges/staking.png" class="w-100" alt="Ownly Staking" />
+						</div>
+						<a data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" href="https://ownly.io/ownstaking" target="_blank" class="neo-black btn btn-custom-1 px-3 py-2 font-size-80 font-size-sm-100" style="border-radius:35px; letter-spacing:0.05em">Stake OWN/BUSD to Earn OWN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="w-100 py-2 py-md-0" id="exchanges">
 			<div class="container py-4 py-md-5">
                 <div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" class="alegreya-bold-italic text-color-4 font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">EXCHANGES</div>
@@ -690,8 +718,11 @@
 				</div>
 			</div>
 		</div>
+		<!-- END BODY -->
 	</div>
+	<!-- END TOKEN -->
 	
+	<!-- MODALS -->
 	<div class="modal fade" id="modal-subscribe-success" tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered modal-sm">
 			<div class="modal-content">
