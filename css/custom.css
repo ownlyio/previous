@@ -1,0 +1,46 @@
+/* Full Page */
+.fullpage-wrap {
+  background-image: url("../img/meta-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 30px;
+}
+
+.section {
+  padding: 0 10rem;
+}
+
+.fp-logo {
+  width: 14rem;
+}
+
+.fp-title-roadmap {
+  font-size: 13em;
+  margin-left: -10px;
+}
+
+.fp-subtitle-roadmap {
+  width: 80%;
+  margin-bottom: 3em;
+}
+
+.fp-link-app:first-child {
+  padding-right: 15px;
+}
+
+.fp-link-app:not(:first-child) {
+  padding: 0 15px;
+}
+
+.fp-link-app:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+.fp-link-app a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.fp-link-app a:hover {
+  text-decoration: underline;
+}
