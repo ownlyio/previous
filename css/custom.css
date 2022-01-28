@@ -61,6 +61,11 @@
   font-size: 3em;
 }
 
+.fp-quarter-text-3 {
+  margin-top: 1.25em;
+  font-size: 8em;
+}
+
 .fp-icon-roadmap {
   margin-right: 20px;
 }
@@ -86,6 +91,16 @@
 
 .fp-roadmap-item:not(:last-child) {
   margin-bottom: 2em;
+}
+
+.fp-slidesNav.fp-bottom {
+  bottom: 40px !important;
+  text-align: center;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #ffffff !important;
 }
 
 .fp-divider {
