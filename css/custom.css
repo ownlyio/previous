@@ -41,6 +41,56 @@
   text-decoration: none;
 }
 
+.fp-quarter.quarter-left {
+  text-align: left;
+}
+
+.fp-quarter.quarter-right {
+  text-align: right;
+}
+
 .fp-link-app a:hover {
   text-decoration: underline;
+}
+
+.fp-quarter-text-1 {
+  font-size: 8em;
+}
+
+.fp-quarter-text-2 {
+  font-size: 3em;
+}
+
+.fp-icon-roadmap {
+  margin-right: 20px;
+}
+
+.fp-icon-outer {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.fp-icon-inner {
+  border: 6px solid white;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+}
+
+.fp-roadmap-details {
+  text-align: left;
+}
+
+.fp-roadmap-item:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.fp-divider {
+  border: 0;
+  margin: 0 1.5em;
+  border-left: 4px solid white;
+  height: auto;
 }
