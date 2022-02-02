@@ -112,3 +112,7 @@
   border-left: 4px solid white;
   height: auto;
 }
+
+.fp-restore-padding {
+  padding: 0;
+}
