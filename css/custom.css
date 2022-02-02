@@ -15,7 +15,7 @@
 }
 
 .fp-title-roadmap {
-  font-size: 13em;
+  font-size: 14vw;
   margin-left: -10px;
 }
 
@@ -115,4 +115,23 @@
 
 .fp-restore-padding {
   padding: 0;
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 0 6rem;
+  }
+
+  .section#footer {
+    padding: 0 !important;
+  }
+
+  .fp-quarter-text-1,
+  .fp-quarter-text-3 {
+    font-size: 13vw;
+  }
+
+  .fp-quarter-text-2 {
+    font-size: 4vw;
+  }
 }
