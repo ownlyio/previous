@@ -20,7 +20,6 @@
 }
 
 .fp-subtitle-roadmap {
-  width: 80%;
   margin-bottom: 3em;
 }
 
@@ -41,11 +40,11 @@
   text-decoration: none;
 }
 
-.fp-quarter.quarter-left {
+.quarter-left {
   text-align: left;
 }
 
-.fp-quarter.quarter-right {
+.quarter-right {
   text-align: right;
 }
 
@@ -101,6 +100,10 @@
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background-color: #ffffff !important;
+}
+
+.fp-text-indent {
+  text-indent: 1rem;
 }
 
 .fp-divider {
