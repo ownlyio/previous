@@ -1,0 +1,183 @@
+/* Full Page */
+.fullpage-wrap {
+  background-image: url("../img/meta-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 20% center;
+}
+
+.fullpage-wrap.d-none {
+  padding-top: 30px;
+}
+
+.section {
+  padding: 0 10rem;
+}
+
+.fp-logo {
+  width: 14rem;
+}
+
+.fp-title-roadmap {
+  font-size: 14vw;
+  margin-left: -10px;
+}
+
+.fp-subtitle-roadmap {
+  margin-bottom: 3em;
+}
+
+.fp-link-app:first-child {
+  padding-right: 15px;
+}
+
+.fp-link-app:not(:first-child) {
+  padding: 0 15px;
+}
+
+.fp-link-app:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+.fp-link-app a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.quarter-left {
+  text-align: left;
+}
+
+.quarter-right {
+  text-align: right;
+}
+
+.fp-link-app a:hover {
+  text-decoration: underline;
+}
+
+.fp-quarter-text-1 {
+  font-size: 8em;
+}
+
+.fp-quarter-text-2 {
+  font-size: 3em;
+}
+
+.fp-quarter-text-3 {
+  margin-top: 1.25em;
+  font-size: 8em;
+}
+
+.fp-quarter-text-4 {
+  font-size: 5em;
+}
+
+.fp-icon-roadmap {
+  margin-right: 20px;
+}
+
+.fp-icon-outer {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.fp-icon-inner {
+  border: 6px solid white;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+}
+
+.fp-roadmap-details {
+  text-align: left;
+}
+
+.fp-roadmap-item:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.fp-slidesNav.fp-bottom {
+  bottom: 40px !important;
+  text-align: center;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #ffffff !important;
+}
+
+.fp-text-indent {
+  text-indent: 1rem;
+}
+
+.fp-divider {
+  border: 0;
+  margin: 0 1.5em;
+  border-left: 4px solid white;
+  height: auto;
+}
+
+.fp-restore-padding {
+  padding: 0;
+}
+
+/* Mobile */
+.mbl-title {
+  font-size: 14vw;
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 0 6rem;
+  }
+
+  .section#footer {
+    padding: 0 !important;
+  }
+
+  .fp-quarter-text-1,
+  .fp-quarter-text-3 {
+    font-size: 13vw;
+  }
+
+  .fp-quarter-text-2 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .fp-title-roadmap {
+    margin-left: -5px;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  .fp-controlArrow.fp-prev {
+    border-width: 20px 18px 20px 0 !important;
+  }
+
+  .fp-controlArrow.fp-next {
+    border-width: 20px 0 20px 18px !important;
+  }
+}
+
+@media (max-width: 567px) {
+  .fp-quarter-text-4 {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .fp-controlArrow.fp-prev {
+    display: none !important;
+  }
+
+  .fp-controlArrow.fp-next {
+    display: none !important;
+  }
+}
