@@ -189,13 +189,17 @@
 
   .fp-logo {
     width: 10rem;
-    margin-bottom: 2em !important;
+    margin-bottom: 1.5em !important;
     margin-top: 2em !important;
   }
 
   .fp-title-roadmap {
     font-size: 40px;
     margin-bottom: 0.3em !important;
+  }
+
+  .fp-subtitle-roadmap {
+    margin-bottom: 1.5em !important;
   }
 
   .fp-subtitle-roadmap,
