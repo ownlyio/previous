@@ -130,6 +130,12 @@
   font-size: 14vw;
 }
 
+@media (min-width: 1800px) {
+  .fp-title-roadmap {
+    font-size: 14.5em;
+  }
+}
+
 @media (max-width: 991px) {
   .section {
     padding: 0 6rem;
