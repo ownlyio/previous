@@ -125,6 +125,28 @@
   padding: 0;
 }
 
+.fp-link-alt {
+  color: white;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.fp-link-alt:hover {
+  color: #e5e5e5;
+}
+
+.fp-past-roadmap {
+  color: #aaa !important;
+}
+
+.fp-current {
+  background-color: rgba(250, 250, 250, 0.5);
+}
+
+.fp-current-mobile a {
+  color: #ddb199 !important;
+}
+
 /* Mobile */
 .mbl-title {
   font-size: 14vw;
