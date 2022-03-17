@@ -2184,6 +2184,10 @@ ul.dash > li:before {
   border-left: 1px solid white;
 }
 
+.own-token-link:hover {
+  color: #16b99a !important;
+}
+
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
