@@ -2168,13 +2168,11 @@ ul.dash > li:before {
   background-position: center right;
 }
 
-.own-token-title {
-  margin-left: 41.6666666667%;
-}
-
 .own-token-img {
-  width: 50%;
+  width: 90%;
   margin: 0 auto 10px;
+  padding-left: 17%;
+  animation: floating 3s infinite linear;
 }
 
 .own-token-content {
@@ -2184,6 +2182,18 @@ ul.dash > li:before {
 
 .border-left {
   border-left: 1px solid white;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 /* SM */
@@ -2332,7 +2342,7 @@ ul.dash > li:before {
 
 @media (max-width: 1200px) {
   .own-token-img {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -2340,16 +2350,20 @@ ul.dash > li:before {
   .own-token-desc {
     width: 100% !important;
   }
+
   #det-section {
     flex-direction: column;
   }
+
   #det-section > div:not(:last-child) {
     margin-bottom: 1.5rem;
   }
+
   #addresses .alegreya-bold-italic,
   #exchanges .alegreya-bold-italic {
     text-align: center;
   }
+
   #mq-banner {
     background-image: url("../img/mq/mq_new_banner_tab.jpg");
     background-position: center center;
@@ -2364,10 +2378,6 @@ ul.dash > li:before {
     width: 50% !important;
   }
 
-  .own-token-title {
-    margin-left: 50% !important;
-  }
-
   .own-token-content {
     width: 100%;
     padding-left: 20px;
@@ -2375,10 +2385,6 @@ ul.dash > li:before {
 
   .own-token-content p {
     font-size: 1.5em !important;
-  }
-
-  .own-token-img {
-    width: 90%;
   }
 }
 
@@ -2403,35 +2409,49 @@ ul.dash > li:before {
     margin-top: 0;
   }
 
-  .col-left {
-    width: 38% !important;
-  }
+  .col-left,
   .col-right {
-    width: 62% !important;
-  }
-
-  .own-token-title {
-    margin-left: 38% !important;
-  }
-
-  .own-token-content p {
-    font-size: 1.5em;
-  }
-
-  .own-token-img {
-    width: 100%;
-  }
-
-  .token-btns {
-    flex-direction: column;
-  }
-
-  .token-btns a {
     width: 100% !important;
   }
 
+  .own-token-title {
+    text-align: center !important;
+  }
+
+  .own-token-title p {
+    text-align: center !important;
+  }
+
+  .own-token-content {
+    border-left: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .own-token-content p {
+    font-size: 1.1em !important;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 1em;
+  }
+
+  .own-token-img {
+    width: 60% !important;
+    padding-left: 7% !important;
+    margin: 0 auto 15px !important;
+  }
+
+  .token-btns {
+    flex-direction: row;
+    margin-top: 1em;
+  }
+
+  .token-btns a {
+    padding: 10px 30px !important;
+  }
+
   .token-btns a:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -2444,40 +2464,21 @@ ul.dash > li:before {
     width: 280px;
   }
 
-  .col-left,
-  .col-right {
-    width: 100% !important;
-  }
-
   .own-token-title {
-    margin-left: 0 !important;
+    margin-top: 0 !important;
     text-align: center !important;
   }
 
   .own-token-title p {
-    font-size: 1em !important;
-    margin-bottom: 0 !important;
-    text-align: center !important;
-  }
-
-  .col-right {
-    border-left: none !important;
-  }
-
-  .own-token-content {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    font-size: 0.8em !important;
   }
 
   .own-token-content p {
-    font-size: 0.9em;
-    text-align: center;
-    width: 90%;
-    margin: 0 auto 1em;
+    font-size: 0.9em !important;
   }
 
   .own-token-img {
-    width: 60% !important;
+    width: 40% !important;
     margin: 0 auto;
   }
 
@@ -2487,11 +2488,18 @@ ul.dash > li:before {
   }
 
   .token-btns a {
-    padding: 8px 0 !important;
+    padding: 8px 20px !important;
+    font-size: 0.7em !important;
   }
 
   .token-btns a:not(:last-child) {
     margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .own-token-img {
+    width: 65% !important;
   }
 }
 
