@@ -62,7 +62,7 @@ let pad_zeroes = (number) => {
 
 let start_countdown = () => {
     $.ajax({
-        url: "https://ownly.tk/api/get-remaining-time/2021-12-30%2009:00:00",
+        url: "https://ownly.tk/api/get-remaining-time/2022-03-31%2009:00:00",
         // url: "http://ownly-api.test/api/get-remaining-time/2021-09-30%2009:00:00",
         method: "GET"
     }).done(function(remaining_time) {
@@ -116,15 +116,15 @@ $(window).on("load", function() {
     $("#mustachio-teaser-container").html('<video autoPlay loop muted controls class="w-100" style="border-radius:10px; border:6px solid #ffffff"><source src="img/mustachios/teaser.mp4" type="video/mp4"></video>');
 });
 
-$(window).on("scroll", function() {
-    let elementTarget = $("#own-countdown-container")[0];
-
-    if(window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-        $("#header").removeClass("d-none");
-    } else {
-        $("#header").addClass("d-none");
-    }
-});
+// $(window).on("scroll", function() {
+//     let elementTarget = $("#own-countdown-container")[0];
+//
+//     if(window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+//         $("#header").removeClass("d-none");
+//     } else {
+//         $("#header").addClass("d-none");
+//     }
+// });
 
 $(document).ready(function() {
     initiate_loading_page();
