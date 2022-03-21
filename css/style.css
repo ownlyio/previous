@@ -2188,6 +2188,41 @@ ul.dash > li:before {
   color: #16b99a !important;
 }
 
+.perks-item-wrap {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.perks-item-bg {
+  background-size: cover;
+  background-position: center center;
+  padding: 1.5em 0;
+  border-radius: 10px 10px 0 0;
+  height: 150px;
+}
+
+.perks-item-bg.perks-blue {
+  background-image: url("../img/meta/blue.jpg");
+}
+
+.perks-item-bg.perks-red {
+  background-image: url("../img/meta/red.jpg");
+}
+
+.perks-item-bg.perks-green {
+  background-image: url("../img/meta/green.jpg");
+}
+
+.perks-item-content {
+  border-radius: 0 0 10px 10px;
+  height: 300px;
+}
+
+.perks-item-content p {
+  text-align: center;
+  font-weight: 100 !important;
+}
+
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -2498,6 +2533,14 @@ ul.dash > li:before {
 
   .token-btns a:not(:last-child) {
     margin-bottom: 0 !important;
+  }
+
+  .perks-item-bg {
+    height: auto !important;
+  }
+
+  .perks-item-content {
+    height: auto !important;
   }
 }
 
