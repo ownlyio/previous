@@ -62,7 +62,7 @@ let pad_zeroes = (number) => {
 
 let start_countdown = () => {
     $.ajax({
-        url: "https://ownly.tk/api/get-remaining-time/2022-03-31%2009:00:00",
+        url: "https://ownly.tk/api/get-remaining-time/2022-03-31%2009:20:00",
         // url: "http://ownly-api.test/api/get-remaining-time/2021-09-30%2009:00:00",
         method: "GET"
     }).done(function(remaining_time) {
@@ -94,6 +94,11 @@ let start_countdown = () => {
                 $("#hours").text("00");
                 $("#minutes").text("00");
                 $("#seconds").text("00");
+
+                $("#countdown-section").removeClass("d-flex");
+                $("#countdown-section").addClass("d-none");
+
+                $("#mustachioverse-button").removeClass("d-none");
 
                 clearInterval(x);
 
