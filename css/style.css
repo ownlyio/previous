@@ -1877,6 +1877,16 @@ html {
   background-color: #ffffff;
   color: #000000;
 }
+.btn-custom-11 {
+  background-color: #3274b5;
+  color: #ffffff;
+}
+.btn-custom-11:hover,
+.btn-custom-11:active,
+.btn-custom-11:focus {
+  background-color: #245382;
+  color: #ffffff;
+}
 .btn-border-1 {
   border: 2px solid #f19150;
   color: #f19150;
