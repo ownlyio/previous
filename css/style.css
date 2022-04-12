@@ -2383,6 +2383,14 @@ ul.dash > li:before {
   .own-token-img {
     width: 100%;
   }
+
+  .own-token-title p {
+    font-size: 3.5em !important;
+  }
+
+  .own-token-content p {
+    font-size: 1.3em !important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2422,8 +2430,8 @@ ul.dash > li:before {
     padding-left: 20px;
   }
 
-  .own-token-content p {
-    font-size: 1.5em !important;
+  .own-token-title p {
+    font-size: 3em !important;
   }
 }
 
