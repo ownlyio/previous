@@ -4,20 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="title" content="Ownly: Innovative Art and Gaming NFT Platform" />
-	<meta name="description" content="OWNLY is a governance, token-based NFT platform that enable creators and collectors optimize the authentic value of NFT assets. Ownly is created to be a meeting place of artworks and collectors in the crypto space.">
+	<meta name="description" content="OWNLY is a metaverse-focused platform that allows creators and collectors to optimize ownership and utility through innovative applications of non-fungible tokens (NFT). Ownly is created to be a meeting place of artists, gamers, and collectors in the crypto and NFT space.">
 	<meta name="author" content="Ownly">
 	
 	<title>Ownly</title>
 	<link rel="icon" href="../img/ownly/32x32.png">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../fontawesome/css/all.css">
-	<link rel="stylesheet" href="../css/style.css?v=21">
+	<link rel="stylesheet" href="../css/style.css?v=22">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	
 	<meta property="og:url" content="https://ownly.io" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Ownly: Buy, own, collect, and trade 1 of 1 edition crypto artworks by talented artists." />
-	<meta property="og:description" content="OWNLY is a governance, token-based NFT platform that enable creators and collectors optimize the authentic value of NFT assets. Ownly is created to be a meeting place of artworks and collectors in the crypto space." />
+	<meta property="og:description" content="OWNLY is a metaverse-focused platform that allows creators and collectors to optimize ownership and utility through innovative applications of non-fungible tokens (NFT). Ownly is created to be a meeting place of artists, gamers, and collectors in the crypto and NFT space." />
 	<meta property="og:image" content="https://ownly.io/img/og-image-token.jpg" />
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LBV47LFR4"></script>
@@ -559,11 +559,11 @@
 			</div>
 		</div>
 
-		<div class="w-100 py-2 py-md-0" id="exchanges">
+		<div class="w-100 bg-color-1 py-2 py-md-0" id="exchanges">
 			<div class="container py-4 py-md-5">
                 <div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" class="alegreya-bold-italic text-color-4 font-size-240 font-size-md-280 mb-5" style="letter-spacing:0.05em">EXCHANGES</div>
 
-				<div class="d-flex justify-content-evenly align-items-end" id="exc-section">
+				<div class="d-flex justify-content-evenly align-items-end mb-4" id="exc-section">
 					<div class="text-center mb-4">
 						<div class="mb-3" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
 							<img src="../img/exchanges/sparkswap.png" class="w-100" alt="SparkSwap" />
@@ -577,7 +577,14 @@
 						<a data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" href="https://ownly.io/pancake" target="_blank" class="neo-black btn btn-border-1 px-2 py-1 font-size-80 font-size-sm-100" style="border-radius:35px; letter-spacing:0.05em">OWN/BUSD</a>
 					</div>
 				</div>
-				<div class="d-flex justify-content-evenly align-items-end" id="exc-section">
+			</div>
+		</div>
+		
+		<div class="w-100 py-2 py-md-0" id="listings">
+			<div class="container py-4 py-md-5">
+				<div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true" class="alegreya-bold-italic text-color-1 font-size-240 font-size-md-280 mb-4" style="letter-spacing:0.05em">LISTINGS</div>
+				
+				<div class="d-flex justify-content-evenly align-items-end mb-4">
 					<div class="text-center mb-4">
 						<div class="mb-3" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1500" data-aos-once="true">
 							<img src="../img/listings/cmc.png" class="w-100" alt="CoinMarketCap" />
@@ -622,117 +629,157 @@
 			</div>
 		</div>
 	</div>
-		
-		<div class="w-100 bg-color-1 py-2 py-md-0" id="private-sale">
-			<div class="container py-4 py-md-5">
-				<div class="alegreya-bold-italic text-color-1 font-size-240 font-size-md-280 mb-4" style="letter-spacing:0.05em">JOIN OUR VIP LIST FOR THE INSIDE SCOOP</div>
-				
-				<div class="row justify-content-center pt-2">
-					<div class="col-md-9">
-						<form class="newsletter-form" action="https://formspree.io/f/xayajjqb" method="POST">
-							<div class="ps-1 font-size-120 line-height-140 mb-4">Don't miss the chance to snag the next big thing! Sign up to get insider tips, updates, exclusive promos, members-only giveaways, and the latest Ownly news straight to your inbox today.</div>
-							
-							<div class="mb-4 pb-3">
-								<input type="email" name="email_address" class="form-control shadow-custom-1 px-4 px-sm-5 py-3 font-size-120" placeholder="Enter Your Email Address here" required />
+	
+	<div class="w-100 py-2 py-md-5" id="private-sale">
+		<div class="container py-4 py-md-5">
+			<div class="alegreya-bold-italic text-color-1 text-center font-size-240 font-size-md-280 mb-4" style="letter-spacing:0.05em">JOIN OUR VIP LIST FOR THE INSIDE SCOOP</div>
+			
+			<div class="row justify-content-center pt-2">
+				<div class="col-md-9">
+					<form id="newsletter-form">
+						<div class="ps-1 font-size-120 text-center line-height-140 mb-4">Don't miss the chance to snag the next big thing! Sign up to get insider tips, updates, exclusive promos, members-only giveaways, and the latest Ownly news straight to your inbox today.</div>
+						
+						<div>
+							<input type="email" name="email_address" class="form-control shadow-custom-1 px-4 px-sm-5 py-3 font-size-120" placeholder="Enter Your Email Address here" required />
+						</div>
+						
+						<div class="form-check d-flex align-items-center mb-4 pb-3">
+							<div>
+								<input class="form-check-input" type="checkbox" id="agreement" />
 							</div>
-							
-							<div class="text-center">
-								<button type="submit" class="btn btn-custom-1 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">
-									<span class="px-5">Subscribe now!</span>
-								</button>
+							<div class="ps-2" style="margin-top:24px">
+								<label class="form-check-label" for="agreement">
+									By joining our Ownly VIP list, you agree to receive news and updates from Ownly via our monthly newsletter. You can opt out of our marketing emails anytime.
+								</label>
 							</div>
-						</form>
-					</div>
+						</div>
+						
+						<div class="text-center">
+							<button type="submit" class="btn btn-custom-1 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">
+								<span class="px-5">Subscribe now!</span>
+							</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
-
-		<div class="w-100 bg-color-2 py-2 py-md-0" id="discord">
-			<div class="container py-4 py-md-5">
-				<div class="alegreya-bold-italic text-white font-size-240 font-size-md-280 mb-4" style="letter-spacing:0.05em">JOIN OUR OWNLY DISCORD COMMUNITY</div>
+	</div>
+	
+	<div class="w-100 bg-color-2 py-2 py-md-5" id="discord">
+		<div class="container py-4 py-md-5">
+			<div class="alegreya-bold-italic text-white font-size-240 text-center font-size-md-280 mb-4" style="letter-spacing:0.05em">JOIN OUR OWNLY DISCORD COMMUNITY</div>
+			
+			<div class="row justify-content-center pt-2">
+				<div class="ps-1 font-size-120 line-height-140 text-center mb-2">We're leveling up our Discord Server to fully utilize its features and build an awesome <b>#OwnlyFans</b> Community.</div>
+				<div class="ps-1 font-size-120 line-height-140 text-center mb-5">Exclusive VIP Membership, Rewards, and Perks awaits!  What are you waitin' for?</div>
 				
-				<div class="row justify-content-center pt-2">
-					<div class="ps-1 font-size-120 line-height-140 mb-2">We're leveling up our Discord Server to fully utilize its features and build an awesome <b>#OwnlyFans</b> Community.</div>
-					<div class="ps-1 font-size-120 line-height-140 mb-4">Exclusive VIP Membership, Rewards, and Perks awaits!  What are you waitin' for?</div>
+				<div class="text-center">
+					<a href="https://ownly.io/discord" class="btn btn-custom-4 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">
+						<span class="fab fa-discord"></span>&nbsp;&nbsp;Join Ownly Discord Now!
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w-100 bg-white border-top">
+		<div class="container py-4">
+			<div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+				<div class="d-flex mb-4 mb-md-0 pb-2 pb-md-0 pe-5">
+					<div class="text-center pe-3 pe-md-5">
+						<img src="../img/ownly-2.png" class="mb-2" width="120" alt="Ownly" />
+						<div class="text-color-1 font-size-90">Ownly &copy; 2022</div>
+						<hr class="my-2">
+						<a href="https://ownly.io/privacypolicy" target="_blank" class="link-color-1 font-size-80">Privacy Policy</a>
+					</div>
 					
-					<div class="text-center">
-						<a href="https://discord.gg/4hCZzXnf5A" class="btn btn-custom-4 px-5 py-3 font-size-110 font-size-sm-110" style="border-radius:35px; letter-spacing:0.05em">
-							<span class="fab fa-discord"></span>&nbsp;&nbsp;Join Ownly Discord Now!
+					<div class="d-flex flex-column justify-content-between ps-3 py-1" style="border-left:3px solid #000000">
+						<div class="d-flex text-color-1 mb-2">
+							<div class="text-center me-3" style="min-width:20px">
+								<i class="fas fa-map-marker-alt font-size-120"></i>
+							</div>
+							<div class="font-size-90">
+								<div>SILI DELI: DOST-BU TBI Office, Ground floor,</div>
+								<div>Student Union Bldg., Bicol University Main Campus,</div>
+								<div>Legazpi City, Albay, Philippines 4500</div>
+							</div>
+						</div>
+						
+						<div class="d-flex text-color-1 mb-2">
+							<div class="text-center me-3" style="min-width:20px">
+								<i class="fas fa-envelope font-size-120"></i>
+							</div>
+							<div class="font-size-90">support@ownly.io</div>
+						</div>
+						
+						<div class="d-flex text-color-1">
+							<div class="text-center me-3" style="min-width:20px">
+								<i class="fas fa-phone font-size-120"></i>
+							</div>
+							<div class="font-size-90">+63 977 143 1897</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ps-xl-5 flex-fill">
+					<div class="mb-4">
+						<div class="text-color-6 font-size-90 pb-2 neo-bold">JOIN OUR VIP LIST FOR THE INSIDE SCOOP!</div>
+						
+						<form class="newsletter-form">
+							<div class="d-flex align-items-center">
+								<div class="d-flex flex-fill justify-content-center">
+									<input type="email" name="email_address" class="form-control d-block px-3 py-1 font-size-90" placeholder="Your email address" required />
+								</div>
+								
+								<div>
+									<button type="submit" class="btn btn-custom-1 px-3 py-1 font-size-90" style="letter-spacing:0.05em">Let&nbsp;me&nbsp;in!</button>
+								</div>
+							</div>
+							
+							<div class="form-check d-flex align-items-center mb-3" style="margin-top:-10px">
+								<div>
+									<input class="form-check-input" type="checkbox" id="agreement" />
+								</div>
+								<div class="ps-1" style="margin-top:18px">
+									<label class="form-check-label font-size-70" for="agreement">
+										By joining our Ownly VIP list, you agree to receive news and updates from Ownly via our monthly newsletter. You can opt out of our marketing emails anytime.
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+					<div class="text-color-1 font-size-110 mb-2">Connect with us:</div>
+					<div class="font-size-170 line-height-140">
+						<a href="https://twitter.com/ownlyio" class="text-decoration-none">
+							<i class="fab fa-twitter text-color-4 me-2"></i>
+						</a>
+						<a href="https://t.me/ownlyio" class="text-decoration-none">
+							<i class="fab fa-telegram text-color-4 me-2"></i>
+						</a>
+						<a href="https://discord.gg/qAyCCMrjww" class="text-decoration-none">
+							<i class="fab fa-discord text-color-4 me-2"></i>
+						</a>
+						<a href="https://github.com/ownlyio" class="text-decoration-none">
+							<i class="fab fa-github text-color-4 me-2"></i>
+						</a>
+						<a href="https://www.linkedin.com/company/ownlyio/" class="text-decoration-none">
+							<i class="fab fa-linkedin-in text-color-4 me-2"></i>
+						</a>
+						<a href="https://web.facebook.com/ownly.io" class="text-decoration-none">
+							<i class="fab fa-facebook text-color-4 me-2"></i>
+						</a>
+						<a href="https://www.reddit.com/r/Ownly/" class="text-decoration-none">
+							<i class="fab fa-reddit text-color-4 me-2"></i>
+						</a>
+						<a href="https://www.instagram.com/ownly.io/" class="text-decoration-none">
+							<i class="fab fa-instagram text-color-4"></i>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<div class="w-100 bg-white">
-			<div class="container py-4">
-				<div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end">
-					<div class="d-flex me-3 mb-4 mb-md-0">
-						<div class="text-center pe-3 pe-md-5">
-							<img src="../img/ownly-2.png" class="mb-3" width="120" alt="Ownly" />
-							<div class="text-color-1 font-size-90">Ownly &copy; 2021</div>
-						</div>
-						
-						<div class="d-flex flex-column justify-content-between ps-3 py-1" style="border-left:3px solid #000000">
-							<div class="d-flex text-color-1 mb-2">
-								<div class="text-center me-3" style="min-width:20px">
-									<i class="fas fa-map-marker-alt font-size-120"></i>
-								</div>
-								<div class="font-size-90">
-									<div>SILI DELI: DOST-BU TBI Office, Ground floor,</div>
-									<div>Student Union Bldg., Bicol University Main Campus,</div>
-									<div>Legazpi City, Albay, Philippines 4500</div>
-								</div>
-							</div>
-							
-							<div class="d-flex text-color-1 mb-2">
-								<div class="text-center me-3" style="min-width:20px">
-									<i class="fas fa-envelope font-size-120"></i>
-								</div>
-								<div class="font-size-90">support@ownly.io</div>
-							</div>
-							
-							<div class="d-flex text-color-1">
-								<div class="text-center me-3" style="min-width:20px">
-									<i class="fas fa-phone font-size-120"></i>
-								</div>
-								<div class="font-size-90">+63 977 143 1897</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="px-2 px-md-0">
-						<div class="text-color-1 font-size-140 font-size-sm-160 mb-2">Connect with us:</div>
-						<div class="font-size-170 font-size-sm-200 font-size-lg-160 font-size-xl-240 font-size-xl-260 line-height-140">
-							<a href="https://twitter.com/ownlyio" class="text-decoration-none">
-								<i class="fab fa-twitter text-color-4 me-2 me-sm-3"></i>
-							</a>
-							<a href="https://t.me/ownlyio" class="text-decoration-none">
-								<i class="fab fa-telegram text-color-4 me-2 me-sm-3"></i>
-							</a>
-							<a href="https://discord.gg/4hCZzXnf5A" class="text-decoration-none">
-								<i class="fab fa-discord text-color-4 me-2 me-sm-3"></i>
-							</a>
-							<a href="https://github.com/ownlyio" class="text-decoration-none">
-								<i class="fab fa-github text-color-4 me-2 me-sm-3"></i>
-							</a>
-							<a href="https://www.linkedin.com/company/ownlyio/" class="text-decoration-none">
-								<i class="fab fa-linkedin-in text-color-4 me-2 me-sm-3"></i>
-							</a>
-							<a href="https://web.facebook.com/ownly.io" class="text-decoration-none">
-								<i class="fab fa-facebook text-color-4 me-2 me-sm-3"></i>
-							</a>
-							<a href="https://www.instagram.com/ownly.io/" class="text-decoration-none">
-								<i class="fab fa-instagram text-color-4 me-2 me-sm-3"></i>
-							</a>
-							<a href="https://www.reddit.com/r/Ownly/" class="text-decoration-none">
-								<i class="fab fa-reddit text-color-4"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	</div>
 		<!-- END BODY -->
 	</div>
 	<!-- END TOKEN -->
@@ -1322,7 +1369,7 @@
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="../js/script.js?v=23"></script>
+	<script src="../js/script.js?v=24"></script>
     <script>
         AOS.init();
     </script>

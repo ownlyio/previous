@@ -197,31 +197,36 @@ $(document).on("click", ".hide-team-description", function() {
 //     }
 // });
 
-$(document).on("submit", "#newsletter-form", function(e) {
+$(document).on("submit", ".newsletter-form", function(e) {
     e.preventDefault();
 
     let newsletter_form = $(this);
-    newsletter_form.find("[type='submit']").prop("disabled", true);
 
-    console.log(newsletter_form);
-    let data = new FormData($(this)[0]);
+    if(newsletter_form.find("#agreement").prop("checked")) {
+        newsletter_form.find("[type='submit']").prop("disabled", true);
 
-    $.ajax({
-        url: "https://ownly.tk/api/store-mustachio-subscriber",
-        method: "POST",
-        cache: false,
-        contentType: false,
-        processData: false,
-        data: data
-    }).done(function(response) {
-        $("#newsletter-form input").val("");
+        let data = new FormData($(this)[0]);
 
-        $("#modal-subscribe-success").modal("show");
-    }).fail(function(error) {
-        console.log(error);
-    }).always(function() {
-        $("#newsletter-form [type='submit']").prop("disabled", false);
-    });
+        $.ajax({
+            url: "https://ownly.tk/api/store-mustachio-subscriber",
+            method: "POST",
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: data
+        }).done(function(response) {
+            $(".newsletter-form input").val("");
+            newsletter_form.find("#agreement").prop("checked", false)
+
+            $("#modal-subscribe-success").modal("show");
+        }).fail(function(error) {
+            console.log(error);
+        }).always(function() {
+            $(".newsletter-form [type='submit']").prop("disabled", false);
+        });
+    } else {
+        newsletter_form.find("#agreement").focus();
+    }
 });
 
 $(document).on('click', "#show-mobile-nav", function() {

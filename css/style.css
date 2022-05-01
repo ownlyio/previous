@@ -1775,6 +1775,13 @@ html {
   color: #ffffff;
   text-decoration: underline;
 }
+.link-color-3 {
+  color: #16b99a;
+}
+.link-color-3:hover {
+  color: #108771;
+  text-decoration: underline;
+}
 .btn-custom-1 {
   background-color: #bc3426;
   color: #ffffff;
@@ -2038,6 +2045,10 @@ ul.dash > li:before {
 *::-webkit-scrollbar-thumb {
   background-color: #606060;
   border-radius: 4px;
+}
+.newsletter-form .form-check-input:checked {
+  background-color: #bc3326 !important;
+  border-color: #bc3326 !important;
 }
 
 /*##################################################################*/
