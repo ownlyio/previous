@@ -238,7 +238,7 @@ $(document).on("submit", ".bbm-form", function(e) {
     let data = new FormData($(this)[0]);
 
     $.ajax({
-        url: "http://ownly-api.test/api/bbm-signup",
+        url: "https://ownly.tk/api/bbm-signup",
         method: "POST",
         cache: false,
         contentType: false,
