@@ -229,6 +229,32 @@ $(document).on("submit", ".newsletter-form", function(e) {
     }
 });
 
+$(document).on("submit", ".bbm-form", function(e) {
+    e.preventDefault();
+
+    let bbm_form = $(this);
+    bbm_form.find("[type='submit']").prop("disabled", true);
+
+    let data = new FormData($(this)[0]);
+
+    $.ajax({
+        url: "http://ownly-api.test/api/bbm-signup",
+        method: "POST",
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: data
+    }).done(function(response) {
+        bbm_form.find("input").val("");
+
+        $("#modal-bbm-signup-success").modal("show");
+    }).fail(function(error) {
+        console.log(error);
+    }).always(function() {
+        bbm_form.find("[type='submit']").prop("disabled", false);
+    });
+});
+
 $(document).on('click', "#show-mobile-nav", function() {
     $("#mobile-nav").css("top", 0);
     $("#header").addClass("d-none");

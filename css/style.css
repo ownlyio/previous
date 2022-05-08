@@ -1894,6 +1894,16 @@ html {
   background-color: #245382;
   color: #ffffff;
 }
+.btn-custom-12 {
+  background-color: #ffffff;
+  color: #1a4789;
+}
+.btn-custom-12:hover,
+.btn-custom-12:active,
+.btn-custom-12:focus {
+  background-color: #ffffff;
+  color: #1a4789;
+}
 .btn-border-1 {
   border: 2px solid #f19150;
   color: #f19150;
@@ -1966,6 +1976,9 @@ html {
 }
 .bg-color-21 {
   background-color: #1f1f1f !important;
+}
+.bg-color-22 {
+  background-color: #1a4789 !important;
 }
 .letter-spacing-5 {
   letter-spacing: 0.05em;
@@ -2049,6 +2062,13 @@ ul.dash > li:before {
 .newsletter-form .form-check-input:checked {
   background-color: #bc3326 !important;
   border-color: #bc3326 !important;
+}
+.border-radius-0 {
+  border-radius:0;
+}
+.horizontal-line {
+  height: 2px;
+  background-color: #f19150;
 }
 
 /*##################################################################*/
@@ -2361,6 +2381,10 @@ ul.dash > li:before {
   #bbbe-q4-timer {
     height: 112px;
   }
+  #bbm-image-container {
+    margin-left:-120px;
+    width:calc(100% + 120px)
+  }
 }
 /* XL */
 @media (min-width: 1200px) {
@@ -2378,6 +2402,10 @@ ul.dash > li:before {
   .countdown {
     min-width: 100px;
   }
+  #bbm-image-container {
+    margin-left:-140px;
+    width:calc(100% + 140px)
+  }
 }
 /* XXL */
 @media (min-width: 1400px) {
@@ -2391,6 +2419,10 @@ ul.dash > li:before {
     width: 65px;
     top: 55px;
     right: -90px;
+  }
+  #bbm-image-container {
+    margin-left:-200px;
+    width:calc(100% + 200px)
   }
 }
 
