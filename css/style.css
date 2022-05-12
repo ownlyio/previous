@@ -1901,8 +1901,8 @@ html {
 .btn-custom-12:hover,
 .btn-custom-12:active,
 .btn-custom-12:focus {
-  background-color: #ffffff;
-  color: #1a4789;
+  background-color: #1a4789;
+  color: #ffffff;
 }
 .btn-border-1 {
   border: 2px solid #f19150;
