@@ -62,7 +62,7 @@ let pad_zeroes = (number) => {
 
 let start_countdown = () => {
     $.ajax({
-        url: "https://ownly.tk/api/get-remaining-time/2022-06-27%2012:00:00",
+        url: "https://ownly.market/api/get-remaining-time/2022-06-27%2012:00:00",
         // url: "http://ownly-api.test/api/get-remaining-time/2021-09-30%2009:00:00",
         method: "GET"
     }).done(function(remaining_time) {
@@ -199,7 +199,8 @@ $(document).on("submit", ".newsletter-form", function(e) {
         let data = new FormData($(this)[0]);
 
         $.ajax({
-            url: "https://ownly.tk/api/store-mustachio-subscriber",
+            url: "https://ownly.market/api/store-mustachio-subscriber",
+            // url: "http://ownly-api.test/api/store-mustachio-subscriber",
             method: "POST",
             cache: false,
             contentType: false,
@@ -229,7 +230,7 @@ $(document).on("submit", ".bbm-form", function(e) {
     let data = new FormData($(this)[0]);
 
     $.ajax({
-        url: "https://ownly.tk/api/bbm-signup",
+        url: "https://ownly.market/api/bbm-signup",
         method: "POST",
         cache: false,
         contentType: false,
