@@ -124,7 +124,7 @@ $(window).on("load", function() {
 
 $(document).ready(function() {
     initiate_loading_page();
-    start_countdown();
+    // start_countdown();
 });
 
 $(document).on("mouseover", ".artist-card", function() {
