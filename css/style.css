@@ -2388,6 +2388,10 @@ ul.dash > li:before {
     margin-left:-120px;
     width:calc(100% + 120px)
   }
+  .shifting-rascals {
+    min-height:100%;
+    width:85%;
+  }
 }
 /* XL */
 @media (min-width: 1200px) {
@@ -2409,6 +2413,10 @@ ul.dash > li:before {
     margin-left:-140px;
     width:calc(100% + 140px)
   }
+  .shifting-rascals {
+    min-height:100%;
+    width:70%;
+  }
 }
 /* XXL */
 @media (min-width: 1400px) {
@@ -2426,6 +2434,10 @@ ul.dash > li:before {
   #bbm-image-container {
     margin-left:-200px;
     width:calc(100% + 200px)
+  }
+  .shifting-rascals {
+    min-height:100%;
+    width:60%;
   }
 }
 
