@@ -62,8 +62,8 @@ let pad_zeroes = (number) => {
 
 let start_countdown = () => {
     $.ajax({
-        url: "https://ownly.market/api/get-remaining-time/2022-10-08%2011:00:00",
-        // url: "http://ownly-api.test/api/get-remaining-time/2022-07-28%2012:00:00",
+        url: "https://ownly.market/api/get-remaining-time/2022-11-01%2000:00:00",
+        // url: "http://ownly-api.test/api/get-remaining-time/2022-11-01%2000:00:00",
         method: "GET"
     }).done(function(remaining_time) {
         let countDownDate = new Date().getTime() + (remaining_time * 1000);
