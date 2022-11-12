@@ -1904,6 +1904,14 @@ html {
   background-color: #1a4789;
   color: #ffffff;
 }
+.btn-custom-13 {
+  background-color: #cc9418;
+  color: #ffffff;
+}
+.btn-custom-13:hover, .btn-custom-13:active, .btn-custom-13:focus {
+  background-color: #ffffff;
+  color: #cc9418;
+}
 .btn-border-1 {
   border: 2px solid #f19150;
   color: #f19150;
