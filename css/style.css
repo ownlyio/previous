@@ -2287,6 +2287,12 @@ ul.dash > li:before {
   }
 }
 
+.mustashow-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 93%;
+}
+
 /* SM */
 @media (min-width: 576px) {
   .page-min-height {
@@ -2348,6 +2354,9 @@ ul.dash > li:before {
   }
   .bbbe-q4-btn {
     width: 320px;
+  }
+  .mustashow-bg {
+    background-size: 140%;
   }
 }
 /* LG */
