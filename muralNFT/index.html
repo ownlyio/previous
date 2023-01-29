@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="EXISTENTIAL VOYAGE" />
+	<meta name="description" content="Introducing the country's largest physical art piece with cutting-edge blockchain technology integration in TEZOS! This massive mural, measuring over 75 feet in length, combines stunning digital art with distributed ledger technology to create a truly one-of-a-kind experience in collecting wall art.">
+	<meta name="author" content="Ownly">
+	
+	<title>Ownly</title>
+	<link rel="icon" href="../img/ownly/32x32.png">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../fontawesome/css/all.css">
+	<link rel="stylesheet" href="../css/style.css?v=21">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<meta property="og:url" content="https://ownly.io" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="EXISTENTIAL VOYAGE" />
+	<meta property="og:description" content="Introducing the country's largest physical art piece with cutting-edge blockchain technology integration in TEZOS! This massive mural, measuring over 75 feet in length, combines stunning digital art with distributed ledger technology to create a truly one-of-a-kind experience in collecting wall art." />
+	<meta property="og:image" content="https://ownly.io/img/mural/og.png" />
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LBV47LFR4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6LBV47LFR4');
+	</script>
+</head>
+<body id="own-token-wrap">
+	<!-- TOKEN -->
+	<div id="top" style="overflow-x:hidden">
+		<!-- NAV -->
+		<div class="d-flex justify-content-center align-items-center position-fixed vh-100 w-100 bg-white" id="loading-ownly-container" style="z-index:100">
+			<div class="pb-5">
+				<img src="../img/ownly-2.png" id="loading-ownly" style="width:200px; transition:1s" alt="Ownly" />
+				<div class="progress mt-4">
+					<div class="progress-bar progress-bar-striped progress-bar-animated bg-color-2" id="loading-page-progress-bar" role="progressbar" style="width:0"></div>
+				</div>
+				<input type="hidden" id="progress_width" value="0">
+			</div>
+		</div>
+	
+		<a href="/" class="d-none text-decoration-none position-fixed d-flex justify-content-center align-items-center bg-color-6 text-white" id="mobile-scroll-up" style="bottom:20px; right:20px; height:50px; width:50px; border-radius:50%; z-index:10">
+			<i class="fas fa-chevron-up"></i>
+		</a>
+		
+		<header class="py-3 position-fixed w-100" id="header" style="top:0; left:0; z-index:99; transition:0.3s">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="d-flex align-items-center">
+						<div class="pe-2">
+							<a href="/" class="d-flex align-items-center mb-0 mb-md-2 mb-lg-0 text-dark text-decoration-none">
+								<img src="../img/ownly.png" class="d-none d-md-block" width="50" alt="Ownly" />
+								<img src="../img/ownly/horizontal-white.png" class="d-block d-md-none" width="130" alt="Ownly" />
+							</a>
+						</div>
+						<div>
+							<a href="/" class="link-color-1 font-size-170 rubik-black ps-1 d-none d-md-block text-decoration-none">OWNLY</a>
+						</div>
+					</div>
+					
+					<div class="d-none d-md-block">
+						<ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center mb-0 rubik-regular">
+							<li class="line-height-90"><a href="https://ownly.io/#features" class="nav-link pe-1 pe-sm-2 pe-xxl-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-90 font-size-xl-100 font-size-xxl-110">Features</a></li>
+							<li class="line-height-90"><a href="/token" class="nav-link px-1 px-sm-2 px-xxl-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-90 font-size-xl-100 font-size-xxl-110 mb-1 mb-sm-0">Token</a></li>
+							<li class="line-height-90"><a href="/roadmap" class="nav-link px-1 px-sm-2 px-xxl-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-90 font-size-xl-100 font-size-xxl-110">Roadmap</a></li>
+							<li class="line-height-90"><a href="https://ownly.io/#blog" class="nav-link px-1 px-sm-2 px-xxl-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-90 font-size-xl-100 font-size-xxl-110">Blog</a></li>
+							<li class="line-height-90"><a href="https://ownly.io/#team" class="nav-link px-1 px-sm-2 px-xxl-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-90 font-size-xl-100 font-size-xxl-110">Team</a></li>
+							<li class="line-height-90"><a href="/events" class="nav-link px-1 px-sm-2 px-xxl-3 py-1 py-sm-2 link-color-1 font-size-80 font-size-sm-90 font-size-xl-100 font-size-xxl-110">Events</a></li>
+							<li class="line-height-90"><a href="https://app.srk.finance/#/airdrop" target="_blank" class="nav-link btn btn-custom-4 ms-1 ms-sm-3 ps-sm-3 py-1 py-sm-2 font-size-80 font-size-xl-90 font-size-xxl-100" style="border-radius:40px">Claim Free OWN</a></li>
+							<li class="line-height-90"><a href="https://discord.gg/mustachioverse" target="_blank" class="nav-link btn btn-custom-4 ms-1 ms-sm-3 ps-sm-3 py-1 py-sm-2 font-size-80 font-size-xl-90 font-size-xxl-100" style="border-radius:40px">Join Discord</a></li>
+							<li class="line-height-90"><a href="https://ownly.market" target="_blank" class="nav-link btn btn-custom-2 ms-1 ms-sm-3 ps-sm-3 py-1 py-sm-2 font-size-80 font-size-xl-90 font-size-xxl-100" style="border-radius:40px">NFT Market</a></li>
+						</ul>
+					</div>
+					
+					<div class="d-block d-md-none pe-1 cursor-pointer" id="show-mobile-nav">
+						<i class="fas fa-bars text-white font-size-150"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="py-2 position-fixed bg-white w-100 overflow-hidden" id="mobile-nav" style="top:-165px; max-height:165px; left:0; z-index:10; transition:0.3s">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="d-flex align-items-center">
+						<div class="pe-2">
+							<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+								<img src="../img/ownly-2.png" class="" width="80" alt="Ownly" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="d-flex flex-fill">
+						<div class="d-flex justify-content-center w-100">
+							<div>
+								<ul class="nav flex-column align-items-start col-12 col-lg-auto me-lg-auto mb-0 rubik-regular">
+									<li><a href="https://ownly.io/#features" class="nav-link py-1 link-color-1 font-size-80">Features</a></li>
+									<li><a href="/token" class="nav-link py-1 link-color-1 font-size-80 mb-1 mb-sm-0">Token</a></li>
+									<li><a href="/roadmap" class="nav-link py-1 link-color-1 font-size-80">Roadmap</a></li>
+								</ul>
+							</div>
+							<div>
+								<ul class="nav flex-column align-items-start col-12 col-lg-auto me-lg-auto mb-0 rubik-regular">
+									<li><a href="https://ownly.io/#blog" class="nav-link py-1 link-color-1 font-size-80">Blog</a></li>
+									<li><a href="https://ownly.io/#team" class="nav-link py-1 link-color-1 font-size-80">Team</a></li>
+									<!--									<li><a href="https://amac.ph" class="nav-link py-1 link-color-1 font-size-80">Events</a></li>-->
+									<li><a href="/events" class="nav-link py-1 link-color-1 font-size-80">Events</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="pe-1 cursor-pointer ps-3" id="hide-mobile-nav" style="margin-top:-50px">
+						<i class="fas fa-times text-color-1 font-size-130"></i>
+					</div>
+				</div>
+				
+				<ul class="nav justify-content-center col-12 col-lg-auto me-lg-auto mb-0 rubik-regular">
+					<li><a href="https://app.srk.finance/#/airdrop" target="_blank" class="nav-link btn btn-custom-4 ms-1 ms-sm-3 ps-sm-3 py-1 py-sm-2 font-size-80 line-height-120 font-size-sm-90 mb-2" style="border-radius:40px">Claim Free OWN</a></li>
+					<li><a href="https://discord.gg/mustachioverse" target="_blank" class="nav-link btn btn-custom-4 ms-1 ms-sm-3 ps-sm-3 py-1 py-sm-2 font-size-80 line-height-120 font-size-sm-90 mb-2" style="border-radius:40px">Join Discord</a></li>
+					<li><a href="https://ownly.market" target="_blank" class="nav-link btn btn-custom-2 ms-1 ms-sm-3 ps-sm-3 py-1 py-sm-2 font-size-80 line-height-120 font-size-sm-90 mb-2" style="border-radius:40px">NFT Market</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+		
+		<div class="">
+			<div class="padding-after-nav">
+				<div class="facebook-responsive">
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fownly.io%2Fposts%2Fpfbid0fxRvh5DfwjDRMzmvwdDbRWgKq4LTss1PtfH8EMFcGg8XauRrw7gF1CAAKNc2Ukvul&show_text=false&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+			</div>
+		</div>
+		
+		<div class="background-image-cover" style="background-image:url('../img/mural/mural-bg.webp')">
+			<div class="container">
+				<div class="row align-items-center padding-after-nav min-vh-100">
+					<div class="col-md-7 order-1 order-md-0">
+						<div class="text-center text-md-start pb-5 pb-md-0 mb-5 mb-md-0 mb-xxl-4">
+							<p class="line-height-100 font-size-230 font-size-sm-250 font-size-md-250 font-size-lg-360 font-size-xl-400 font-size-xxl-480 font-weight-700 mb-4" style="color:#d94ba1">EXISTENTIAL<br>VOYAGE</p>
+							<p class="font-size-sm-110 font-size-md-100 font-size-lg-120 font-size-xl-140" style="color:#23286a">Introducing the country's largest physical art piece with cutting-edge blockchain technology integration in TEZOS! This massive mural, measuring over 75 feet in length, combines stunning digital art with distributed ledger technology to create a truly one-of-a-kind experience in collecting wall art.</p>
+							<p class="font-size-sm-110 font-size-lg-120 font-size-xl-140 mb-4 pb-3" style="color:#23286a">The mural, created by renowned Filipino illustrator and doodle artist Lei Melendres, depicts a breathtaking images of various journey in life. The use of vibrant colors and intricate details transport the viewer to another world.</p>
+						</div>
+					</div>
+					
+					<div class="col-md-5 order-0 order-md-1 mb-4 mb-md-0">
+						<div class="px-sm-5 px-md-0">
+							<div class="px-4 px-sm-5 px-md-0 pb-xxl-5">
+								<img src="../img/mural/explorer-sticker.webp" class="w-100" alt="Ownly" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="background-image-cover" style="background-image:url('../img/mural/lei.jpg')">
+			<div class="container">
+				<div class="row justify-content-end align-items-center min-vh-100 py-5">
+					<div class="col-md-7 py-5">
+						<p class="text-center text-md-end line-height-100 font-size-230 font-size-sm-250 font-size-md-250 font-size-lg-360 font-size-xl-400 font-size-xxl-440 font-weight-700 mb-3" style="color:#d94ba1">
+							<span class="bg-white px-4">ARTIST</span>
+						</p>
+						<p class="text-center text-md-end line-height-100 font-size-230 font-size-sm-250 font-size-md-250 font-size-lg-360 font-size-xl-400 font-size-xxl-440 font-weight-700 mb-4" style="color:#d94ba1">
+							<span class="bg-white px-4">STATEMENT</span>
+						</p>
+						
+						<p class="text-center text-md-end font-size-sm-110 font-size-lg-120 font-size-xl-130 mb-3" style="color:#23286a">
+							<span class="bg-white">I'm Lei Melendres, a full-time freelance illustrator for over a decade. My current art style came from trying all those different drawing styles and techniques over the years. The art I create is commonly known as "Doodle Art, " a broad and generalized art term for something that is both too little and too much. I mean, anyone can create a doodle as long as they can hold any drawing material and use it on something that can record their drawing strokes. It could be as simple as a single line or an unending display of skill where you draw until you can no longer do it using all kinds of elements such as different characters, patterns, words, etc. The idea of being able to draw creatively and spontaneously to fill out a whole page excites me, and the result for me will always be surprising and captivating. Art is not always about expressing your thoughts and ideas. Sometimes, it's a way of releasing the overflowing creative juice you have to entertain and satisfy yourself.</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="background-image-cover" style="background-image:url('../img/mural/mural-bg.webp')">
+			<div class="container">
+				<div class="row justify-content-center align-items-center py-5">
+					<div class="col-lg-8 col-xl-7 pb-5">
+						<div class="row justify-content-center">
+							<div class="col-md-7 text-center">
+								<img src="../img/mural/existential-voyage.png" class="w-100" />
+							</div>
+						</div>
+						
+						<p class="text-center font-size-sm-110 font-size-lg-120 font-size-xl-140 mb-4" style="color:#23286a">As human beings, we have always been fascinated by the search for our true meaning and purpose in life. As a result, every single one of us has had moments where we asked ourselves who we're supposed to be and why we do what we do in life. To find an answer, we are willing to go to great lengths, whether thru a journey of self-discovery where we collect things, information, experiences, and lessons we think might help us become mature or knowledgeable enough to understand the complexity of being human or through more scientific means like research and experiments that could also be made possible by collecting all the necessary resources we need to understand life in every sense of the word. Of course, not everyone will be successful, and this process can be a destructive path as it sometimes takes a bit of trial and error before we succeed, which is why it takes a bit of courage to take the first step. And since we're going on a journey through known and unknown realms during the whole process, it can be considered a long voyage. Finally, when we can't get answers through those means, we sometimes seek help from a higher power beyond our reach, spiritually or scientifically, and hope we get lucky enough to find what we're looking for or more.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-100 bg-white">
+			<div class="container py-4">
+				<div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end">
+					<div class="d-flex me-3 mb-4 mb-md-0">
+						<div class="text-center pe-3 pe-md-5">
+							<img src="../img/ownly-2.png" class="mb-3" width="120" alt="Ownly" />
+							<div class="text-color-1 font-size-90">Ownly &copy; 2021</div>
+						</div>
+						
+						<div class="d-flex flex-column justify-content-between ps-3 py-1" style="border-left:3px solid #000000">
+							<div class="d-flex text-color-1 mb-2">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-map-marker-alt font-size-120"></i>
+								</div>
+								<div class="font-size-90">
+									<div>MAIN.PH Building,</div>
+									<div>3297 A. Mabini street, Barangay Poblacion,</div>
+									<div>Makati City, Philippines</div>
+								</div>
+							</div>
+							
+							<div class="d-flex text-color-1 mb-2">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-envelope font-size-120"></i>
+								</div>
+								<div class="font-size-90">support@ownly.io</div>
+							</div>
+							
+							<div class="d-flex text-color-1">
+								<div class="text-center me-3" style="min-width:20px">
+									<i class="fas fa-phone font-size-120"></i>
+								</div>
+								<div class="font-size-90">+63 977 143 1897</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="px-2 px-md-0">
+						<div class="text-color-1 font-size-140 font-size-sm-160 mb-2">Connect with us:</div>
+						<div class="font-size-170 font-size-sm-200 font-size-lg-160 font-size-xl-240 font-size-xl-260 line-height-140">
+							<a href="https://twitter.com/ownlyio" class="text-decoration-none">
+								<i class="fab fa-twitter text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://t.me/ownlyio" class="text-decoration-none">
+								<i class="fab fa-telegram text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://discord.gg/mustachioverse" class="text-decoration-none">
+								<i class="fab fa-discord text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://github.com/ownlyio" class="text-decoration-none">
+								<i class="fab fa-github text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://www.linkedin.com/company/ownlyio/" class="text-decoration-none">
+								<i class="fab fa-linkedin-in text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://web.facebook.com/ownly.io" class="text-decoration-none">
+								<i class="fab fa-facebook text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://www.instagram.com/ownly.io/" class="text-decoration-none">
+								<i class="fab fa-instagram text-color-4 me-2 me-sm-3"></i>
+							</a>
+							<a href="https://www.reddit.com/r/Ownly/" class="text-decoration-none">
+								<i class="fab fa-reddit text-color-4"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END BODY -->
+	</div>
+	<!-- END TOKEN -->
+	
+	<!-- MODALS -->
+	<div class="modal fade" id="modal-subscribe-success" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-sm">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="text-center mt-3 mb-3">
+						<i class="fas fa-check-circle font-size-400 text-color-3"></i>
+					</div>
+					<h5 class="w-100 font-size-100 text-center">Thank you for subscribing!</h5>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-custom-2 px-4" data-bs-dismiss="modal">Okay</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="modal-burn-events-2021-Q3" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-header neo-bold font-size-110">2021 3rd Quarter BBBC Transactions</div>
+				<div class="modal-body">
+					<div class="text-center">Total of <b>122.962.264.671 OWN</b> bought back and earned from staking plus <b>127,037,735.329 OWN</b> from our main wallet for a total of <b>250 Million</b> OWN burned this 3rd Quarter of 2021.</div>
+					
+					<div class="row mt-4">
+						<div class="col-sm-12 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Burned 250,000,000 OWN tokens</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x9b539a536bd7c6e83456dbacaa4e2feab4db3c1f2df2a5d693b791c5a196364f" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 43,738,062.26 OWN with 28 BNB</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x4660b420dd76e53a5553aa87d2e370b39d9ee01f2b496a178d73a0b67fd57131" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 1,735,591.56 OWN with 507.07 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xa2ca00f66248c4ac67139348c798d38c5c31e31574a0340203d8abc9b1c535da" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Earned 437,105.65 OWN from staking SRK</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x47adecb35a409b46d7cfdcb775d2d98b8cf225e42254fe0a7060d1d01d3742ef" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 22,177,204.80 OWN with 1,343,732.37 SRKb</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x4c22c574dfc64a7397f33a5f302bbef3b9390362745cb8aadcb51c523819e92f" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 10,488,495.62 OWN with 3,000 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x85d9edca29ac39680893981e184e9dbb31bd41e20dd19de6a7d0e07a8ca1e3b0" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 9,889,149.49 OWN with 3,000 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x52fbff539b7da45e3b7e6abe1d183ca3a09a78e9d0f90865fb0bc19e11311a63" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Earned 106,883.94 OWN from staking SRKb</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x4afae9bcd47c14cce548fec373d4638890246947a520b49501247307e6615aef" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 11,814,602.01 with 750,000 SRKb</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x5b4bd06a5a0b4acb2689168488dcd61ed2bdea8b061fb6fe1218eff5cff5484c" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 22,575,169.34 with 11.41 BNB</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xf3bc3542c52e1914ca281cff4e11d9544f406fd54d6c082a67a52c3eea69ad19" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-custom-2 px-4" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="modal-burn-events-2021-Q4" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-header neo-bold font-size-110">2021 4th Quarter BBBC Transactions</div>
+				<div class="modal-body">
+					<div class="text-center">Total of <b>354,407,362.99 OWN</b> bought back plus <b>145,592,637.01 OWN</b> from our main wallet for a total of <b>500 Million</b> OWN burned this 4th Quarter of 2021.</div>
+					
+					<div class="row mt-4">
+						<div class="col-sm-12 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Burned 500,000,000 OWN tokens</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x2996504bb8b22529c3f64b282e0be3de85ae331bed0c02242d3beaf6d4f01df6" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 68,646,132.70 OWN with 17 BNB</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x2529c1075d44bc41af2337e437ff1015183ca56f516dffbb17885f1fc09a6a29" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 23,318,272.01 OWN with 2,934.65 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xfaa879e82697b2faa6d5580a1de6710c086371bcabed8773d163d36038a3b033" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 7,122,613.85 OWN with 2 BNB</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x2b46c1256f89f44873eba02b0bd157da980bcee53bd44beb008dfd55988fdf9f" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 34,772,909.75 OWN with 8.2 BNB</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xc63708492e10ceff05ca2dc7cff30fcc19a705d608c38812e7ebab31cca0f993" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 47,090,747.93 OWN with 8.4 BNB</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x85d9edca29ac39680893981e184e9dbb31bd41e20dd19de6a7d0e07a8ca1e3b0" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 5,505,675.66 OWN with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x820b057fc5cf7ffa0622c415015180edc6b95ff52534e887c6ecec3b9db165ce" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 5,469,979.97 OWN with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xd5386f146a61b05e05c4c535d4275ba55274c1a9da34acf4432f21442d8c67f8" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 5,311,899.50 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x888dfb0c7a157621610aca13b14330f6b442a76e3ed0e1de652d209ebc3fdd67" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 4,771,634.89 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x238d1ba327e52c74f1e74b123e5283685541d2598c5f3e05192e7556991d5887" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 3,757,481.27 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x7f918c536ab4b38fc4153fa31609c8622a4d621b18829f4c5050159db0928204" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 3,254,194.32 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x3c435eb032a86e6c33c05d07afc100afeb201344d2f04defcd41adc50468f039" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 3,401,861.17 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x4a903b2c54506f0fc201a2b2bb84baa1644649389ec61daa3ab9f0e50358ca9e" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 8,357,936.24 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x82b7620d985eb170239a3fd61a72c8e29f15d5d5964b3176759ade945ba9d31a" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 8,302,064.18 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xf223b51bad4524cdc9da9a6e6f31e911eecabce4dfeb83e00d03f4f9bd866093" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 8,232,089.76 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x5170d60d1f12748aa448499008e1e325ab03f5d7a5da3c9194a2cf9f53ee49c5" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 8,110,033.14 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xe50d5df23c4a45862583a1afd2eaba6cfcc71938f979963f3f2405fe63f9c542" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 8,006,703.13 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xc8d0105bfbe746d167e5e82e5b9f096e49fe34cad66265dc23b36c11d7a61f95" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 7,892,136.98 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x56fbbaa311e831c11dd8855b445e469f3f8dc919b3646a26cdb403d7018c4458" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 7,845,280.37 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x8d9494ca7979f189754275be334a3812bef1244338ae82faae392212a77c7d79" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 7,753,505.57 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xe69214175dad97ece0dabfcaa5471032b010465f46eff27b6b6753be20b1f772" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 7,692,712.25 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x89e980f203b8feb202c1e1bfe4359e290bef82a4efbd17c11ab96feb4944289e" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 7,595,763.74 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x1b4e7a42230d7bccac5f12ee05810f232c4120c6234fc7c2e05f3318375f1ca0" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 7,521,930.59 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x3aaece1b136d4f0d1ec6d5aaf05676df09df15a5832b091ef00268b6bd23205d" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 3,763,207.60 with 300 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x5c5cec2bdade12d412e7aebe76455f345a4bd427bbbdf3e959fe444edebbcaa8" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 6,185,354.79 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x6c8b28498d5869ce9b0117e0f57cc77e2347b008fe091e776970a1cf546ebb18" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 6,048,333.36 with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xd3c915b3df7337a360472862982f43a27bf59f65daa1282233f4c154f1cc0848" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 11,914,996.31 with 915 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x8a6c912a9855318153fe71a7cce2ba6d97cc2a800ef23bfcd91f22062c326509" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 26,761,911.96 with 2.95 BNB</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x8a6c912a9855318153fe71a7cce2ba6d97cc2a800ef23bfcd91f22062c326509" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-custom-2 px-4" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="modal-burn-events-2022-Q1" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-header neo-bold font-size-110">2022 1st Quarter BBBC Transactions</div>
+				<div class="modal-body">
+					<div class="text-center">Total of <b>135,776,130.39 OWN</b> bought back plus <b>89,223,869.61 OWN</b> from our wallet for a total of <b>225 Million</b> OWN burned this 1st Quarter of 2022.</div>
+					
+					<div class="row justify-content-center mt-4">
+						<div class="col-sm-12 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Burned 225,000,000 OWN tokens</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x4593eb07aa2db16c2909dec3ab27765e0152044f780e1698d7ae9e78f437501b" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 16,995,516.47 OWN with 1,000 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x0bf3ecbf9dbf6b9cc0dfdd06a719481196457ef858a8891635a41a3ab07c0e55" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 18,932,405.20 OWN with 1,000 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xc17ec9bf196a3b3346185079ea0bd356b6b6f87957d10d02408a682f43083b05" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 19,989,058.49 OWN with 1,000 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0x2b46c1256f89f44873eba02b0bd157da980bcee53bd44beb008dfd55988fdf9f" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 17,172,951.96 OWN with 1,000 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xd84eb4d839f02e7cedb597b3fb7046b433400c905468099494161b96480fb7f7" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 24,513,583.21 OWN with 1,500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xd4016f1429211caf87a34f8d2790b1d089ba4cb8f58935f86da4972e87039396" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 8,124,105.64 OWN with 500 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xefa246999ca48798a13f122e5baf4578951123ac3c75d4eebe68992c0a4c3ebd" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-6 col-lg-4 mb-3">
+							<div class="card h-100">
+								<div class="card-body d-flex align-items-center">
+									<div class="text-center flex-fill">Bought back 15,229,773.06 OWN with 1,000 BUSD</div>
+								</div>
+								<div class="card-footer">
+									<a href="https://bscscan.com/tx/0xeb962983b7823c60ab728f7881eb0719e9707cc71eadea47ee4021e82d089214" target="_blank" class="btn btn-custom-5 font-size-80 w-100 py-1" style="border-width:2px">View on Explorer</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-custom-2 px-4" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="../js/script.js?v=48"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
