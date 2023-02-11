@@ -2371,6 +2371,9 @@ ul.dash > li:before {
   .mustashow-bg {
     background-size: 140%;
   }
+  .mural-feature-title {
+    height:108px;
+  }
 }
 /* LG */
 @media (min-width: 992px) {
@@ -2422,6 +2425,9 @@ ul.dash > li:before {
     min-height:100%;
     width:85%;
   }
+  .mural-feature-title {
+    height:81px;
+  }
 }
 /* XL */
 @media (min-width: 1200px) {
@@ -2468,6 +2474,9 @@ ul.dash > li:before {
   .shifting-rascals {
     min-height:100%;
     width:60%;
+  }
+  .mural-feature-title {
+    height:57px;
   }
 }
 
